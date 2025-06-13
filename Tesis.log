@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.12)  12 JUN 2025 13:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.12)  13 JUN 2025 01:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -809,211 +809,668 @@ LaTeX Info: Redefining \. on input line 483.
 LaTeX Info: Redefining \% on input line 483.
 [15]
 Cap\'{\i }tulo 3.
-<imagenes/descripcion.png, id=134, 7792.11125pt x 3355.53625pt>
-File: imagenes/descripcion.png Graphic file (type png)
-<use imagenes/descripcion.png>
-Package pdftex.def Info: imagenes/descripcion.png  used on input line 493.
-(pdftex.def)             Requested size: 457.80486pt x 197.12498pt.
-<imagenes/sstema.png, id=135, 8900.25125pt x 2866.71pt>
-File: imagenes/sstema.png Graphic file (type png)
-<use imagenes/sstema.png>
-Package pdftex.def Info: imagenes/sstema.png  used on input line 506.
-(pdftex.def)             Requested size: 457.80486pt x 147.45567pt.
+<imagenes/diagrama_de_pretrata.jpeg, id=134, 2736.3831pt x 977.5722pt>
+File: imagenes/diagrama_de_pretrata.jpeg Graphic file (type jpg)
+<use imagenes/diagrama_de_pretrata.jpeg>
+Package pdftex.def Info: imagenes/diagrama_de_pretrata.jpeg  used on input line
+ 494.
+(pdftex.def)             Requested size: 457.80486pt x 163.54485pt.
+<imagenes/hf.jpeg, id=135, 3207.1017pt x 1082.1228pt>
+File: imagenes/hf.jpeg Graphic file (type jpg)
+<use imagenes/hf.jpeg>
+Package pdftex.def Info: imagenes/hf.jpeg  used on input line 503.
+(pdftex.def)             Requested size: 457.80486pt x 154.46829pt.
 [16
 
- <./imagenes/descripcion.png>]
-LaTeX Info: Redefining \. on input line 524.
-LaTeX Info: Redefining \% on input line 524.
- [17 <./imagenes/sstema.png>]
-<imagenes/convertidor diagrama.png, id=144, 646.5756pt x 316.5426pt>
+ <./imagenes/diagrama_de_pretrata.jpeg>]
+<imagenes/sstema.png, id=139, 8900.25125pt x 2866.71pt>
+File: imagenes/sstema.png Graphic file (type png)
+<use imagenes/sstema.png>
+Package pdftex.def Info: imagenes/sstema.png  used on input line 524.
+(pdftex.def)             Requested size: 457.80486pt x 147.45567pt.
+LaTeX Info: Redefining \. on input line 530.
+LaTeX Info: Redefining \% on input line 530.
+ [17 <./imagenes/hf.jpeg> <./imagenes/sstema.png>]
+LaTeX Info: Redefining \. on input line 554.
+LaTeX Info: Redefining \% on input line 554.
+ [18]
+<imagenes/convertidor diagrama.png, id=151, 646.5756pt x 316.5426pt>
 File: imagenes/convertidor diagrama.png Graphic file (type png)
 <use imagenes/convertidor diagrama.png>
 Package pdftex.def Info: imagenes/convertidor diagrama.png  used on input line 
-558.
+576.
 (pdftex.def)             Requested size: 366.24527pt x 179.30092pt.
-LaTeX Info: Redefining \. on input line 562.
-LaTeX Info: Redefining \% on input line 562.
- [18]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <imagenes/3_reactor.jpg, id=152, 596.98032pt x 509.65407pt>
 File: imagenes/3_reactor.jpg Graphic file (type jpg)
 <use imagenes/3_reactor.jpg>
-Package pdftex.def Info: imagenes/3_reactor.jpg  used on input line 568.
+Package pdftex.def Info: imagenes/3_reactor.jpg  used on input line 586.
 (pdftex.def)             Requested size: 183.11914pt x 156.33469pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <imagenes/Biorreactor.png, id=153, 154.6578pt x 200.4288pt>
 File: imagenes/Biorreactor.png Graphic file (type png)
 <use imagenes/Biorreactor.png>
-Package pdftex.def Info: imagenes/Biorreactor.png  used on input line 584.
+Package pdftex.def Info: imagenes/Biorreactor.png  used on input line 602.
 (pdftex.def)             Requested size: 137.34285pt x 177.9896pt.
-LaTeX Info: Redefining \. on input line 588.
-LaTeX Info: Redefining \% on input line 588.
- [19 <./imagenes/convertidor diagrama.png> <./imagenes/3_reactor.jpg>]
-<imagenes/Reactor.png, id=159, 441.8106pt x 335.3328pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imagenes/Reactor.png, id=154, 441.8106pt x 335.3328pt>
 File: imagenes/Reactor.png Graphic file (type png)
 <use imagenes/Reactor.png>
-Package pdftex.def Info: imagenes/Reactor.png  used on input line 595.
+Package pdftex.def Info: imagenes/Reactor.png  used on input line 613.
 (pdftex.def)             Requested size: 228.90242pt x 173.73958pt.
-LaTeX Info: Redefining \. on input line 606.
-LaTeX Info: Redefining \% on input line 606.
- [20 <./imagenes/Biorreactor.png> <./imagenes/Reactor.png>]
-<imagenes/soldado1.png, id=165, 676.77844pt x 1203.7472pt>
+LaTeX Info: Redefining \. on input line 617.
+LaTeX Info: Redefining \% on input line 617.
+[19]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imagenes/soldado1.png, id=159, 676.77844pt x 1203.7472pt>
 File: imagenes/soldado1.png Graphic file (type png)
 <use imagenes/soldado1.png>
-Package pdftex.def Info: imagenes/soldado1.png  used on input line 610.
+Package pdftex.def Info: imagenes/soldado1.png  used on input line 628.
 (pdftex.def)             Requested size: 91.55957pt x 162.84784pt.
-<imagenes/reactor_tubos.png, id=166, 676.77844pt x 1203.7472pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imagenes/reactor_tubos.png, id=160, 676.77844pt x 1203.7472pt>
 File: imagenes/reactor_tubos.png Graphic file (type png)
 <use imagenes/reactor_tubos.png>
-Package pdftex.def Info: imagenes/reactor_tubos.png  used on input line 620.
+Package pdftex.def Info: imagenes/reactor_tubos.png  used on input line 638.
 (pdftex.def)             Requested size: 160.23448pt x 284.9929pt.
-LaTeX Info: Redefining \. on input line 627.
-LaTeX Info: Redefining \% on input line 627.
- [21 <./imagenes/soldado1.png> <./imagenes/reactor_tubos.png>]
-<imagenes/reactor_completo.png, id=172, 1204.5pt x 906.38625pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 645.
+LaTeX Info: Redefining \% on input line 645.
+[20 <./imagenes/convertidor diagrama.png> <./imagenes/3_reactor.jpg>]
+<imagenes/reactor_completo.png, id=165, 1204.5pt x 906.38625pt>
 File: imagenes/reactor_completo.png Graphic file (type png)
 <use imagenes/reactor_completo.png>
-Package pdftex.def Info: imagenes/reactor_completo.png  used on input line 632.
+Package pdftex.def Info: imagenes/reactor_completo.png  used on input line 650.
 
 (pdftex.def)             Requested size: 320.46199pt x 241.14551pt.
-<imagenes/motorreductor.png, id=173, 203.8014pt x 334.851pt>
-File: imagenes/motorreductor.png Graphic file (type png)
-<use imagenes/motorreductor.png>
-Package pdftex.def Info: imagenes/motorreductor.png  used on input line 648.
-(pdftex.def)             Requested size: 137.34285pt x 225.66211pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Info: Redefining \. on input line 659.
 LaTeX Info: Redefining \% on input line 659.
-[22 <./imagenes/reactor_completo.png>]
-<imagenes/Medidas del mezclador.png, id=178, 1445.4pt x 813.0375pt>
+[21 <./imagenes/Biorreactor.png> <./imagenes/Reactor.png>]
+<imagenes/motorreductor.png, id=171, 203.8014pt x 334.851pt>
+File: imagenes/motorreductor.png Graphic file (type png)
+<use imagenes/motorreductor.png>
+Package pdftex.def Info: imagenes/motorreductor.png  used on input line 666.
+(pdftex.def)             Requested size: 137.34285pt x 225.66211pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 677.
+LaTeX Info: Redefining \% on input line 677.
+[22 <./imagenes/soldado1.png> <./imagenes/reactor_tubos.png>]
+<imagenes/Medidas del mezclador.png, id=177, 1445.4pt x 813.0375pt>
 File: imagenes/Medidas del mezclador.png Graphic file (type png)
 <use imagenes/Medidas del mezclador.png>
 Package pdftex.def Info: imagenes/Medidas del mezclador.png  used on input line
- 663.
+ 681.
 (pdftex.def)             Requested size: 366.24527pt x 206.01299pt.
-<imagenes/Mezclador y reactor vista frontal.png, id=179, 1445.4pt x 813.0375pt>
+LaTeX Info: Redefining \. on input line 685.
+LaTeX Info: Redefining \% on input line 685.
+ [23 <./imagenes/reactor_completo.png> <./imagenes/motorreductor.png>]
+<imagenes/Mezclador y reactor vista frontal.png, id=183, 1445.4pt x 813.0375pt>
 
 File: imagenes/Mezclador y reactor vista frontal.png Graphic file (type png)
 <use imagenes/Mezclador y reactor vista frontal.png>
 Package pdftex.def Info: imagenes/Mezclador y reactor vista frontal.png  used o
-n input line 674.
+n input line 692.
 (pdftex.def)             Requested size: 320.46199pt x 180.25827pt.
-LaTeX Info: Redefining \. on input line 678.
-LaTeX Info: Redefining \% on input line 678.
- [23 <./imagenes/motorreductor.png> <./imagenes/Medidas del mezclador.png>]
-<imagenes/reactor con mezclador.jpg, id=185, 902.37125pt x 1604.99625pt>
+<imagenes/reactor con mezclador.jpg, id=184, 902.37125pt x 1604.99625pt>
 File: imagenes/reactor con mezclador.jpg Graphic file (type jpg)
 <use imagenes/reactor con mezclador.jpg>
 Package pdftex.def Info: imagenes/reactor con mezclador.jpg  used on input line
- 683.
+ 701.
 (pdftex.def)             Requested size: 183.11914pt x 325.6957pt.
-LaTeX Info: Redefining \. on input line 692.
-LaTeX Info: Redefining \% on input line 692.
- [24 <./imagenes/Mezclador y reactor vista frontal.png> <./imagenes/reactor con
- mezclador.jpg>]
-<imagenes/Diagrama1_1.png, id=190, 469.755pt x 537.207pt>
+LaTeX Info: Redefining \. on input line 705.
+LaTeX Info: Redefining \% on input line 705.
+ [24 <./imagenes/Medidas del mezclador.png> <./imagenes/Mezclador y reactor vis
+ta frontal.png>]
+LaTeX Info: Redefining \. on input line 724.
+LaTeX Info: Redefining \% on input line 724.
+ [25 <./imagenes/reactor con mezclador.jpg>]
+<imagenes/Diagrama1_1.png, id=195, 469.755pt x 537.207pt>
 File: imagenes/Diagrama1_1.png Graphic file (type png)
 <use imagenes/Diagrama1_1.png>
-Package pdftex.def Info: imagenes/Diagrama1_1.png  used on input line 722.
+Package pdftex.def Info: imagenes/Diagrama1_1.png  used on input line 740.
 (pdftex.def)             Requested size: 183.11914pt x 209.41151pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 742.
-LaTeX Info: Redefining \% on input line 742.
-[25]
-<imagenes/Senal en simulink.png, id=196, 467.346pt x 250.536pt>
+LaTeX Info: Redefining \. on input line 760.
+LaTeX Info: Redefining \% on input line 760.
+ [26 <./imagenes/Diagrama1_1.png>]
+<imagenes/Senal en simulink.png, id=200, 467.346pt x 250.536pt>
 File: imagenes/Senal en simulink.png Graphic file (type png)
 <use imagenes/Senal en simulink.png>
-Package pdftex.def Info: imagenes/Senal en simulink.png  used on input line 746
+Package pdftex.def Info: imagenes/Senal en simulink.png  used on input line 764
 .
 (pdftex.def)             Requested size: 320.46199pt x 171.79196pt.
-LaTeX Info: Redefining \. on input line 752.
-LaTeX Info: Redefining \% on input line 752.
- [26 <./imagenes/Diagrama1_1.png> <./imagenes/Senal en simulink.png>]
-<imagenes/Senal PWM.png, id=202, 379.1766pt x 200.9106pt>
+<imagenes/Senal PWM.png, id=201, 379.1766pt x 200.9106pt>
 File: imagenes/Senal PWM.png Graphic file (type png)
 <use imagenes/Senal PWM.png>
-Package pdftex.def Info: imagenes/Senal PWM.png  used on input line 756.
+Package pdftex.def Info: imagenes/Senal PWM.png  used on input line 774.
 (pdftex.def)             Requested size: 366.24527pt x 194.06757pt.
-<imagenes/1.png, id=203, 1445.4pt x 697.10437pt>
-File: imagenes/1.png Graphic file (type png)
-<use imagenes/1.png>
-Package pdftex.def Info: imagenes/1.png  used on input line 780.
-(pdftex.def)             Requested size: 412.02156pt x 198.70871pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/prueba a 90_k12.png, id=204, 1445.4pt x 697.10437pt>
+<imagenes/1.png, id=202, 1445.4pt x 697.10437pt>
+File: imagenes/1.png Graphic file (type png)
+<use imagenes/1.png>
+Package pdftex.def Info: imagenes/1.png  used on input line 798.
+(pdftex.def)             Requested size: 412.02156pt x 198.70871pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 804.
+LaTeX Info: Redefining \% on input line 804.
+[27 <./imagenes/Senal en simulink.png>]
+<imagenes/prueba a 90_k12.png, id=207, 1445.4pt x 697.10437pt>
 File: imagenes/prueba a 90_k12.png Graphic file (type png)
 <use imagenes/prueba a 90_k12.png>
-Package pdftex.def Info: imagenes/prueba a 90_k12.png  used on input line 789.
+Package pdftex.def Info: imagenes/prueba a 90_k12.png  used on input line 807.
 (pdftex.def)             Requested size: 320.46199pt x 154.55476pt.
-LaTeX Info: Redefining \. on input line 793.
-LaTeX Info: Redefining \% on input line 793.
-[27 <./imagenes/Senal PWM.png>]
-<imagenes/4.png, id=209, 1445.4pt x 697.10437pt>
+LaTeX Info: Redefining \. on input line 811.
+LaTeX Info: Redefining \% on input line 811.
+ [28 <./imagenes/Senal PWM.png> <./imagenes/1.png (PNG copy)>]
+<imagenes/4.png, id=212, 1445.4pt x 697.10437pt>
 File: imagenes/4.png Graphic file (type png)
 <use imagenes/4.png>
-Package pdftex.def Info: imagenes/4.png  used on input line 804.
+Package pdftex.def Info: imagenes/4.png  used on input line 822.
 (pdftex.def)             Requested size: 457.80486pt x 220.791pt.
-LaTeX Info: Redefining \. on input line 808.
-LaTeX Info: Redefining \% on input line 808.
- [28 <./imagenes/1.png (PNG copy)> <./imagenes/prueba a 90_k12.png (PNG copy)>]
 <imagenes/4_1.png, id=213, 1445.4pt x 697.10437pt>
 File: imagenes/4_1.png Graphic file (type png)
 <use imagenes/4_1.png>
-Package pdftex.def Info: imagenes/4_1.png  used on input line 812.
+Package pdftex.def Info: imagenes/4_1.png  used on input line 830.
 (pdftex.def)             Requested size: 457.80486pt x 220.791pt.
-LaTeX Info: Redefining \. on input line 817.
-LaTeX Info: Redefining \% on input line 817.
- [29 <./imagenes/4.png (PNG copy)> <./imagenes/4_1.png (PNG copy)>]
-<imagenes/5.png, id=217, 1445.4pt x 697.10437pt>
+LaTeX Info: Redefining \. on input line 833.
+LaTeX Info: Redefining \% on input line 833.
+ [29 <./imagenes/prueba a 90_k12.png (PNG copy)> <./imagenes/4.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 835.
+LaTeX Info: Redefining \% on input line 835.
+ [30 <./imagenes/4_1.png (PNG copy)>]
+<imagenes/5.png, id=220, 1445.4pt x 697.10437pt>
 File: imagenes/5.png Graphic file (type png)
 <use imagenes/5.png>
-Package pdftex.def Info: imagenes/5.png  used on input line 827.
+Package pdftex.def Info: imagenes/5.png  used on input line 845.
 (pdftex.def)             Requested size: 457.80486pt x 220.791pt.
-<imagenes/5_1.png, id=218, 1445.4pt x 697.10437pt>
+<imagenes/5_1.png, id=221, 1445.4pt x 697.10437pt>
 File: imagenes/5_1.png Graphic file (type png)
 <use imagenes/5_1.png>
-Package pdftex.def Info: imagenes/5_1.png  used on input line 839.
+Package pdftex.def Info: imagenes/5_1.png  used on input line 857.
 (pdftex.def)             Requested size: 457.80486pt x 220.791pt.
-LaTeX Info: Redefining \. on input line 843.
-LaTeX Info: Redefining \% on input line 843.
- [30 <./imagenes/5.png (PNG copy)>]
-<imagenes/7.png, id=222, 1445.4pt x 697.10437pt>
+LaTeX Info: Redefining \. on input line 861.
+LaTeX Info: Redefining \% on input line 861.
+ [31 <./imagenes/5.png (PNG copy)>]
+<imagenes/7.png, id=226, 1445.4pt x 697.10437pt>
 File: imagenes/7.png Graphic file (type png)
 <use imagenes/7.png>
-Package pdftex.def Info: imagenes/7.png  used on input line 855.
+Package pdftex.def Info: imagenes/7.png  used on input line 873.
 (pdftex.def)             Requested size: 457.80486pt x 220.791pt.
-LaTeX Info: Redefining \. on input line 859.
-LaTeX Info: Redefining \% on input line 859.
- [31 <./imagenes/5_1.png (PNG copy)>]
-<imagenes/PRBS.png, id=227, 1445.4pt x 697.10437pt>
+LaTeX Info: Redefining \. on input line 877.
+LaTeX Info: Redefining \% on input line 877.
+ [32 <./imagenes/5_1.png (PNG copy)>]
+<imagenes/PRBS.png, id=230, 1445.4pt x 697.10437pt>
 File: imagenes/PRBS.png Graphic file (type png)
 <use imagenes/PRBS.png>
-Package pdftex.def Info: imagenes/PRBS.png  used on input line 868.
+Package pdftex.def Info: imagenes/PRBS.png  used on input line 886.
 (pdftex.def)             Requested size: 412.02156pt x 198.70871pt.
-LaTeX Info: Redefining \. on input line 874.
-LaTeX Info: Redefining \% on input line 874.
- [32 <./imagenes/7.png (PNG copy)> <./imagenes/PRBS.png (PNG copy)>]
-<imagenes/senal_prbs_ampl_alea.png, id=231, 1445.4pt x 697.10437pt>
+LaTeX Info: Redefining \. on input line 892.
+LaTeX Info: Redefining \% on input line 892.
+ [33 <./imagenes/7.png (PNG copy)> <./imagenes/PRBS.png (PNG copy)>]
+<imagenes/senal_prbs_ampl_alea.png, id=234, 1445.4pt x 697.10437pt>
 File: imagenes/senal_prbs_ampl_alea.png Graphic file (type png)
 <use imagenes/senal_prbs_ampl_alea.png>
 Package pdftex.def Info: imagenes/senal_prbs_ampl_alea.png  used on input line 
-879.
+897.
 (pdftex.def)             Requested size: 412.02156pt x 198.70871pt.
-<imagenes/diagrama_PRBS.png, id=232, 340.27126pt x 614.295pt>
+<imagenes/diagrama_PRBS.png, id=235, 340.27126pt x 614.295pt>
 File: imagenes/diagrama_PRBS.png Graphic file (type png)
 <use imagenes/diagrama_PRBS.png>
-Package pdftex.def Info: imagenes/diagrama_PRBS.png  used on input line 894.
+Package pdftex.def Info: imagenes/diagrama_PRBS.png  used on input line 912.
 (pdftex.def)             Requested size: 183.11914pt x 330.58955pt.
-LaTeX Info: Redefining \. on input line 898.
-LaTeX Info: Redefining \% on input line 898.
- [33 <./imagenes/senal_prbs_ampl_alea.png (PNG copy)>]
-<imagenes/temperatura con prbs.png, id=236, 1445.4pt x 697.10437pt>
+LaTeX Info: Redefining \. on input line 916.
+LaTeX Info: Redefining \% on input line 916.
+ [34 <./imagenes/senal_prbs_ampl_alea.png (PNG copy)>]
+<imagenes/temperatura con prbs.png, id=239, 1445.4pt x 697.10437pt>
 File: imagenes/temperatura con prbs.png Graphic file (type png)
-<use imagenes/temperatura
+<use imagenes/temperatura con prbs.png>
+Package pdftex.def Info: imagenes/temperatura con prbs.png  used on input line 
+921.
+(pdftex.def)             Requested size: 366.24527pt x 176.63705pt.
+LaTeX Info: Redefining \. on input line 925.
+LaTeX Info: Redefining \% on input line 925.
+ [35 <./imagenes/diagrama_PRBS.png>]
+<imagenes/temp_neta.png, id=244, 1445.4pt x 697.10437pt>
+File: imagenes/temp_neta.png Graphic file (type png)
+<use imagenes/temp_neta.png>
+Package pdftex.def Info: imagenes/temp_neta.png  used on input line 932.
+(pdftex.def)             Requested size: 320.46199pt x 154.55476pt.
+LaTeX Info: Redefining \. on input line 945.
+LaTeX Info: Redefining \% on input line 945.
+ [36 <./imagenes/temperatura con prbs.png (PNG copy)> <./imagenes/temp_neta.png
+ (PNG copy)>]
+<imagenes/identificacion.png, id=248, 473.6094pt x 247.6452pt>
+File: imagenes/identificacion.png Graphic file (type png)
+<use imagenes/identificacion.png>
+Package pdftex.def Info: imagenes/identificacion.png  used on input line 956.
+(pdftex.def)             Requested size: 366.24527pt x 191.51114pt.
+<imagenes/Polos y ceros.png, id=249, 1445.4pt x 697.10437pt>
+File: imagenes/Polos y ceros.png Graphic file (type png)
+<use imagenes/Polos y ceros.png>
+Package pdftex.def Info: imagenes/Polos y ceros.png  used on input line 964.
+(pdftex.def)             Requested size: 457.80486pt x 220.791pt.
+LaTeX Info: Redefining \. on input line 968.
+LaTeX Info: Redefining \% on input line 968.
+ [37 <./imagenes/identificacion.png>]
+LaTeX Info: Redefining \. on input line 968.
+LaTeX Info: Redefining \% on input line 968.
+ [38 <./imagenes/Polos y ceros.png (PNG copy)>]
+<imagenes/pid tuner.png, id=259, 1445.4pt x 767.86874pt>
+File: imagenes/pid tuner.png Graphic file (type png)
+<use imagenes/pid tuner.png>
+Package pdftex.def Info: imagenes/pid tuner.png  used on input line 983.
+(pdftex.def)             Requested size: 320.46199pt x 170.24391pt.
+LaTeX Info: Redefining \. on input line 1013.
+LaTeX Info: Redefining \% on input line 1013.
+ [39 <./imagenes/pid tuner.png>]
+<imagenes/sistema_controlado.png, id=264, 1445.4pt x 767.86874pt>
+File: imagenes/sistema_controlado.png Graphic file (type png)
+<use imagenes/sistema_controlado.png>
+Package pdftex.def Info: imagenes/sistema_controlado.png  used on input line 10
+19.
+(pdftex.def)             Requested size: 366.24527pt x 194.56783pt.
+LaTeX Info: Redefining \. on input line 1028.
+LaTeX Info: Redefining \% on input line 1028.
+ [40 <./imagenes/sistema_controlado.png>]
+Cap\'{\i }tulo 4.
+
+Package natbib Warning: Citation `Arturo2022evaluacion' on page 41 undefined on
+ input line 1047.
+
+[41
+
+]
+LaTeX Info: Redefining \. on input line 1115.
+LaTeX Info: Redefining \% on input line 1115.
+ [42]
+<imagenes/diagramabiologico.png, id=275, 2572.61125pt x 1838.87pt>
+File: imagenes/diagramabiologico.png Graphic file (type png)
+<use imagenes/diagramabiologico.png>
+Package pdftex.def Info: imagenes/diagramabiologico.png  used on input line 112
+1.
+(pdftex.def)             Requested size: 320.46199pt x 229.04448pt.
+
+
+Package natbib Warning: Citation `Arturo2022evaluacion' on page 43 undefined on
+ input line 1130.
+
+LaTeX Info: Redefining \. on input line 1132.
+LaTeX Info: Redefining \% on input line 1132.
+[43 <./imagenes/diagramabiologico.png>]
+
+Package natbib Warning: Citation `Arturo2022evaluacion' on page 44 undefined on
+ input line 1165.
+
+
+Overfull \hbox (3.67848pt too wide) in paragraph at lines 1174--1174
+[]\OT1/cmr/m/n/10.95 Biomasa| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+[]\OT1/cmr/m/n/10.95 Carga
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+[]\OT1/cmr/m/n/10.95 Carga
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\OT1/cmr/m/n/10.95 en-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+[]\OT1/cmr/m/n/10.95 Inoculo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\OT1/cmr/m/n/10.95 (le-va-du-
+ []
+
+
+Overfull \hbox (5.2054pt too wide) in paragraph at lines 1174--1174
+[]\OT1/cmr/m/n/10.95 Temperatura| 
+ []
+
+
+Overfull \hbox (2.661pt too wide) in paragraph at lines 1174--1174
+[]\OT1/cmr/m/n/10.95 Tiempo| 
+ []
+
+
+Overfull \hbox (3.2501pt too wide) in paragraph at lines 1174--1175
+[]\OT1/cmr/m/n/10.95 Agitaci^^Son| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1177--1177
+[]\OT1/cmr/m/n/10.95 20
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+[]\OT1/cmr/m/n/10.95 20
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1183
+[]\OT1/cmr/m/n/10.95 1725
+ []
+
+LaTeX Info: Redefining \. on input line 1191.
+LaTeX Info: Redefining \% on input line 1191.
+[44]
+LaTeX Info: Redefining \. on input line 1197.
+LaTeX Info: Redefining \% on input line 1197.
+ [45]
+Cap\'{\i }tulo 5.
+<imagenes/cernir_bagazo_1.jpg, id=291, 1606.0pt x 1208.515pt>
+File: imagenes/cernir_bagazo_1.jpg Graphic file (type jpg)
+<use imagenes/cernir_bagazo_1.jpg>
+Package pdftex.def Info: imagenes/cernir_bagazo_1.jpg  used on input line 1231.
+
+(pdftex.def)             Requested size: 183.11914pt x 137.7869pt.
+[46
+
+]
+<imagenes/cernir_bagazo_2.jpg, id=295, 906.38625pt x 1204.5pt>
+File: imagenes/cernir_bagazo_2.jpg Graphic file (type jpg)
+<use imagenes/cernir_bagazo_2.jpg>
+Package pdftex.def Info: imagenes/cernir_bagazo_2.jpg  used on input line 1244.
+
+(pdftex.def)             Requested size: 123.60925pt x 164.25461pt.
+<imagenes/cernir_bagazo_cedazo.jpg, id=296, 1208.515pt x 1606.0pt>
+File: imagenes/cernir_bagazo_cedazo.jpg Graphic file (type jpg)
+<use imagenes/cernir_bagazo_cedazo.jpg>
+Package pdftex.def Info: imagenes/cernir_bagazo_cedazo.jpg  used on input line 
+1254.
+(pdftex.def)             Requested size: 123.60925pt x 164.26073pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imagenes/cernir_bagazo_pesado.jpg, id=297, 2312.64pt x 2413.51688pt>
+File: imagenes/cernir_bagazo_pesado.jpg Graphic file (type jpg)
+<use imagenes/cernir_bagazo_pesado.jpg>
+Package pdftex.def Info: imagenes/cernir_bagazo_pesado.jpg  used on input line 
+1265.
+(pdftex.def)             Requested size: 123.60925pt x 128.96904pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 1278.
+LaTeX Info: Redefining \% on input line 1278.
+[47 <./imagenes/cernir_bagazo_1.jpg> <./imagenes/cernir_bagazo_2.jpg>]
+LaTeX Info: Redefining \. on input line 1297.
+LaTeX Info: Redefining \% on input line 1297.
+ [48 <./imagenes/cernir_bagazo_cedazo.jpg> <./imagenes/cernir_bagazo_pesado.jpg
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 1338--1339
+
+ []
+
+<imagenes/hidroxido_pesado.jpg, id=304, 3083.52pt x 4095.3pt>
+File: imagenes/hidroxido_pesado.jpg Graphic file (type jpg)
+<use imagenes/hidroxido_pesado.jpg>
+Package pdftex.def Info: imagenes/hidroxido_pesado.jpg  used on input line 1343
+.
+(pdftex.def)             Requested size: 123.60925pt x 164.15904pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imagenes/reactor limpio.jpg, id=305, 3083.52pt x 4095.3pt>
+File: imagenes/reactor limpio.jpg Graphic file (type jpg)
+<use imagenes/reactor limpio.jpg>
+Package pdftex.def Info: imagenes/reactor limpio.jpg  used on input line 1351.
+(pdftex.def)             Requested size: 123.60925pt x 164.15904pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 1355.
+LaTeX Info: Redefining \% on input line 1355.
+[49]
+LaTeX Info: Redefining \. on input line 1367.
+LaTeX Info: Redefining \% on input line 1367.
+ [50 <./imagenes/hidroxido_pesado.jpg> <./imagenes/reactor limpio.jpg>]
+Cap\'{\i }tulo 6.
+[51
+
+]
+
+LaTeX Warning: Reference `SacariSF' on page 52 undefined on input line 1402.
+
+
+Overfull \hbox (14.18553pt too wide) in paragraph at lines 1408--1427
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 1432.
+LaTeX Info: Redefining \% on input line 1432.
+
+Overfull \hbox (428.93695pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CAP[]ITULO 6.  RESULTADOS EXPERIMENTALES DEL PROCESO DE PRODUC
+CI[]ON DE BIOETANOL 2 G CON PRETRATAMIENTO ALCALINO Y BIOL[]OGICO \OT1/cmr/m/n/
+12 52
+ []
+
+[52]
+
+Package natbib Warning: Citation `CFE2023' on page 53 undefined on input line 1
+435.
+
+LaTeX Info: Redefining \. on input line 1490.
+LaTeX Info: Redefining \% on input line 1490.
+
+Overfull \hbox (428.93695pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CAP[]ITULO 6.  RESULTADOS EXPERIMENTALES DEL PROCESO DE PRODUC
+CI[]ON DE BIOETANOL 2 G CON PRETRATAMIENTO ALCALINO Y BIOL[]OGICO \OT1/cmr/m/n/
+12 53
+ []
+
+[53]
+LaTeX Info: Redefining \. on input line 1522.
+LaTeX Info: Redefining \% on input line 1522.
+
+Overfull \hbox (428.93695pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CAP[]ITULO 6.  RESULTADOS EXPERIMENTALES DEL PROCESO DE PRODUC
+CI[]ON DE BIOETANOL 2 G CON PRETRATAMIENTO ALCALINO Y BIOL[]OGICO \OT1/cmr/m/n/
+12 54
+ []
+
+[54]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 1606.
+LaTeX Info: Redefining \% on input line 1606.
+
+Overfull \hbox (428.93695pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CAP[]ITULO 6.  RESULTADOS EXPERIMENTALES DEL PROCESO DE PRODUC
+CI[]ON DE BIOETANOL 2 G CON PRETRATAMIENTO ALCALINO Y BIOL[]OGICO \OT1/cmr/m/n/
+12 55
+ []
+
+[55]
+LaTeX Info: Redefining \. on input line 1663.
+LaTeX Info: Redefining \% on input line 1663.
+
+Overfull \hbox (428.93695pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CAP[]ITULO 6.  RESULTADOS EXPERIMENTALES DEL PROCESO DE PRODUC
+CI[]ON DE BIOETANOL 2 G CON PRETRATAMIENTO ALCALINO Y BIOL[]OGICO \OT1/cmr/m/n/
+12 56
+ []
+
+[56]
+LaTeX Info: Redefining \. on input line 1663.
+LaTeX Info: Redefining \% on input line 1663.
+
+Overfull \hbox (428.93695pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CAP[]ITULO 6.  RESULTADOS EXPERIMENTALES DEL PROCESO DE PRODUC
+CI[]ON DE BIOETANOL 2 G CON PRETRATAMIENTO ALCALINO Y BIOL[]OGICO \OT1/cmr/m/n/
+12 57
+ []
+
+[57]
+Cap\'{\i }tulo 7.
+[58
+
+]
+<imagenes/diagrama2_2.jpg, id=343, 1927.2pt x 1084.05pt>
+File: imagenes/diagrama2_2.jpg Graphic file (type jpg)
+<use imagenes/diagrama2_2.jpg>
+Package pdftex.def Info: imagenes/diagrama2_2.jpg  used on input line 1698.
+(pdftex.def)             Requested size: 366.24527pt x 206.00471pt.
+<imagenes/logo al conectar.png, id=344, 219.219pt x 164.7756pt>
+File: imagenes/logo al conectar.png Graphic file (type png)
+<use imagenes/logo al conectar.png>
+Package pdftex.def Info: imagenes/logo al conectar.png  used on input line 1709
+.
+(pdftex.def)             Requested size: 228.90242pt x 172.06404pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imagenes/LXTerminal.png, id=345, 199.4652pt x 150.3216pt>
+File: imagenes/LXTerminal.png Graphic file (type png)
+<use imagenes/LXTerminal.png>
+Package pdftex.def Info: imagenes/LXTerminal.png  used on input line 1722.
+(pdftex.def)             Requested size: 228.90242pt x 172.51524pt.
+[59
+
+ <./imagenes/diagrama2_2.jpg>]
+LaTeX Info: Redefining \. on input line 1737.
+LaTeX Info: Redefining \% on input line 1737.
+ [60 <./imagenes/logo al conectar.png> <./imagenes/LXTerminal.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1753
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1755--1763
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1783
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1783
+
+ []
+
+[61
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1784--1789
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1791--1796
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1798--1803
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1804--1805
+
+ []
+
+LaTeX Info: Redefining \. on input line 1806.
+LaTeX Info: Redefining \% on input line 1806.
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 1806--1812
+
+ []
+
+
+Package natbib Warning: There were undefined citations.
+
+LaTeX Info: Redefining \. on input line 1824.
+LaTeX Info: Redefining \% on input line 1824.
+[63] (Tesis.aux
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 11310 strings out of 474486
+ 203682 string characters out of 5743755
+ 1956542 words of memory out of 5000000
+ 33430 multiletter control sequences out of 15000+600000
+ 574323 words of font info for 99 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 68i,17n,79p,1100b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\elfhe\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx
+0900.pk> <C:\Users\elfhe\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcbx1000.pk> <C:\Users\elfhe\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\tcrm1095.pk> <C:\Users\elfhe\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\tcbx1200.pk> <C:\Users\elfhe\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/elfhe/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/elfhe/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/elfhe/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/elfhe/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/
+elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+C:/Users/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i12.pfb><C:/Users/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><C:/Users/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><C:/Users/elfhe/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb><C:/Users/elfhe/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/elfhe/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/elfhe/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/elfhe/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/elfhe
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Use
+rs/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+><C:/Users/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mti12.pfb><C:/Users/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/symbols/msam10.pfb>
+Output written on Tesis.pdf (75 pages, 19320064 bytes).
+PDF statistics:
+ 460 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+
