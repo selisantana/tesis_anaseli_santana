@@ -35,17 +35,18 @@
 \contentsline {chapter}{\numberline {3}Instrumentaci\'on del sistema y control }{16}{}%
 \contentsline {section}{\numberline {3.1}Descripci\'on del Sistema de control de temperatura dentro del reactor }{16}{}%
 \contentsline {subsection}{\numberline {3.1.1}Pretratamiento }{16}{}%
+\contentsline {subsection}{\numberline {3.1.2}Hidr\'olisis y fermentaci\'on}{17}{}%
 \contentsline {section}{\numberline {3.2} Descripci\'on del Sistema de control de temperatura dentro del reactor }{17}{}%
 \contentsline {subsection}{\numberline {3.2.1}Convertidor: dise\~no y construcci\'on}{19}{}%
-\contentsline {section}{\numberline {3.3}Planta: Adaptaci\'on del biorreactor}{19}{}%
-\contentsline {subsection}{\numberline {3.3.1}Biorreactor}{20}{}%
-\contentsline {subsection}{\numberline {3.3.2}Motor}{22}{}%
-\contentsline {subsection}{\numberline {3.3.3}Mezclador}{23}{}%
-\contentsline {section}{\numberline {3.4}Configuraci\'on de sensores de temperatura}{25}{}%
+\contentsline {section}{\numberline {3.3}Planta: Adaptaci\'on del biorreactor}{20}{}%
+\contentsline {subsection}{\numberline {3.3.1}Biorreactor}{21}{}%
+\contentsline {subsection}{\numberline {3.3.2}Motor}{23}{}%
+\contentsline {subsection}{\numberline {3.3.3}Mezclador}{24}{}%
+\contentsline {section}{\numberline {3.4}Configuraci\'on de sensores de temperatura}{26}{}%
 \contentsline {subsection}{\numberline {3.4.1} Programa para poder leer las temperaturas}{26}{}%
 \contentsline {section}{\numberline {3.5}Sistema identificado y control}{27}{}%
 \contentsline {subsection}{\numberline {3.5.1}Se\~nal PWM}{27}{}%
-\contentsline {subsection}{\numberline {3.5.2}Pruebas para observar la linealidad del sistema con PWM}{27}{}%
+\contentsline {subsection}{\numberline {3.5.2}Pruebas para observar la linealidad del sistema con PWM}{28}{}%
 \contentsline {subsection}{\numberline {3.5.3}Se\~nal PRBS}{33}{}%
 \contentsline {subsection}{\numberline {3.5.4}Respuesta de la planta aplicando una Se\~nal PRBS}{34}{}%
 \contentsline {subsection}{\numberline {3.5.5}Identificaci\'on del sistema de la planta}{37}{}%
