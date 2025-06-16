@@ -3,7 +3,7 @@
 \usepackage[spanish,mexico]{babel}   % adapta elementos de latex al castellano
 \usepackage[latin1]{inputenc}        % escribir simbolos no anglosajones
 \usepackage{enumerate}               % editar formato de listados III, 3, c
-\usepackage{subfigure}               % varias figuras en una sola
+%\usepackage{subfigure}               % varias figuras en una sola
 \usepackage{graphicx}                % incluir gráficos
 \usepackage{amsfonts}                % fuentes de uso matemático
 %\usepackage{hyperref}                % links del mismo documento
@@ -23,6 +23,8 @@
 \usepackage{xcolor} % Para usar colores
 \usepackage{enumitem} % Para personalizar listas
 \usepackage{float} % Necesario para [H]
+\usepackage{subcaption} % Para subfiguras y sus captions
+
 
 \author{Ana Seli Santana Marquina}
 
@@ -102,7 +104,12 @@ To achieve this objective,
 \singlespacing
 \chapter*{Nomenclatura} \addcontentsline{toc}{chapter}{Nomenclatura}
 \onehalfspacing
-
+\begin{tabular}{r l}
+	Nomenclatura & Descripción \\
+	SSF & Sacarificación y fermentación simultanea \\
+	UPF & Unidades papel filtro \\
+	 
+\end{tabular}
 
 	
 	
@@ -111,11 +118,45 @@ To achieve this objective,
 \chapter{Introducción} \setcounter{page}{1} \pagenumbering{arabic}
 \onehalfspacing
 
+De acuerdo con las estadísticas de la Agencia Internacional de Energía (EIA en inglés), 2019 (\cite{EIA,2019}), del total de energía consumida en el mundo, 40.4\% provino del petróleo, 19.7\% corresponde al consumo de electricidad, 16.4\% provino de gas natural, 9.5\% de carbón y 3.6\% son otros tipos de energía, finalmente solo el 10.4\% de energía consumida provino de biocombustibles y residuos. Estas estadísticas ponen en evidencia el uso incesante de combustibles fósiles que ha provocado una disminución constante de estos recursos no renovables, que se estima podrían agotarse en unas cuantas décadas. Por lo tanto, a nivel mundial se están considerando nuevas fuentes energéticas que proporcionen una menor huella de carbono. La biomasa es un recurso renovable que comúnmente se quema o se desecha como basura. Algunas alternativas para aprovechar recursos naturales es producir combustibles sólidos como pellets de madera, gaseosos como el metano, o líquidos como el etanol o el diésel. La búsqueda de nuevas fuentes de energía necesita del diseño de nuevos procesos para la transformación de biomasa en combustibles. Un ejemplo claro es la producción de bioetanol de segunda generación, obtenido a partir de desechos orgánicos (\cite{zuliani, 2021}). El bioetanol puede ser producido a partir de distintas materias primas y con diferentes tecnologías. Una de estas, es la tecnología de bioetanol de primera generación (1G) que utiliza materia prima con alto contenido de azúcares. Tal es el caso de la fruta como la manzana o jugo de caña, entre otros. Una alternativa es la tecnología de bioetanol de segunda generación, que usa materia prima que no es competencia en el mercado de los alimentos, como los desechos orgánicos. Ejemplo de este tipo de materia prima son las hojas de los árboles, el bagazo de caña y más. En esta tesis, la investigación se centra en la producción de bioetanol a partir de bagazo de caña. La idea es utilizar los residuos que se obtienen en la producción de azúcar. Uno de estos es el bagazo de caña que comúnmente es quemado en la industria como energético, sin embargo, es posible diseñar un proceso que pueda darle un segundo uso a este material de desecho, al generar bioetanol como biocombustible. 
+Para producir bioetanol o alcohol etílico de segunda generación se requieren una serie de etapas, tales como la adecuación de la biomasa, el pretratamiento, la hidrólisis y la fermentación (según el caso de configuración estas últimas etapas pueden llevarse a cabo de manera simultánea o por separado), la destilación binaria para purificar el producto, obteniendo un etanol de mayor concentración, y algún proceso de separación de mezclas no ideales para obtener etanol anhidro.
+
+Las energías limpias han ido evolucionando al paso de los años y poco a poco se buscan técnicas que proporcionen un mayor rendimiento, utilizando materia lignocelulosa, la cual es la materia más abundante en nuestro planeta, un ejemplo de ello son los árboles, plantas, desechos orgánicos, entre otros. La producción de bioetanol de segunda generación tiene una dificultad, dado que son desechos orgánicos, el azúcar no es fácil de obtener, por lo que se requiere un paso extra que ayude a obtener la mayor azúcar posible, esa etapa tiene como nombre pretratamiento. 
+Una de las etapas importantes para la producción de bioetanol es el pretratamiento, reduce la cantidad de lignina y hemicelulosa, generando una celulosa más susceptible al ataque enzimático. Esto se realiza rompiendo las barreras de la lignina por la modificación de la estructura del bagazo. Existen distintos tipos de pretratamientos, entre los que destacan los pretratamientos químicos, térmicos, biológicos, y mecánicos. Existen diferentes variantes de estos, los cuales serán descritos en el apartado \ref{}.
+
+Después del pretratamiento, la biomasa es sometida a una hidrólisis y a una fermentación. La hidrólisis y fermentación Se realiza en un mismo contenedor donde la biomasa se convierte en azúcares fermentables posteriormente en alcohol etílico.
+
+La producción de bioetanol de segunda generación se puede llevar a cabo mediante diferentes configuraciones. Una configuración consta de una primera etapa de sacarificación enzimática de la biomasa pretratada y una segunda etapa de fermentación, la cual se denomina Sacarificación enzimática de la biomasa pretratada y la fermentación en etapas separadas (SHF por sus siglas en inglés). Otra configuración es la sacarificación y fermentación simultáneas (SSF por sus siglas en inglés). 
+
+La siguiente tesis estudia los procesos de producción de bioetanol de segunda generación, dando una particular importancia a la etapa de pretratamiento. El estudio abarca desde los procesos de pre-pretratamiento de la biomasa de segunda generación, tales como la clasificación y limpieza del bagazo. Incluye la comparación de dos pretratamientos y se considera solo la configuración SSF para obtener como producto final, bioetanol diluido, que es acondicionado después del proceso SSF. Los pretratamientos considerados son uno químico (alcalino) y uno biológico (usando humus de lombriz). Las condiciones de operación Enfocándose en tener una temperatura controlada en estas dos etapas.
+
+Las variables del proceso que determinan la calidad del producto son: para la etapa de pretratamiento, la temperatura, el tamaño de partícula del bagazo (grado de molienda), y el tiempo de la etapa. Para el proceso SSF, las variables son la temperatura, el pH, la carga enzimática, y el volumen de la mezcla. Los experimentos de del proceso en etapas de pretratameinto y SSF se llevan a cabo en un reactor tipo Batch secuencialmente. El proceso SSF se realiza a volumen de mezcla, carga enzimática y masa de levadura constantes. Cada serie de experimentos se efectúa a una temperatura de pretratamiento(T$_P$) constante y una temperatura de SSF (T$_s$) también constante ($T_P$ $?$ T$_s$).
+
+Para evaluar el efecto las condiciones de pretratamiento de la biomasa, se diseñó una serie de experimentos considerando 2 tamaños de partícula de bagazo, tres temperaturas de pretratamiento y 2 tiempos de duración del pretratamiento. Todos los experimentos de SSF se realizan a temperatura de 43 °C y pH alrededor de 5, el volumen de la mezcla es de 2 L, conteniendo 100 g de bagazo, 1.8 ml de carga enzimática y 160 g de levadura.
+
+Con el fin de mantener la temperatura constante se diseñaron dos controladores PID para regular la temperatura de las etapas de pretratamiento y SSF. Para sintonizar los controladores se obtuvo un modelo por identificación que relaciona la temperatura dentro del reactor Batch con el voltaje que entra a la resistencia de banda para el calentamiento. El pH se mantiene alrededor de un valor añadiendo una solución buffer de ácido cítrico. Solo se mide el pH inicial y el pH final. Para cada serie de experimentos se obtiene el contenido de alcohol (bioetanol) en el producto, medido en porcentaje de volumen, así como los costos de producción.
+A continuación, se describe la organización del documento.
+La primera sección contiene la introducción al tema, el planteamiento del problema, los objetivos del proyecto, las metas, la justificación del trabajo, los alcances, y las limitaciones.
+En la segunda parte de nuestro documento se encuentra un marco conceptual para definir la terminología asociada al tema, así como el estado del arte.
+En la tercera parte del documento se describe el sistema de reactor Batch y sus variables. También se describen los materiales y métodos para construir el módulo experimental del reactor Batch y su instrumentación. Al final de esta sección se presenta el diseño del controlador de temperatura para los procesos de pretratamiento. 
+En el apartado cuatro del documento se muestra un diseño factorial de experimentos, para analizar el efecto de las condiciones de operación de los pretratamientos estudiados, parte central del trabajo.  
+En la quinta sección se detallan las pruebas de laboratorio en función del diseño de experimentos. Explicando el procedimiento de cada etapa, 
+En la sección 6 se presentan y discuten los resultados de las pruebas. Por último, se presentan las conclusiones del trabajo.
+
+
 
 \newpage
 \singlespacing
 \section{Planteamiento del problema}
 \onehalfspacing
+ 
+Este proyecto busca mejorar la producción de bioetanol de segunda generación a partir de biomasa lignocelulósica mediante la evaluación de dos métodos de pretratamiento: biológico y alcalino. El estudio se centra en determinar las condiciones más adecuadas (temperatura, tamaño de partícula y tiempo) para lograr mayores rendimientos, menores costos y un consumo energético más eficiente.
+
+Como parte del proceso, se implementa hidrólisis y fermentación simultáneas (SSF) como configuración de producción, siguiendo la metodología propuesta por \cite{Arturo2022evaluacion}, con el propósito de acortar los tiempos de producción y reducir gastos operativos. El análisis comparará no solo la eficiencia en la conversión a etanol, sino también el impacto económico y energético de cada alternativa de pretratamiento.
+El objetivo es obtener la configuración que proporcione la mayor producción de bioetanol de segunda generación (2G), analizando el efecto de las variables de la etapa de pretratamiento, el costo de producción y el consumo energético.
+
+
+
 
 
 \newpage
@@ -124,19 +165,13 @@ To achieve this objective,
 \subsection{Objetivo general}
 \onehalfspacing
 
-Analizar experimentalmente los efectos del tamaño de partícula de biomasa, temperatura y tiempo de procesamiento para dos tipos de pretratamiento de bagazo de caña de azúcar, previos a la producción de bioetanol de segunda generación (2 G) mediante una hidrólisis y fermentación en etapas simultáneas (SSF). \newline
+	Analizar experimentalmente los efectos del tamaño de partícula de biomasa, temperatura y tiempo de procesamiento para dos tipos de pretratamiento de bagazo de caña de azúcar, previos a la producción de bioetanol de segunda generación (2 G) mediante una hidrólisis y fermentación en etapas simultáneas (SSF). \newline 
 
 
-
-
-{\large Objetivos específicos}
-
-\singlespacing
 \subsection{Objetivos específicos}
-\onehalfspacing
 \begin{itemize}
 	\item Diseñar los experimentos para analizar los tres factores considerados, con diferentes niveles, para modificar los pretratamientos.
-	\item Acondicionar e instrumentar un reactor en lotes o tipo batch para llevar a cabo separadamente las etapas de pretratamiento y SSF.
+	\item Acondicionar e instrumentar un reactor tipo batch para llevar a cabo separadamente las etapas de pretratamiento y SSF.
 	\item Diseñar e implementar un control de temperatura para operar el reactor en etapas de pretratamiento y SSF.
 	\item Aplicar experimentalmente dos tipos de pretratamiento de biomasa, el primero de tipo biológico con humus de lombriz y el segundo de tipo alcalino usando hidróxido de sodio.
 	\item Producir bioetanol de segunda generación por medio de una configuración SSF usando el bagazo pretratado con las condiciones definidas por el diseño de experimentos.
@@ -144,8 +179,6 @@ Analizar experimentalmente los efectos del tamaño de partícula de biomasa, tempe
 	
 	
 \end{itemize}
-
-
 
 
 
@@ -190,38 +223,39 @@ Ya que este tipo de biomasa es considerada basura tiene la característica de no 
 	
 	\item Se demostrará experimentalmente la producción de bioetanol a través de dos etapas combinadas, es decir, sacarificación y fermentación simultáneas, para analizar el comportamiento de las variables y la eficiencia del proceso.
 	
-	
-	
 \end{enumerate}
+
+
+
 \singlespacing
 \section{Limitaciones}
 \onehalfspacing
 
 
-\singlespacing
-\section{Metodología}
-\onehalfspacing
-\begin{enumerate}
-	\item \textbf{Revisión del estado del arte.}: Se realiza una exhaustiva búsqueda del estado del arte de la producción de bioetanol , así como los pretratamientos.
-	
-	\item \textbf{Análisis de los pretratamientos.}: En el contexto de la experimentación, se realiza un minucioso análisis de los datos obtenidos, con el objetivo de obtener una comprensión profunda de los resultados, el proceso del análisis y modificación se lleva a cabo con el propósito de obtener mejores resultados y así podemos garantizar que los resultados obtenidos sean confiables. En relación con la experimentación, se analizan los datos obtenidos y se modifican las variables para cumplir los objetivos propuestos.
-	
-	\item \textbf{Experimentación}: Después de tener información sobre las técnicas para la producción de bioetanol en la etapa de pretratamientos, para ser más objetivo, en las propuestas, se plantea conocer el laboratorio, así como conocer un poco más sobre el material que se utilizará y las técnicas de fermentación.
-	Por otro lado, se realizará experimentación en todo el trabajo, para realizar configuración en el pretratamiento y así ir modificando cada variable para cumplir con el objetivo de obtener la mejor relación costo/beneficio. Por otra parte, una de las experimentaciones realizadas fueron:
-	
-	
-	\item \textbf{Análisis de datos.}: En el contexto de la experimentación, se realiza un minucioso análisis de los datos obtenidos, con el objetivo de obtener una comprensión profunda de los resultados, proceso de análisis y modificación se lleva a cabo con el propósito de obtener mejores resultados y así poder garantizar que los resultados obtenidos sean confiables. En relación con la experimentación, se analizan los datos obtenidos y se ajustan las variables para cumplir con los objetivos propuestos. A partir del análisis de los datos, se modifican las variables, logrando una mejor relación costo/beneficio.
-	
-	
-	
-	\item \textbf{Modelo de las variables de interés.}: Con base a los experimentos se realiza un análisis de sensibilidad de las variables de interés dado el impacto que obtienen en la producción de bioetanol en las distintas etapas.
-	
-	\item \textbf{Aplicación del control.}:
-	El modelo es obtenido por parámetro de interés observando la sensibilidad de las variables.
-	Basando el modelo en distintas técnicas. Tomando en cuenta que solo algunas variables tendrán un modelo con aplicación práctica y algunas con modelo en simulación.
-	
-	
-\end{enumerate}
+%\singlespacing
+%\section{Metodología}
+%\onehalfspacing
+%\begin{enumerate}
+%	\item \textbf{Revisión del estado del arte.}: Se realiza una exhaustiva búsqueda del estado del arte de la producción de bioetanol , así como los pretratamientos.
+%	
+%	\item \textbf{Análisis de los pretratamientos.}: En el contexto de la experimentación, se realiza un minucioso análisis de los datos obtenidos, con el objetivo de obtener una comprensión profunda de los resultados, el proceso del análisis y modificación se lleva a cabo con el propósito de obtener mejores resultados y así podemos garantizar que los resultados obtenidos sean confiables. En relación con la experimentación, se analizan los datos obtenidos y se modifican las variables para cumplir los objetivos propuestos.
+%	
+%	\item \textbf{Experimentación}: Después de tener información sobre las técnicas para la producción de bioetanol en la etapa de pretratamientos, para ser más objetivo, en las propuestas, se plantea conocer el laboratorio, así como conocer un poco más sobre el material que se utilizará y las técnicas de fermentación.
+%	Por otro lado, se realizará experimentación en todo el trabajo, para realizar configuración en el pretratamiento y así ir modificando cada variable para cumplir con el objetivo de obtener la mejor relación costo/beneficio. Por otra parte, una de las experimentaciones realizadas fueron:
+%	
+%	
+%	\item \textbf{Análisis de datos.}: En el contexto de la experimentación, se realiza un minucioso análisis de los datos obtenidos, con el objetivo de obtener una comprensión profunda de los resultados, proceso de análisis y modificación se lleva a cabo con el propósito de obtener mejores resultados y así poder garantizar que los resultados obtenidos sean confiables. En relación con la experimentación, se analizan los datos obtenidos y se ajustan las variables para cumplir con los objetivos propuestos. A partir del análisis de los datos, se modifican las variables, logrando una mejor relación costo/beneficio.
+%	
+%	
+%	
+%	\item \textbf{Modelo de las variables de interés.}: Con base a los experimentos se realiza un análisis de sensibilidad de las variables de interés dado el impacto que obtienen en la producción de bioetanol en las distintas etapas.
+%	
+%	\item \textbf{Aplicación del control.}:
+%	El modelo es obtenido por parámetro de interés observando la sensibilidad de las variables.
+%	Basando el modelo en distintas técnicas. Tomando en cuenta que solo algunas variables tendrán un modelo con aplicación práctica y algunas con modelo en simulación.
+%	
+%	
+%\end{enumerate}
 
 
 
@@ -264,8 +298,19 @@ Ya que no es un componente tóxico, ni contamínate el alcohol etílico contiene pr
 
 
 \singlespacing
-\subsection{Definición de conceptos}
+\section*{Definición de conceptos}
 \onehalfspacing
+
+\singlespacing
+\subsection{lignocelulosa}
+\onehalfspacing
+
+Proveniente de la fotosíntesis, la lignocelulosa es uno de los componentes más abundante y principal de la biomasa, esta forma la pared celular de las plantas. Entre las plantas, la composición y porcentajes de lignocelulosa varían, dependiendo de la edad y etapa de crecimiento de las plantas \cite{cuervo2009lignocelulosa}.
+Es viable utilizar este material por su bajo costo, su alta disponibilidad y aprovechamiento variado, un ejemplo es en la industria de los materiales compuestos \cite{jara2022principales}.
+Ya que son viables, se han desarrollado usos alternativos para aprovechar este subproducto agroindustrial, utilizándolo en la creación de biocombustibles.
+La lignocelulosa está conformada por celulosa, hemicelulosa y lignina, siendo una fuente de carbono y energía renovable \cite{portalproduccion}. 
+
+
 
 
 \singlespacing
@@ -280,19 +325,6 @@ El bagazo representa el de mayor tonelaje y volumen de la producción de azúcar d
 	\caption[Bagazo de caña]{}
 	\label{fig:bagazo}
 \end{figure}
-
-
-
-\singlespacing
-\subsection{lignocelulosa}
-\onehalfspacing
-
-Proveniente de la fotosíntesis, la lignocelulosa es uno de los componentes más abundante y principal de la biomasa, esta forma la pared celular de las plantas. Entre las plantas, la composición y porcentajes de lignocelulosa varían, dependiendo de la edad y etapa de crecimiento de las plantas \cite{cuervo2009lignocelulosa}.
-Es viable utilizar este material por su bajo costo, su alta disponibilidad y aprovechamiento variado, un ejemplo es en la industria de los materiales compuestos \cite{jara2022principales}.
-Ya que son viables, se han desarrollado usos alternativos para aprovechar este subproducto agroindustrial, utilizándolo en la creación de biocombustibles.
-La lignocelulosa está conformada por celulosa, hemicelulosa y lignina, siendo una fuente de carbono y energía renovable \cite{portalproduccion}. 
-
-
 
 
 \singlespacing
@@ -377,7 +409,7 @@ Las enzimas hidrolíticas son adaptables al frío y las levaduras termófilas son i
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{imagenes/dagrama ssf}
+	\includegraphics[width=0.9\linewidth]{imagenes/dagrama ssf}
 	\caption{Diagrama de sacarificación y fermentación simultanea}
 	\label{fig:diagrama-de-sacarificacion-y-fermentacion-simultanea1}
 \end{figure}
@@ -409,7 +441,7 @@ También hay pretratamientos biológicos en los que comúnmente se usan microorgani
 \singlespacing
 \subsubsection{Pretratamiento Biológico}
 \onehalfspacing
-
+Para la producción de bioetanol de segunda generación se realizaron investigaciones donde utilizan como materia lignocelulósica el bagazo de caña, pretratado con hongo Pleurotus ostreatus, donde esta investigación tiene el propósito el evaluar la eficacia del pretratamiento, observando la reducción del contenido de fibra. El bagazo de caña pretratado es comparado con bagazo sin pretratatar para obtener los resultados ya que se desea evaluar el impacto del biotransformación. Como conclusión la investigación muestra que el hongo Pleurotus ostreatus muestra una reducción significativa de la fibra, siendo beneficioso, dado que enriquece el bagazo con nutrientes (\cite{Amaya2024}) .
 
 
 \singlespacing
@@ -423,9 +455,6 @@ Enseguida se describen algunas investigaciones sobre pretratamientos alcalinos c
 \citet{Nasution_2022} presentó una revisión de los pretratamientos más usados en los últimos años. Como pretratamiento alcalino se destaca el uso del NaOH. Comúnmente se recomienda manejar una concentración al 2 \% de NaOH, una relación de agua destilada de 1:10 solido-liquido, y una temperatura de operación de 80 °C, así como un tiempo de tratamiento de 2h.
 
 En un estudio afin, \citet{Arturo2022evaluacion} utilizó como biomasa bagazo de caña para producir bioetanol con dos modos diferentes de producción: sacarificación enzimática y fermentación en etapas separadas (SHF), y Sacarificación y fermentación simultáneas (SSF). Se probaron 4 tipos de pretratamientos de la materia prima, entre estos se aplicó un pretratamiento alcalino usando como base NaOH al 2 \% p/v y una carga de bagazo del 4\% p/v. El pretratamiento se llevó a cabo a 97°C durante un tiempo de 90 minutos. Al finalizar este tiempo, la biomasa tratada se acondicionó mediante etapas de enjuagado, filtrado y secado para después ser procesada por cada modo de producción, SHF o SSF. Comparando el porcentaje de alcohol obtenido a partir de cada proceso (SHF o SSF), se concluyó que el proceso SHF obtuvo un producto más concentrado, con 15 \% de alcohol, mientras que el producto del proceso SSF tenía un contenido de alcohol menor de 11 \%. En contra parte se concluyó que el proceso SSF reduce en un 80\% el tiempo consumido por el proceso SHF.
-
-\textbf{Conclusión}\\
-
 
 
 
@@ -470,9 +499,12 @@ En el artículo de \citet{Gomes2022analisis} se analizaron tres configuraciones p
 
 
 \subsubsection{Sacarificación y fermentación simultáneas} 
+La producción de bioetanol en etapas simultaneas se realizan
+
 
 \subsection{Producción de bioetanol de segunda generación en reactores tipo Batch}
-
+En la tesis de \cite{Perez2024}, realiza una hidrólisis y fermentación simultanea con objetivo de diseñar un biorreactor para la producción de 2,3 -butanodiol  a partir de zanahoria, mencionando que el diseño del biorreactor tiene un sistema de agitación. Uno de los datos en los que concluye es que mediante el agitado, la glucosa es mas abundante en el proceso. El reactor mencionado es de capacidad de 2 L, trabajando a una carga enzimática de 5 FPU/g y 10 FPU/g con temperaturas de 37 °C. Otra conclusión obtenida fue que la carga enzimática no afecto en la producción.
+En otra investigación sobre la producción de bioetanol a partir de la cáscara de piña como biomasa, se empleó un reactor tipo batch con tanque agitado, elegido por su facilidad de manejo. Como conclusión, se destaca que factores como la temperatura han influido positivamente en el aumento del rendimiento del proceso. Ver el articulo  \cite{Segura2018}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -495,22 +527,21 @@ En la producción de bioetanol se lleva a cabo la etapa de pretratamiento, a cont
 	\caption{Diagrama del proceso de pretratamiento de material lignocelulósico (bagazo de caña).}
 	\label{descrip}
 \end{figure}
- El sistema general del proceso de la etapa del pretratamiento 
- 
+ El sistema general del proceso de la etapa del pretratamiento se muestra en la imagen \ref{descrip}. Donde inicia ingresando los insumos dentro de un tanque agitado, tales como el agua desmineralizada,  la materia lignocelulósica (el bagazo de caña) y finalmente el humus de lombriz o hidróxido de sodio. Durante el pretratamiento se mezclan los compuestos, por lo que tenemos condiciones de mezclado, es decir 142 rpm por parte del motor, encendiendo y apagando el motor cada 10 segundos, con el propósito de observar el comportamiento en la producción de bioetanol, y el efecto del consumo energético. También durante el proceso de pretratamiento se lee la temperatura dentro del biorreactor ( o tanque agitado, llamado así por el mezclado durante el pretratamiento), esa señal de temperatura se le llama señal de salida, esta señal de salida se registra en una tira de datos, al mismo tiempo es una señal que se retroalimenta y compara con una señal de referencia, es decir la temperatura de retroalimentación se compara con la temperatura de referencia. La diferencia de las temperaturas ( señal de error) se ingresa al control PID, el control PID nos dará un valor que lo pasaremos a traducir con ayuda de un arduino, a un voltaje de 0 a 5 V. La resistencia de calentamiento del reactor necesita una potencia mayor, es necesario utilizar mas voltaje, el convertidor toma energía alterna del toma corriente (0-127 V) y la convierte en corriente directa para posteriormente con ayuda de un mosfet potenciar la energía saliente del PID ( señal de control convertida a voltaje), para finalmente entrara a la resistencia de calentamiento en el reactor. El ciclo de medición y calentamiento se lleva a cabo durante el tiempo que dure el pretratamiento.
  
  
  \subsection{Hidrólisis y fermentación}
- Para mostrar la etapa de hidrólisis y fermentación se muestra el sistema del proceso  
+ Para mostrar la etapa de hidrólisis y fermentación se presenta el sistema que describe el proceso y la obtención de los datos.
  \begin{figure}[H]
  	\centering
- 	\includegraphics[width=1\linewidth]{imagenes/hf}
+ 	\includegraphics[width=1.1\linewidth]{imagenes/hf}
  	\caption{Diagrama del proceso de la etapa de hidrólisis y fermentación (bagazo de caña).}
  	\label{diagrama2}
  \end{figure}
  
  
- A continuación se presenta cada una de las características del sistema que muestra la etapa de hidrólisis y fermentación, asi como cada una de las variables que intervienen en el proceso:
- Tenemos en primer lugar una planta que esta conformado por un tanque agitado, dado que tenemos un motor y un mezclador que nos ayuda a mezclar la reacción durante el pretratamiento. Con condiciones de mezclado con 142 RPM y con tiempo de agitación de 10 segundos de encendido y 10 segundos de apagado.
+ A continuación se presenta cada una de las características del sistema que muestra la etapa de hidrólisis y fermentación, así como cada una de las variables que intervienen en el proceso:
+ Tenemos en primer lugar una planta que esta conformado por un tanque agitado, dado que tenemos un motor y un mezclador que nos ayuda a mezclar la reacción durante el pretratamiento. Con condiciones de mezclado con 142 rpm y con tiempo de agitación de 10 segundos de encendido y 10 segundos de apagado.
  Los insumos como el bagazo de caña pretratado, la levadura activa, las enzimas, el agua desmineralizada y finalmente el ácido cítrico, los cuales se ingresan al biorreactor, antes de sellar el biorreactor de lee el Ph inicial
  
  
@@ -519,6 +550,7 @@ En la producción de bioetanol se lleva a cabo la etapa de pretratamiento, a cont
  
 
 \section{ Descripción del Sistema de control de temperatura dentro del reactor  }
+
 
 A continuación, se presenta la etapa de pretratamiento con un diagrama que representa el control de temperatura dentro del reactor (Figura \ref{sistema1}).
 % TODO: \usepackage{graphicx} required
@@ -623,7 +655,7 @@ $10.38 x 10^6  $ $ mm^3$. Dentro de este reactor se llevarán a cabo los pretrata
 \subsection{Biorreactor}
 \onehalfspacing
 
-La planta consta de un biorreactor que contiene una resistencia que calienta la solución, una estructura que se soldó y modifico para poder adaptar correctamente los sensores y el reactor como lo muestra la figura\ref{fig:soldado1}.
+La planta consta de un biorreactor que contiene una resistencia que calienta la solución, una estructura que se soldó y modifico para poder adaptar correctamente los sensores y el reactor como lo muestra la figura \ref{fig:soldado1}.
 
 % TODO: \usepackage{graphicx} required
 \begin{figure}[h!]
@@ -658,7 +690,7 @@ Como se realizaron las modificaciones, la planta cuenta con las especificaciones
 \subsection{Motor}
 
 
-El tercer elemento que fue modificado del biorreactor fue el motor; el motor de la figura  anterior era de corriente alterna a 127 v, a 50-60 hz, con 142 RPM, a 2 a, lamentablemente no contaba con el torque necesario para mover los 6 l de agua con biomasa bagazo de caña.
+El tercer elemento que fue modificado del biorreactor fue el motor; el motor de la figura  anterior era de corriente alterna a 127 v, a 50-60 hz, con 142 rpm, a 2 a, lamentablemente no contaba con el torque necesario para mover los 6 l de agua con biomasa bagazo de caña.
 
 
 
@@ -670,7 +702,7 @@ Se busco uno que tuviera esa capacidad, por lo que se utilizara un motor-reducto
 	\caption{Moto-reductor}
 	\label{motorreductor}
 \end{figure}
-El motor cuenta con 333 rpm, trabaja a 24 v , trabaja con un torque nominal de 3.9 kN/m, se programo con ayuda de un rele para prender 10 segundos y que se apague otros 10 segundos, con el propósito de observar el comportamiento de la temperatura.
+El motor cuenta con 333 rpm, trabaja a 24 V , trabaja con un torque nominal de 3.9 kN/m, se programo con ayuda de un rele para prender 10 segundos y que se apague otros 10 segundos, con el propósito de observar el comportamiento de la temperatura.
 
 
 
@@ -701,7 +733,7 @@ Se construyo en acero inoxidable de acuerdo a las especificaciones, se puede obs
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.4\linewidth]{imagenes/reactor con mezclador}
+	\includegraphics[width=0.3\linewidth]{imagenes/reactor con mezclador}
 	\caption{Mezclador y reactor vista frontal}
 	\label{reactor y mezclador}
 \end{figure}
@@ -713,6 +745,7 @@ Se construyo en acero inoxidable de acuerdo a las especificaciones, se puede obs
 \section{Configuración de sensores de temperatura}
 \onehalfspacing
 
+\label{diseno del control de temp}
 
 Dado que la temperatura es una variable importante en los pretratamientos y en la etapa de hidrólisis y fermentación, se requiere tomar notas al respecto; en los siguientes apartados se programarán los sensores DHT11, que leerán la temperatura y la humedad en el ambiente, así como un termopar tipo K que medirá la temperatura dentro del biorreactor.
 
@@ -755,7 +788,7 @@ En el documento CSV se pueden visualizar los datos obtenidos por el termopar tip
 \section{Sistema identificado y control}
 \onehalfspacing
 
-
+A continuación se presenta una descripción de como se obtuvo el sistema identificado y también el diseño del control.
 \singlespacing
 \subsection{Señal PWM}
 \onehalfspacing
@@ -772,7 +805,7 @@ Para entender cómo se comporta el sistema en general, se debe generar una señal 
 Esta señal PWM entrara al sistema modificando los ciclos de trabajo, para saber el comportamiento, así como observar la linealidad de nuestro sistema, con los resultados obtenidos se configurara una señal PRBS que ayude a identificar el sistema, para obtener una identificación que lo modele.
 
 La señal PWM tiene la forma que se observa en la figura \ref{Senal PWM}.
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{imagenes/Senal PWM.png}
 	\caption{Señal PWM}
@@ -796,7 +829,7 @@ Inicialmente, se modificó el ciclo de trabajo de la señal PWM al 90\%. Los resul
 % TODO: \usepackage{graphicx} required
 
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=.9\linewidth]{imagenes/1.png}
 	\caption{Prueba 1,Termopar k 1 y 2 con un ciclo de trabajo de 90\%. }
@@ -912,8 +945,8 @@ La señal PRBS entra  mediante la salida PWM del arduino a un convertidor, pasand
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.4\linewidth]{imagenes/diagrama_PRBS}
-	\caption{Señal PRBS. }
+	\includegraphics[width=1\linewidth]{imagenes/diagrama_PRBS}
+	\caption{Entrada de la señal al reactor. }
 	\label{ diagrama_prbs}
 \end{figure}
 
@@ -956,24 +989,24 @@ Esta función de transferencia tiene respuesta como se muestra en la siguiente fi
 
 \begin{figure} [H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{imagenes/identificacion}
-	\caption{}
+	\includegraphics[width=0.7\linewidth]{imagenes/identificacion}
+	\caption{Comparación del sistema con la identificación.}
 	\label{fig:identificacion}
 \end{figure}
 Para observar el comportamiento del sistema se puede ver los polos y ceros del sistema en la figura \ref{polos y ceros}
 
 \begin{figure} [H]
 	\centering
-	\includegraphics[width=1\linewidth]{imagenes/Polos y ceros}
-	\caption{}
+	\includegraphics[width=.8\linewidth]{imagenes/Polos y ceros}
+	\caption{Polos y ceros del sistema}
 	\label{polos y ceros}
 \end{figure}
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\singlespacing
+
 \subsection{Control PID}
-\onehalfspacing
+
 Un control PID puede ser calculado con la siguiente ecuación 
 
 \begin{equation}
@@ -1052,17 +1085,11 @@ Tras el pretratamiento, se procederá a una etapa de SSF bajo condiciones fijas p
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
 \subsubsection{Diseño experimental del pretratamiento Biológico}
 
-
-%\label{DiseñopretratamientoBioogico}
-
+\label{disenodeexperimentobiologico}
 
 El diseño de experimentos para la producción de bioetanol pretratado con humus de lombriz especifica los datos a considerar para las experimentación, los cuales se muestran  la Tabla \ref{tab:VariablesBiologico}. Esta información incluye los insumos y las cantidades para cada experimentación. Uno de los factores que se menciona es el tiempo que dura la experimentación, este factor no se modifica en este pretratamiento. También se dan a conocer las condiciones de mezclado del reactivo dentro del reactor tipo Batch, que nos ayuda a mantener la temperatura constante dentro del reactor, así como mantener la mezcla homogénea durante todo el proceso. 
-
 
 
 \begin{table}[H]
@@ -1070,17 +1097,17 @@ El diseño de experimentos para la producción de bioetanol pretratado con humus d
 	\caption{Condiciones de operación fijas del reactor  para el pretratamiento biológico del bagazo de caña.}
 	\label{tab:VariablesBiologico}
 	\resizebox{\textwidth}{!}{
-		\begin{tabular}{| c | c | c | c | c | }
+		\begin{tabular}{| c | c | c | c | c |      }
 			\hline
 			\textbf{Cantidad de} & \textbf{Cantidad de} & \textbf{Volumen de la carga} & \textbf{Tiempo del pretratamiento} &  \textbf{Condiciones de agitación}  \\  
 			\textbf{bagazo de caña} & \textbf{humus de lombriz} & \textbf{ } & \textbf{Carga de humus} & \textbf{ agitación}   \\  
 			\hline
 			
-			\multirow{5}{*}{3\% p/v } & \multirow{5}{*}{5\% p/v }  & \multirow{6}{*}{6 l} &\multirow{6}{*}{5 dias}  &  \multirow{3}{*}{10 s encendido/apagado} \\ 
+			\multirow{6}{*}{3\% p/v } & \multirow{6}{*}{5\% p/v }  & \multirow{6}{*}{6 l} &\multirow{6}{*}{5 dias}  &  \multirow{3}{*}{10 s encendido/apagado} \\ 
 			& & & &    \\ 
 			& & & &    \\ 
 			\cline{5-5}
-			180 g& 300 g &  &  &   \multirow{3}{*}{142 RPM}  \\
+			&  &  &  &   \multirow{3}{*}{142 rpm}  \\
 			& & & &    \\
 			& & & &    \\ 
 			\hline
@@ -1088,10 +1115,11 @@ El diseño de experimentos para la producción de bioetanol pretratado con humus d
 	}
 \end{table}
 
-
 El diseño de experimentos contempla los factores que son importantes para la configuración en la producción de bioetanol 2G. Los factores en este caso son las variables que modificamos (temperatura y tamaño de bagazo de caña).	Los niveles son los valores en que los factores fueron utilizados en las experimentaciones, modificando en 1, 2 o 3 niveles.
 
-Para el pretratamiento biológico, específicamente se tomó un nivel 1 de tiempo de pretratamiento, es decir las experimentaciones se realizaron en 5 días. Para el factor A ( tamaño de bagazo de caña), se plantearon dos niveles siendo estos Tamaño No Uniforme de Bagazo (TNUB) y bagazo con partículas de 1 cm. La idea es saber que impacto tiene modificar el tamaño de partícula, en el caso del factor B, el cual es la temperatura, se plantearon 3 niveles: 45 °C ,40 °C, y 30 °C. La Tabla \ref{biologico2} muestra el detalle de los 6 experimentos resultantes de la combinación de factores y niveles seleccionados para el pretratamiento biológico.
+Para el pretratamiento biológico, específicamente se tomó un nivel 1 de tiempo de pretratamiento, es decir las experimentaciones se realizaron en 5 días. Para el factor A ( tamaño de bagazo de caña), se plantearon dos niveles siendo estos Tamaño No Uniforme de Bagazo (TNUB) y bagazo con partículas de 1 cm. La idea es saber que impacto tiene modificar el tamaño de partícula, en el caso del factor B, el cual es la temperatura, se plantearon 3 niveles: 45 °C ,40 °C, y 30 °C. La Tabla \ref{biologico2} muestra el detalle de los 6 experimentos resultantes de la combinación de factores y niveles seleccioandos para el pretratamiento biológico.
+
+
 
 
 \begin{table}[H]
@@ -1100,7 +1128,7 @@ Para el pretratamiento biológico, específicamente se tomó un nivel 1 de tiempo d
 	\label{biologico2}
 	\begin{tabular}{|c|c|c|  }
 		\hline
-		\textbf{Núm de} & \textbf{Tamaño de partícula } & \textbf{Temperatura} \\
+		\textbf{Num de} & \textbf{Tamaño de particula } & \textbf{Temperatura} \\
 		\textbf{experimento} 	& \textbf{ del bagazo de caña} &  \textbf{(°C)}   \\		
 		\hline
 		1   & \multirow{3}{*}{TNUB *} & 45  \\	\cline{1-1}	
@@ -1121,76 +1149,128 @@ En la Figura \ref{biologico2} se puede observar un diagrama que plantea a detall
 
 \begin{figure} [h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{imagenes/diagramabiologico}
+	\includegraphics[width=0.9\linewidth]{imagenes/diagramabiologico}
 	\caption{Diagrama de los factores del pretratamiento biológico.}
 	\label{Diagrama biologico}
 \end{figure}
 
+
 %%%%%%%%%%%%%%%%
+		
+\subsubsection{ Diseño experimental del pretratamiento Alcalino}
 
 
-\subsubsection{Diseño de experimentos del pretratamiento Alcalino}
-Para el caso del pretratamiento alcalino con hidróxido de sodio, tomando como referencia la tesis \cite{Arturo2022evaluacion}, donde menciona que las temperaturas con mayor producción de bioetanol son temperaturas de 97 grados; en consecuencia se modifican las temperaturas en que se puede experimentar manejándolas en ese rango.
-Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar el comportamiento del porcentaje de bioetanol si trabajamos con valores cercanos al mencionado, así como modificar el tamaño de bagazo, esto para saber el impacto del tamaño de biomasa al moverlo en el reactor tipo batch (por lotes).
+Para el caso del pretratamiento alcalino con hidróxido de sodio las temperaturas que se trabajaron fueron 80 °C, 90 °C y 95 °C. También se modificó el tamaño de las partículas de bagazo y el tiempo de producción. En la Tabla \ref{tab:Variablesalcalino} se mencionan las cantidades por insumo que se utilizaron para las pruebas con pretratamiento alcalino. El mezclado del reactivo es importante dado que nos ayuda a mantener la mezcla y la temperatura homogénea dentro del reactor tipo Batch, por lo que también menciona las condiciones de mezclado.
+
 
 \begin{table}[H]
 	\centering
-	\resizebox{\textwidth}{!}{   % Ajusta al ancho del documento (textwidth)
-		\begin{tabular}{| c | c | c | c | c | c|c|c|}
+	\caption{Condiciones de operación fijas del reactor para el pretratamiento alcalino del bagazo de caña.}
+	\label{tab:Variablesalcalino}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{| c | c | c | c | c | c |      }
 			\hline
-			Biomasa  &Carga de biomasa & Pretratamiento & Carga de hidróxido de sodio & Volumen & Tamaño & Temperatura  & Tiempo  \\  
+			\textbf{Cantidad de} & \textbf{Cantidad de} & \textbf{Volumen de la carga} & \textbf{Tiempo del} & \multicolumn{2}{c|}{ \textbf{Condiciones de agitación} } \\  
+			\textbf{bagazo de caña} & \textbf{Hidróxido de sodio} & \textbf{ } & \textbf{pretratamiento} & \multicolumn{2}{c|}{  }  \\  
 			\hline
-			& & & & & & \textcolor{blue}{80°C} &\\
-			Bagazo  & 4\%  & Alcalino & 2\% p/v & 6 l  & Varios tamaños & \textcolor{blue}{90°C} & 5400 s  \\  
-			de caña &  & & & & & \textcolor{blue}{95°C} &\\ 
-			& & & & & & &  \\ 	\hline
 			
-			&   & & & & & 80°C &\\
-			Bagazo  &   4\% & Alcalino & 2\% p/v & 6 l   & \textcolor{red}{1 cm} & 90°C & 5400 s \\ 
-			de caña & &  & & & & 95°C &\\ 
-			& & & & & & &\\
-			
+			\multirow{6}{*}{4 \% p/v } & \multirow{6}{*}{2\% p/v }  & \multirow{6}{*}{6 l} & \multirow{3}{*}{5400} & \multirow{6}{*}{ 10 s encendido/apagado} & \multirow{6}{*}{142 rpm}  \\ 
+			& & & &  &  \\ 
+			& & & &  &   \\ 
+			\cline{4-4}
+			&  &  & \multirow{3}{*}{7870} &  & \\
+			& & & & &   \\
+			& & & &  &  \\ 
 			\hline
 		\end{tabular}
-	} % Cierre de \resizebox
-	\caption{Valores para el pretratamiento alcalino}
-	\label{tab:Variablesalcalino}
+	}
 \end{table}
 
 
 
 
+De la misma forma, cada pretratamiento fue realizado modificando tres factores. El factor A es el tamaño de partícula, para el cual se consideraron dos niveles: TNUB y 1 cm. El factor B es la temperatura, y para este se consideraron tres niveles: 95 °C , 90 °C, 80 °C. Por último, el factor C que es el tiempo de pretratamiento, tiene dos niveles: 5400 s y 7870 s. En total se realizaron 12 experimentos para el pretratamiento alcalino, como se muestra en la Tabla \ref{alcalino}. 
 
-\singlespacing
-\section{Diseño de experimentos para la configuración: sacarificación y fermentación simultaneas (SSF) }
-\onehalfspacing
-
-Por otra parte, tenemos la configuración para la producción de bioetanol, donde tomando como referencia la tesis \cite{Arturo2022evaluacion}, se pueden tener los valores para los elementos en la configuración SSF, en donde intervienen los elementos como la carga de biomasa que es la cantidad de bagazo previamente pretratado con alguno de los métodos anteriores, levadura necesaria para una buena fermentación, el ph de la solución dentro del reactor, la carga enzimática que es uno de los elementos importantes para realizar la hidrólisis, la temperatura que tomando en cuenta la tesis antes mencionada es de 43 °C. En la tabla 	\ref{tab:Variables a modificar para la hidrolisis y fermentacion}, muestran los valores de cada uno de los elementos a tomar en consideración para la la configuración de etapas juntas (SSF). 
-
-
-
-\begin{table} [H]
+\begin{table}[H]
 	\centering
-	\small
-	\begin{tabular}{|p{1.3cm}|p{1.5cm}|p{1.15cm}|p{1.5cm}|p{1.5cm}|p{.5cm}|p{2 cm}|p{1.2cm}|p{1.5cm}|}
+	\caption{Condiciones de operación del reactor para la producción de bioetanol 2G con pretratamiento alcalino. Diseño de experimentos.}
+	\label{alcalino}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
-		Biomasa  & Volumen  & Carga de biomasa  & Carga enzimática  & Inoculo (levadura)  & Ph  & Temperatura  & Tiempo & Agitación  \\
-		
-		\hline
-		Bagazo   & 3.6 L & 5\% & 20 UPF/g  & 10\%  & 5 & ambiente & 48h   & S.A\\
-		de caña  &  & (180g)& (3.33 ml) &  (360 ml  ) &  &  &    & S.A\\
-		
-		
-		\hline
-		Bagazo  & 4.8 L  & 5\%  & 20 UPF/g  & 10\%  & 5 & 43°C & 48h     & 1725 rpm\\
-		de caña  &  & (240g)& (5,08 ml) &  (600 ml  ) &  &  &    & \\
-		
-		\hline
+		\textbf{Núm de} & \textbf{Temperatura} & \textbf{Tamaño de } & \textbf{Tiempo} \\ 
+		\textbf{de experimento}	&\textbf{ (°C)}&\textbf{ bagazo}  &\textbf{(s)}	\\ \hline
+		1 & \multirow{4}{*}{95} & \multirow{2}{*}{TNUB*} & 5400   \\ \cline{1-1} \cline{4-4}
+		2 &  &  & 7870  \\ \cline{3-4}  \cline{1-1} 
+		3 &  & \multirow{2}{*}{1 cm} & 5400  \\  \cline{1-1} \cline{4-4}
+		4 &  &  & 7870  \\ \cline{1-1}  \hline
+		5 & \multirow{4}{*}{90}& \multirow{2}{*}{TNUB*} & 5400  \\ \cline{1-1}  \cline{4-4}
+		6 &  &  & 7870   \\ \cline{1-1} \cline{3-4}
+		7 &  & \multirow{2}{*}{1 cm} & 5400  \\ \cline{1-1}\cline{4-4}
+		8 &  &  & 7870 \\ \hline
+		9 & \multirow{4}{*}{80} & \multirow{2}{*}{TNUB*} & 5400  \\ \cline{1-1}\cline{4-4}
+		10 &  &  & 7870   \\ \cline{1-1} \cline{3-4}
+		11 &  &\multirow{2}{*}{1 cm} & 5400 \\ \cline{1-1}\cline{4-4}
+		12 &  &  & 7870  \\ \hline
 	\end{tabular}
-	\caption{Variables a modificar en la hidrólisis y fermentación}
-	\label{tab:Variables a modificar para la hidrolisis y fermentacion}
+	\\[3 pt] % Espacio adicional
+	% {\raggedright \footnotesize $^{*}$Tamaño no uniforme de bagazo. \par}
+	\footnotesize{$^{*}$  Tamaño no uniforme de bagazo.}
 \end{table}
-Se puede observar que se utilizan dos volumen, esto es por que el volumen de 3600 ml es utilizando biomasa pretratada con humus de lombriz, es decir realizando un pretratamiento biológico, y para el caso del volumen de 5.5 l es utilizando biomasa pretratada con hidroxido de sodio, tambien llammdo pretratamiento alcalino.
+
+
+
+A continuación se presenta un diagrama donde se clasifica por factores cada variable a considerar, esto solo para el caso del pretratamiento alcalino, ver figura  \ref{Diagramaalcalino}.
+
+
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{imagenes/Diagrama alcalino}
+	\caption{Diagrama del pretratamiento alcalino con los factores.}
+	\label{Diagramaalcalino}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\subsubsection{Diseño de experimentos para la configuración:
+	sacarificación y fermentación simultaneas (SSF)}
+\label{SacariSF}	
+
+%		\onehalfspacing
+
+La producción de bioetanol fue realizada usando la configuración de hidrólisis y fermentación simultáneas. Las condiciones de operación corresponden al diseño del proceso presentado en la tesis de \cite{Arturo2022evaluacion}. Se debe precisar la carga de biomasa, que es la cantidad de bagazo previamente pretratado con alguno de los dos métodos considerados, la levadura necesaria para una buena fermentación, el pH de la solución dentro del reactor, la carga enzimática que es un elemento clave  para llevar  cabo la hidrólisis, y por ultimo la temperatura de la SSF. En la Tabla \ref{tab:Variables a modificar para la hidrolisis y fermentacion}, se muestran los valores de cada uno de los elementos a tomar en cuenta para la implementar el proceso SSF. \\[0.5em]
+
+\begin{table} [h!]
+	\centering
+	\caption{Variables del proceso de SSF}
+	\label{tab:Variables a modificar para la hidrolisis y fermentacion}
+	\small
+	\resizebox{17cm}{!} {
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+			\hline
+			\textbf{Biomasa}  &\textbf{ Volumen}  & \textbf{Carga de } & \textbf{Carga}  & \textbf{Inoculo}  &\textbf{ Ph}  & \textbf{Temperatura } & \textbf{Tiempo}   \\
+			&   & \textbf{ biomasa}  & \textbf{enzimática } & \textbf{de levadura } & &  &     \\
+			
+			\hline
+			\multirow{2}{*}{Bagazo de caña} &\multirow{2}{*}{2 l}  &\multirow{2}{*}{5\%}  & \multirow{2}{*}{20 UPF/g } & \multirow{2}{*}{10\% } &\multirow{2}{*}{ 5} & \multirow{2}{*}{43 °C} & \multirow{2}{*}{48h }   \\
+			&   & & &  &  & &     \\		
+			\hline
+	\end{tabular}}
+\end{table}
+
+
+
+\begin{itemize}
+	\item  Carga enzimática
+\end{itemize}
+
+
+La carga enzimática se refiere a  la cantidad de enzimas que se introduce durante el proceso SSF y está dada en unidades de papel filtro por gramo de sustrato (UPF/g). UPF es una medida de laboratorio para expresar la actividad enzimática. La ecuación \ref{carga} permite calcular la carga enzimática en unidades de ml, en función de la cantidad de unidades de papel filtro (UPF),  \cite{Arturo2022evaluacion}).
+
+\begin{equation}
+	\label{carga}
+	\text{carga enzimática (ml)} = \frac{3.7}{UPF}
+\end{equation}
+
+
 
 
 
@@ -1199,172 +1279,572 @@ Se puede observar que se utilizan dos volumen, esto es por que el volumen de 360
 \singlespacing
 \chapter{Pruebas experimentales}
 \onehalfspacing
-Para las pruebas experimentales tendremos en cuenta de primera instancia los materiales necesarios en cada pretratamiento, posteriormente se menciona los pasos que conlleva realizar cada pretratamiento
+En esta sección se describen las pruebas experimentales, indicando en primera instancia los materiales necesarios en cada pretratamiento, y posteriormente, se mencionan los pasos que conlleva realizar cada prueba.
 
 \singlespacing
-\subsection{Pre-Pretratamiento}
+\section{Pre-Pretratamiento}
 \onehalfspacing
 
 El pre-pretratamiento ayuda clasificar el tamaño de bagazo que se va a utilizar, así como secar el bagazo en caso de tener humedad. El material y compuestos para poder limpiar y clasificar el tamaño de bagazo
 
 \textbf{Compuestos} 
 
-\begin{itemize}
-	\item Bagazo de caña 
-\end{itemize}
+			
+El pre-pretratamiento es un preprocesamiento de la biomasa para someterla posteriormente al pretratamiento del tipo seleccionado para activar la producción de azúcares fermentables. El pre-pretratamiento incluye clasificar el tamaño de bagazo por tamizado, y secarlo en caso de tener humedad. El material y compuestos para poder clasificar y limpiar el bagazo son los siguientes
+\\[0.5em]
+\textbf{Compuestos} 
+\begin{itemize}[label=\textcolor{blue}{$\bullet$}]
+	\item	\textit{ Bagazo de caña }
+\end{itemize} 
 
 
-\textbf{Materiales} 
+\textbf{Materiales} \\[0.5em]
 
-\begin{itemize}
-	\item lona
-	\item Malla cuadrada 1 cm
-	\item Bolsa platica 3kg
-	\item Bascula 
-	\item Cubeta 10 l
-\end{itemize}
+\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+	\textit{$\bullet$ Lona} & \textit{$\bullet$ Malla cuadrada 1 cm} & \textit{$\bullet$ Bolsa plástica de 30$×$40 cm} \\ 
+	\textit{$\bullet$ Báscula} & \textit{$\bullet$ Cubeta con capacidad de 10 l} & \\ 
+\end{tabular}
 
 
-\textbf{1.}	Se coloca una lona abajo en el piso extendida con el propósito de que el bagazo de caña no entre en contacto con la basura o el piso, se extiende el bagazo en la lona con el fin quitarle toda la humedad que tenga almacenada.
+\textbf{Procedimiento}
+\\[0.5em]
+\textbf{1.} Se implementó una barrera de protección usando una lona impermeable extendida sobre el piso, evitando el contacto directo del bagazo de caña con superficies contaminantes. Sobre esta superficie aislante, se distribuyó uniformemente el bagazo de caña para facilitar el secado pasivo y la eliminación controlada de su humedad residual. El proceso se muestra en la Figura~\ref{secado1}
 
 
-\textbf{2.}	Para cernir el bagazo de caña se utilizaron dos mallas de 1 cm, instaladas una arriba de otra sobre la cubeta de 10 l. Posteriormente se coloca el bagazo arriba de la malla y se realiza un moviendo armónico como se observa en la figura 	\ref{cernir_bagazo_1}, el bagazo de menor medida baja a la cubeta.
-\begin{figure} [h!]
+\textbf{2.}	La clasificación por tamaño se efectuó usando un arreglo de dos mallas metálicas de 1 cm, montadas en serie sobre un recipiente de 10 L. Mediante agitación rítmica del bagazo colocado en la malla superior (Figura \ref{cernir_bagazo_B}), las fracciones menores a 1 cm fueron seleccionadas por gravedad hacia la cubeta, mientras que las partículas mayores se retuvieron en el tamiz.
+
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.4\linewidth]{imagenes/cernir_bagazo_1}
-	\caption{El bagazo es cernido con ayuda de las mallas de 1 cm}
-	\label{cernir_bagazo_1}
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/secado de bagazo} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{Bagazo de caña tendido sobre una lona.}
+		\label{secado1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/cernir_bagazo_1} % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{El bagazo es cernido con ayuda de la malla de 1 cm.}
+		\label{cernir_bagazo_B}
+	\end{minipage}
 \end{figure}
 
 
 
-\textbf{3.}	Lo vuelvo a cernir dos veces para tener lo más pequeño posible, utilizando las mismas dos mallas de 1 cm y realizando un movimiento armónico, como se observa en la figura \ref{cernir_bagazo_2} .
+\textbf{3.}	El bagazo se sometió a dos ciclos adicionales de cribado utilizando el mismo sistema de doble malla (abertura de 1 cm), aplicando un movimiento armónico controlado en cada repetición (Figura \ref{cernir_bagazo_2C}). Este proceso iterativo permitió obtener una fracción de partículas con tamaño significativamente reducido, optimizando la homogeneidad del material resultante.
 
 
+\textbf{4.} Para garantizar un tamaño de partícula uniforme, el bagazo de caña se sometió a un cribado adicional mediante un cedazo de malla más fina, con el objetivo de obtener un material final con una granulometría controlada de 1 cm, lo que optimiza su posterior aprovechamiento en procesos industriales. Ver Figura \ref{cernir_bagazo_cedazo}.
 
-\begin{figure} [h!]
+
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.27\linewidth,angle=90]{imagenes/cernir_bagazo_2}
-	\caption{Momento donde el bagazo es clasificado}
-	\label{cernir_bagazo_2}
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=\linewidth, height=4cm, keepaspectratio]{imagenes/cernir_bagazo_2}
+		\caption{Momento donde el bagazo es clasificado.}
+		\label{cernir_bagazo_2C}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth, height=4cm, keepaspectratio]{imagenes/cernir_bagazo_cedazo}
+		\caption{Clasificación con colador para trozos grandes.}
+		\label{cernir_bagazo_cedazo}
+	\end{minipage}
 \end{figure}
 
 
-\textbf{4.}  El bagazo de caña se vuelve a pasar por un cedazo mas fino para quitar los pedazos que se observen muy grandes.
+\textbf{5.} El bagazo cernido fue pesado en una báscula hasta alcanzar la masa requerida (240 g o 180 g, según el pretratamiento asignado) y posteriormente se introdujo en una bolsa de plástico, la cual fue sellada herméticamente para evitar alteraciones en su contenido de humedad durante el almacenamiento o transporte.
 
-\begin{figure} [h!]
+
+\begin{figure} [H]
 	\centering
-	\includegraphics[width=0.27\linewidth,angle=90]{imagenes/cernir_bagazo_cedazo}
-	\caption{Con ayuda de un colador se clasifica por si un trozo de bagazo es mas grande}
-	\label{cernir_bagazo_cedazo}
-\end{figure}
-
-
-\textbf{5.} Se pesa el bagazo cernido en una báscula hasta alcanzar 240 g o 180 g, según el pretratamiento. A continuación, se coloca en una bolsa de plástico, que se sella para prevenir la acumulación de humedad.
-
-
-\begin{figure} [h!]
-	\centering
-	\includegraphics[width=0.27\linewidth]{imagenes/cernir_bagazo_pesado}
-	\caption{Momento donde el bagazo es clasificado}
+	\includegraphics[width=5cm, height=3cm]{imagenes/cernir_bagazo_pesado}
+	\caption{El bagazo cernido es colocado en la bolsa y se pesado en una bascula.}
 	\label{cernir_bagazo_pesado}
 \end{figure}
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \singlespacing
 \section{Pretratamiento Biológico}
 \onehalfspacing
 
-Para el pretratamiento biológico se presenta una lista de materiales y compuestos necesarios para realizar la experimentación, los cuales son:
 
-\textbf{Compuestos} 
+Para la ejecución del pretratamiento biológico se requirió el siguiente conjunto de materiales y reactivos estandarizados. Posteriormente se mencionan los pasos para la experimentación.\\
 
-\begin{itemize}
-	\item Humus de Lombriz (300 g)
-	\item Bagazo de caña ( 180g )
-\end{itemize}
+\textbf{Compuestos} \\[0.5em]
 
+\begin{tabular}{p{0.3\textwidth}p{0.3\textwidth}}
+	\textcolor{blue}{$\bullet$} \textit{Humus de Lombriz}  &	\textcolor{blue}{$\bullet$} \textit{Bagazo de caña}
+\end{tabular} \\[0.5em]
 
-\textbf{Materiales} 
+\textbf{Materiales} \\[0.5em] 
 
-
-\begin{itemize}
-	
-	\item Agua desmineralizada (6l)
-	\item Algodón ( 1 bolsa)
-	\item Bolsa platica de tamaño 30*40
-	\item Bascula 
-	\item Cinta de aislar (1)
-	\item Cinta teflón 
-\end{itemize}
+\begin{tabular}{p{0.3\textwidth}p{0.3\textwidth}p{0.2\textwidth}}
+	\textcolor{blue}{$\bullet$} \textit{Agua desmineralizada }  &	\textcolor{blue}{$\bullet$} \textit{Algodón} &	\textcolor{blue}{$\bullet$} \textit{Bolsa plástica 20$x$30}\\
+		\textcolor{blue}{$\bullet$} \textit{Báscula}  &	\textcolor{blue}{$\bullet$} \textit{Cinta aislante} &	\textcolor{blue}{$\bullet$} \textit{Cinta de teflón}\\
+\end{tabular} \\[0.5em]
 
 
+	\textbf{Procedimiento}
+\\[0.5em]
+
+\textbf{1.}	La dosificación del bagazo fue realizada mediante pesaje con una báscula digital utilizando una bolsa plástica de 3 kg como recipiente, hasta alcanzar los 180 g requeridos. Este procedimiento se aplicó únicamente cuando no se empleó la medida estándar de 1 cm de longitud de partícula, en cuyo caso se utilizó directamente el material previamente clasificado y calibrado. Ver Figura \ref{bagazo_variostamanos}.
 
 
-\singlespacing
-\section{Pretratamiento Alcalino}
-\onehalfspacing
+\textbf{2.}	Mediante báscula digital ($±$0.2 g) y material de vidrio calibrado (vaso de precipitado de 500 mL) se pesó exactamente 350 g de humus de lombriz grado técnico, siguiendo el procedimiento ilustrado en la Figura \ref{humus}.
 
-
-
-
-
-\textbf{Compuestos} 
-
-\begin{itemize}
-	\item Hidróxido de sodio ( 120 g)
-	\item Bagazo de caña ( 240 g )
-\end{itemize}
-
-
-\textbf{Materiales} 
-
-
-
-
-\begin{itemize}
-	
-	\item Agua desmineralizada (6l)
-	\item Algodón ( 1 bolsa)
-	\item Bolsa plástica de tamaño 30*40 cm
-	\item Bascula 
-	\item Cinta de aislar (1)
-	\item Cinta teflón 
-\end{itemize}
-
-
-
-\textbf{1.} 
-
-
-\textbf{1.}	Para pesarlo se utiliza una bolsa plástica de 30*40 cm  y una báscula, vaciando el bagazo la bolsa mientras se pesa (180 g), este paso solo se realiza en caso de no utilizar 1 cm de bagazo de caña, si es el caso de utilizar 1 cm , se utiliza el previamente clasificado y pesado.\\
-
-\textbf{2.} Se pesa el hidróxido de sodio a 120 g, esto con ayuda de un vaso precipitado y una bascula.
-\begin{figure} [h!]
+			
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.27\linewidth]{imagenes/hidroxido_pesado}
-	\caption{Momento donde el bagazo es clasificado}
-	\label{cernir_bagazo_hidroxidopesado}
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=3cm, height=5cm]{imagenes/pesado2}
+		\caption{Medición de masa del bagazo de caña, clasificado por tamaño de partícula (1 mm a 10 cm), previo al proceso de bioetanol.}
+		\label{bagazo_variostamanos}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=3cm, height=5cm]{imagenes/humus}
+		\caption{Pesaje del humus de lombriz con ayuda de una bascula.}
+		\label{humus}
+	\end{minipage}
 \end{figure}
 
-\textbf{3.} Se enjuaga el reactor y mezclador con agua desmineralizada, con el propósito de que sea utilizado lo mas limpio posible .
-\begin{figure} [h!]
+
+\textbf{3.}	Previo a su uso, el reactor se sometió a un proceso de limpieza exhaustiva (Figura \ref{progra}), seguido de la aplicación estratégica de cinta de teflón en la zona roscada inferior para garantizar un sellado hermético. Finalmente, se procedió al ensamblaje mediante el apriete controlado del tornillo, asegurando así la integridad del sistema.
+
+
+
+\textbf{4.}	Se cargó el reactor con 6.0 L de agua desmineralizada, dosificados mediante un vaso de precipitado de 1 L, calibrado. Posteriormente, se incorporaron los 180 g de bagazo de caña previamente pesados y contenidos en la bolsa de 3 kg, siguiendo el procedimiento ilustrado en la Figura \ref{baciad}.
+
+
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.27\linewidth]{imagenes/reactor limpio}
-	\caption{Reactor previamente enjuagado con agua desmineralizada}
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=4cm, height=5cm]{imagenes/reactor limpio} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{Fotografía muestra el reactor tipo batch después de limpiarlo.}
+		\label{progra}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=4cm, height=5cm]{imagenes/biologico5} % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{ Carga del bagazo de caña en el reactor tipo batch.}
+		\label{baciad}
+	\end{minipage}
+\end{figure}
+
+\textbf{5.}	Se adicionaron 300 g de humus de lombriz al reactor que ya contenía agua desmineralizada y bagazo de caña (Figura \ref{humus2}).
+
+\textbf{6.} Se procedió a sellar el reactor utilizando una tapa que incorpora el motor. Se colocaron los sensores de tipo termopar K en los tubos de un centímetro de diámetro, asegurándo que estuvieran correctamente posicionados. Para evitar fugas de vapor, se utilizó algodón para sellar adecuadamente los tubos. Además, se emplearon láminas de aluminio y cinta aislante o térmica para garantizar un cierre hermético tanto alrededor de la tapa como en la zona de los sensores, tal como se observa en la Figura~\ref{cellado del reactor}.
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=3cm, height=5cm]{imagenes/humus2} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{Fotografía que muestra como se le agrega el humus de lombriz al reactor.}
+		\label{humus2}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=3cm, height=5cm]{imagenes/cellado del reactor} % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{Esta fotografía muestra el reactor después de sellarlo.}
+		\label{cellado del reactor}
+	\end{minipage}
+\end{figure}
+
+
+\textbf{7. } Se procedió a conectar las Raspberry Pi y los monitores, así como las fuentes de alimentación y el sistema de respaldo (no-break). Se conectaron los contactos múltiples necesarios, se configuraron los dispositivos y se programó el control para mantener la temperatura conforme al diseño experimental descrito en el apartado \ref{disenodeexperimentobiologico}. El proceso se mantuvo durante el tiempo estipulado para el pretratamiento. El diseño del control de temperatura se reporta en el anexo \ref{diseno del control de temp}. Las Figuras \ref{progra 1} y \ref{progra 2} muestran las pantallas con el control en funcionamiento.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/programa1} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{Programa de la temperatura ambiente en marcha.}
+		\label{progra 1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/programa2} % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{Programa del control en marcha.}
+		\label{progra 2}
+	\end{minipage}
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Pretratamiento Alcalino}
+El pretratamiento alcalino de la biomasa se implementó usando Hidróxido de Sodio. A continuación se muestran los insumos y los pasos para llevar a cabo las pruebas experimentales.		
+\\[1 em]
+\textbf{Compuestos} 
+\\[0.5em]
+
+\begin{tabular}{p{0.3\textwidth}p{0.3\textwidth}}
+	\textcolor{blue}{$\bullet$} \textit{Hidróxido de sodio} &	\textcolor{blue}{$\bullet$}\textit{ Bagazo de caña} 
+\end{tabular} \\[ 1em]
+
+
+
+\textbf{Materiales} 
+\\[1 em]
+
+\begin{tabular}{p{0.3\textwidth}p{0.3\textwidth}p{0.3\textwidth}}
+	$\bullet$ \textit{Agua desmineralizada }& $\bullet$ \textit{Algodón }& $\bullet$ \textit{Bolsa plástica de 30$×$40 cm} \\
+	$\bullet$ \textit{Báscula} & $\bullet$ \textit{Cinta aislante} & $\bullet$ \textit{Cinta de teflón}
+\end{tabular}
+\\[0.5em]
+
+
+\textbf{Procedimiento}
+\\[0.5em]
+
+
+\textbf{1.}	La cantidad de bagazo se determinó mediante pesaje con báscula digital (precisión $±$0.2 g) usando una bolsa plástica de 30$×$40 cm como contenedor, hasta alcanzar 180 g. Alternativamente, cuando se requirió la medida de 1 cm, se utilizó directamente el material preclasificado y calibrado, según se ilustra en la Figura \ref{bagazo1}.\\
+
+\textbf{2.} Mediante una báscula digital (precisión $±$0.2 g) y vaso de precipitado de vidrio, se pesaron exactamente 120 g de hidróxido de sodio en pellets, asegurando la exactitud requerida para el proceso.Ver Figura \ref{cernir_bagazo_hidroxidopesado}.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=3cm, height=5cm]{imagenes/pesado4}
+		\caption{Bagazo de 1 cm.}
+		\label{bagazo1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=3cm, height=5cm]{imagenes/hidroxido_pesado}
+		\caption{El hidroxido es pesado en una bascula.}
+		\label{cernir_bagazo_hidroxidopesado}
+	\end{minipage}
+\end{figure}
+
+	
+\textbf{3.} El reactor y su mezclador fueron enjuagados minuciosamente con agua desmineralizada para garantizar su limpieza óptima antes de ser usado, eliminando cualquier residuo que puediera afectar el proceso.
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=3cm, height=5cm,angle=90]{imagenes/reactor limpio}
+	\caption{Reactor tipo batch previamente enjuagado con agua desmineralizada.}
 	\label{reactor limpio}
 \end{figure}
-\newpage
 
-\textbf{4.} Se encienden los componentes y la resistencia , así como se revisan que no tengan ningun problema.
+\textbf{4.} Se procedió a activar los componentes eléctricos y la resistencia, verificando su correcto funcionamiento. Posteriormente, se instaló el tornillo de sellado en la base del reactor, asegurando su hermeticidad. En el interior del equipo previamente sanitizado se incorporaron el agua desmineralizada y el bagazo de caña en las proporciones establecidas, iniciando así el proceso de tratamiento. 
 
-\textbf{5.} Se coloca en la parte de abajo del reactor el tornillo que cella el reactor.
+\textbf{5.} Se incorporó el hidróxido de sodio (NaOH) previamente dosificado al reactor que contiene la mezcla de agua desmineralizada y bagazo de caña,  como se documenta en la Figura \ref{bagazo con hidroxido}.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=3cm, height=3cm]{imagenes/agua con bagazo}
+		\caption{Se agrega el bagazo de caña al reactor con agua desmineralizada.}
+		\label{agua con bagazo}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/bagazo con hidroxido1}
+		\caption{Se agrega el hidróxido y se mezcla hasta incorporarse.}
+		\label{bagazo con hidroxido}
+	\end{minipage}
+\end{figure}
+
+\textbf{6.} El reactor se selló herméticamente mediante un sistema multicapa compuesto por: algodón como barrera primaria, papel aluminio para aislamiento térmico y cinta aislante/ térmica como sellado secundario, garantizando el cierre completo del sistema como se detalla en la Figura \ref{sellado_bio}.
+
+
+
+\textbf{7.} Finalmente, se activó el sistema de control automatizado (Figura \ref{programa}), para seguir los perfiles programados de temperatura para el interior del reactor y el tiempo de pretratamiento establecidos en el diseño experimental (Figura \ref{Diagrama1}). Este control garantizó las condiciones requeridas para el proceso.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=\linewidth, height=4cm, keepaspectratio]{imagenes/sellado2}
+		\caption{El reactor se sella con ayuda de algodón, papel aluminio y cinta de aislar o cinta térmica.}
+		\label{sellado_bio}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth, height=4cm, keepaspectratio]{imagenes/programa3}
+		\caption{Se muestra el programa en funcionamiento.}
+		\label{programa}
+	\end{minipage}
+\end{figure}
+
+\textbf{7.} El diseño del control de temperatura para llevar a cabo este pretratamiento de la biomasa está reportado en el anexo \ref{diseno del control de temp}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+
+\subsubsection{Acondicionamiento para el material pretratado}
+
+\textbf{Materiales}
+\\[0.5em]
+
+\begin{tabular}{p{0.3\textwidth}p{0.3\textwidth}p{0.3\textwidth}}
+	$\bullet$ \textit{Agua desmineralizada} & $\bullet$ \textit{ Bagazo de caña Pretratado} & $\bullet$ \textit{Tela delgada}  \\
+	
+	$\bullet$ \textit{Colador} & $\bullet$ \textit{Cubeta 10 l} & 
+\end{tabular}
+\\[0.5em]
+
+			
+\textbf{Procedimiento}
+\\[0.5em] 
+\textbf{1.} Durante el pretratamiento biológico se registraron periódicamente los datos experimentales para garantizar su trazabilidad, y al finalizar el proceso, se almacenó toda la información recopilada. Adicionalmente, se registró el consumo energético mediante la lectura del watímetro (Figura \ref{watimetro}), el cual cuantificó la energía utilizada en kilovatios-hora (kWh) a lo largo del tratamiento.
+
+\textbf{2.} Bajo condiciones controladas, se desarmó el sistema, retirando primero los elementos de sellado (aluminio/algodón), luego los componentes electrónicos (sensores termopares tipo k) y finalmente el conjunto tapa-mezclador, dejando la configuración documentada en la Figura \ref{biologico1}.
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/watimetro} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{Se observa el watimetro que se encuentra en la estructura y mide la energia que entra al convertidor.}
+		\label{watimetro}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=4cm, height=3cm]{imagenes/biologico1} % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{Se observa el watimetro que se encuentra en la estructura y mide la energia que entra al convertidor.}
+		\label{biologico1}
+	\end{minipage}
+\end{figure}
+
+
+\textbf{3.} Para la separación sólido-líquido se implementó un sistema de filtración compuesto por una cubeta de 10 L que integraba una manta filtrante y un colador (Figura \ref{Cubeta con colador y manta para colar el bagazo pretratado.}). En este dispositivo se colocó el bagazo pretratado, permitiendo la retención de la biomasa y el paso del liquido resultante, tal como se documenta en la Figura \ref{Bagazo1}.
+
+	\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/biologico6} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{Cubeta con colador y manta para colar el bagazo pretratado.}
+		\label{Cubeta con colador y manta para colar el bagazo pretratado.}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/bagazo_biologico_sacado} % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{Bagazo previamente pretratado.}
+		\label{Bagazo1}
+	\end{minipage}
+\end{figure}
+
+\textbf{4.} El bagazo pretratado se mantuvo en la cubeta hasta completar el filtrado del agua residual, tras lo cual se sometió a un proceso de lavado con agua adicional para eliminar el máximo posible de humus de lombriz o el hidróxido de sodio respectivamente. Posteriormente, el material se exprimió manualmente para extraer el exceso de líquido y se dejó escurrir, siguiendo el procedimiento ilustrado en la Figura \ref{biologico3}.
+
+
+\textbf{5.} Para eliminar la humedad residual, el bagazo se extiendió uniformemente en una bandeja y se introdujo en un horno, donde se secó bajo condiciones controladas hasta alcanzar el contenido de humedad deseado, optimizando así el tiempo de proceso como se muestra en la Figura \ref{secado2}. 
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/biologico3} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{En la fotografía muestra como se retira el exceso de agua exprimiendo.}
+		\label{biologico3}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=4cm, height=3cm]{imagenes/secado2} % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{El bagazo es secado en un horno.}
+		\label{secado2}
+	\end{minipage}
+\end{figure}
+
+\textbf{6.} Tras el secado inicial, el bagazo se colocó nuevamente en el colador para someterlo a un segundo enjuague con agua desmineralizada, asegurando la eliminación de residuos solubles (humus de lombriz o hidróxido de sodio), proceso que se documenta en la Figura \ref{enjuagado}.
+
+
+
+\textbf{7.}Tras el escurrido manual, el material se sometió a secado pasivo en condiciones ambientales (25 $±$ 2 °C, humedad relativa menor a 60\%) hasta obtener peso constante, verificando la eliminación completa de humedad según se especifica en la Figura \ref{biologico4}.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/enjuagado} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{En la fotografía muestra el bagazo después de filtrar el agua.}
+		\label{enjuagado}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=4cm, height=3cm]{imagenes/secado6} % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{El bagazo se coloca en un plástico para retirar el agua y la humedad.}
+		\label{biologico4}
+	\end{minipage}
+\end{figure}
+
+
+\textbf{8.} Una vez completado el secado, el bagazo se almacenó en bolsas herméticas para prevenir la absorción de humedad ambiental, garantizando así las condiciones óptimas para su uso en los posteriores procesos de la SSF, tal como se muestra en la Figura \ref{biologico4}. Posteriormente el reactor tipo batch fue lavado con agua desmineralizada. \\[0.5em]
+
+\textbf{9.} En el anexo \ref{diseno del control de temp} se reporta el diseño del control de temperatura para este pretratamiento.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Hidrólisis y fermentación en etapas simultaneas}
+
+Para la SSF se consideraron los datos del apartado del diseño factorial, a continuación se presenta la lista de materiales y el procedimiento para la producción de bietanol 2G.
+\\
+\textbf{Compuestos} \\[0.5em]
+
+\begin{tabular}{p{0.3\textwidth}p{0.3\textwidth}p{0.3\textwidth}}	 
+	$\bullet$ \textit{Agua desmineralizada} & $\bullet$ \textit{Enzimas Cellic Ctec 2}  & $\bullet$ \textit{Levadura activa} \\
+	$\bullet$ \textit{Ácido Cítrico} & $\bullet$ \textit{Bagazo de caña Pretratado} & \\
+	
+\end{tabular}
+
+
+\textbf{Materiales} 
+
+\begin{tabular}{p{0.3\textwidth}p{0.3\textwidth}p{0.3\textwidth}}
+	$\bullet$ \textit{Cinta de teflón} & $\bullet$ \textit{Algodón } & $\bullet$ \textit{ Papel aluminio} \\
+	$\bullet$ \textit{Cinta térmica}  & $\bullet$ \textit{Vaso de precipitado} &
+\end{tabular}
+\\[0.5em]
+
+ \textbf{Procedimiento}
+\\[0.5em]	 
+\textbf{1.}  El reactor tipo batch, previamente lavado, fue desinfectado con agua desmineralizada y se procedió a sellar herméticamente su base para garantizar condiciones estériles antes de iniciar el proceso, evitando así cualquier contaminación externa que pueda afectar la reacción.\\[0.5em]
+
+
+\textbf{2.} Cada reactivo (ácido cítrico, levadura activa) se pesó individualmente usando una báscula digital calibrada y un vaso de precipitado estéril, mientras que el agua se midió volumétricamente, ajustando las cantidades según los parámetros establecidos en el diseño de experimentos para garantizar la reproducibilidad del proceso y la trazabilidad de los datos. Ver Figura\ref{pesado2}.
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=3cm, height=3cm]{imagenes/agua} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{ Agua desmineralizada que ayudara a limpiar el reactor.}
+		\label{agua}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=4cm, height=3cm]{imagenes/levadura y acido citrico} % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{Levadura y ácido cítrico.}
+		\label{pesado2}
+	\end{minipage}
+\end{figure}
+
+	 
+\textbf{3.} En el interior del reactor tipo batch se depositaron el agua desmineralizada y el bagazo de caña previamente pretratado, siguiendo las proporciones establecidas en el protocolo experimental (como se ilustra en la Figura \ref{ hidrolisis}), asegurando una distribución homogénea de los componentes que garantizara las condiciones requeridas para la reacción.
+
+\textbf{4.} Al reactor tipo batch conteniendo el bagazo de caña pretratado y el agua desmineralizada se le adicionó la levadura activa previamente pesada (ver Figura \ref{hidrolisis4}), la cual se mezcló homogéneamente hasta lograr su completa incorporación al medio de reacción. 
+
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=3cm, height=3cm]{imagenes/hidrolisis1} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{ Reactor con bagazo previamente pretratado.}
+		\label{ hidrolisis}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=4cm, height=3cm]{imagenes/hidrolisis4 } % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{La levadura se agrega al reactor.}
+		\label{hidrolisis4}
+	\end{minipage}
+\end{figure}
+
+
+\textbf{5.} Con ayuda de una micropipeta calibrada se midieron los mililitros exactos de la enzima Cellic CTec2 según el diseño de experimentos, la cual se añadió al sistema y se mezcló meticulosamente hasta su completa integración (Figura \ref{hidrolisis9}), asegurando la actividad enzimática óptima	\\ 
+
+
+\textbf{6.} El pH de la mezcla se midió utilizando un medidor de pH Hanna Instruments previamente calibrado, introduciendo el electrodo en la solución y agitando suavemente para obtener una lectura estable; dependiendo del resultado, se añadió gradualmente ácido cítrico en cantidades pesadas con precisión, monitoreando el cambio en el pH después de cada adición hasta alcanzar el valor deseado según los parámetros establecidos en el diseño experimental, ver figura \ref{hidrolisis3}.
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/hidrolisis9} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{ Se agrega la enzima al reactor con ayuda de la micropipeta. }
+		\label{hidrolisis9}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/hidrolisis3 } % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{ Se mide el ph de la mezcla con ayuda del medidor hanna instruments.}
+		\label{hidrolisis3}
+	\end{minipage}
+\end{figure}
+
+  \textbf{7.} El reactor tipo batch se selló herméticamente utilizando algodón y papel aluminio (ver Figura \ref{hidrolisis 6}), y se instaló una trampa de aire compuesta por una manguera insertada en uno de los orificios de la tapa del reactor. Para garantizar un cierre seguro y evitar fugas, se reforzó la conexión entre la manguera y la tapa con cinta adhesiva. El extremo libre de la manguera se sumergió en una cubeta con agua, permitiendo la liberación controlada del dióxido de carbono generado durante la reacción, al mismo tiempo que impidió la entrada de oxígeno al sistema. Este diseño asegura un ambiente anaeróbico adecuado para el proceso.
+\\[0.5em]
+
+\textbf{8.} Se inició el sistema de control para la SSF, ajustando los parámetros de tiempo y temperatura según las condiciones predefinidas en el diseño experimental (ver apartado \ref{SacariSF}), garantizando así las condiciones adecuadas para el proceso. Ver Figura \ref{hidrolisis 8} para observar la estructura y conexiones.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.46\textwidth}
+		\centering
+		\includegraphics[width=5cm, height=3cm]{imagenes/hidrolisis 6} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\caption{ El algodón es colocado entre la tapa para tratar de que el reactor sea lo mas hermético posible. }
+		\label{hidrolisis  6}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=3cm, height=3cm]{imagenes/conexion de hidrolisis } % Cambia "imagen2.jpg" por el nombre de tu archivo
+		\caption{ Puesta en marcha del control en la etapa de SSF en un reactor tipo batch.}
+		\label{hidrolisis 8}
+	\end{minipage}
+\end{figure}
+
+
+  	
+\textbf{9.} Finalizado el proceso de SSF, se determina el pH final del producto (Figura \ref{hidrolisis 7}) y se transfiere a recipientes herméticos, los cuales se almacenan a temperaturas inferiores a 30 °C para preservar las muestras hasta la cuantificación del contenido alcohólico con ayuda de un refractometro manual. Finalmente el reactor tipo batch es lavado con agua desmineralizada.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=5cm, height=3cm]{imagenes/hidrolisis7}
+	\caption{ Medición del ph de la mezcla después de la SSF.}
+	\label{hidrolisis 7}
+\end{figure}
+
+
+\textbf{10.} El diseño del control del proceso SSF se reporta en el anexo \ref{diseno del control de temp}.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CAPÍTULO 4
 \singlespacing
 \chapter{Resultados experimentales del proceso de producción de bioetanol 2 G con pretratamiento Alcalino  y Biológico}
@@ -1401,11 +1881,72 @@ El tiempo de pretratamiento para las pruebas anteriores fue 5 días.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{ Hidrólisis y fermentación para pretratamiento Alcalino}
+Inicialmente se definió un tiempo para el pretratamiento alcalino según lo recomendado por \cite{Arturo2022evaluacion}, quien consideró condiciones reportadas en la literatura. En la práctica, ya que el proceso se llevó a cabo en la presente tesis usando un reactor más grande que el empleado en el trabajo de referencia, el control de temperatura se volvió crítico. El control de temperatura que fue implementado tiene un tiempo de establecimiento relativamente grande, durante el cual la temperatura no se encuentra todavía en la referencia. Un supuesto fue que un tiempo de pretratamiento más largo permitiría operar por más tiempo el reactor con la temperatura controlada, y que esta etapa podría resultar más efectiva. En concreto, como segunda condición se definió un tiempo de pretratamiento de 7870, manejando partículas de bagazo de caña de 1 mm hasta 10 cm. Los tamaños considerados fueron iguales al caso previo con pretratamiento biológico, se manejaron tamaños no uniformes de bagazo (TNUB) y partículas de 1 cm. En la Tabla \ref{Pretratamiento Alcalino} se muestran las condiciones de los 12 experimentos diseñados, indicando la energía consumida en cada una de las pruebas, expresada en unidades de kWh, la cual fue leída de un watimetro. Esta energía también corresponde al consumo debido al calentamiento del reactor, sumando específicamente el consumo de la resistencia de calentamiento y del convertidor del control durante el pretratamiento.
+
+
+
+\begin{table}[H]
+	\centering
+	\caption{Preubas experimentales con pretratamiento alcalino}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{Núm de} & \textbf{Temperatura} & \textbf{Tamaño de } & \textbf{Tiempo} & \textbf{Consumo } \\ 
+		\textbf{de experimento}	&\textbf{ (°C)}&\textbf{ bagazo}  &\textbf{(s)}	&\textbf{ energético (kWh)}\\ \hline
+		1 & \multirow{4}{*}{95} & \multirow{2}{*}{TNUB} & 5400 & 0.66  \\ \cline{1-1} \cline{4-5}
+		2 &  &  & 7870 & 0.81  \\ \cline{3-5}  \cline{1-1} 
+		3 &  & \multirow{2}{*}{1 cm} & 5400 & 0.74 \\  \cline{1-1} \cline{4-5}
+		4 &  &  & 7870 & 0.86 \\ \cline{1-1}  \hline
+		5 & \multirow{4}{*}{90}& \multirow{2}{*}{TNUB} & 5400 & 0.71  \\ \cline{1-1}  \cline{4-5}
+		6 &  &  & 7870 & 0.7  \\ \cline{1-1} \cline{3-5}
+		7 &  & \multirow{2}{*}{1 cm} & 5400 & 0.74 \\ \cline{1-1}\cline{4-5}
+		8 &  &  & 7870 & 0.6 \\ \hline
+		9 & \multirow{4}{*}{80} & \multirow{2}{*}{TNUB} & 5400 & 0.67  \\ \cline{1-1}\cline{4-5}
+		10 &  &  & 7870 & 0.63  \\ \cline{1-1} \cline{3-5}
+		11 &  &\multirow{2}{*}{1 cm} & 5400 & 0.78 \\ \cline{1-1}\cline{4-5}
+		12 &  &  & 7870 & 0.8 \\ \hline
+	\end{tabular}
+	\label{Pretratamiento Alcalino}
+\end{table}
+
+	\subsection{Resultados experimentales del proceso de producción de bioetanol en la etapa de hidrólisis y fermentación utilizando diferentes tipos de pretratamiento}
+A continuación se presentan los resultados de las pruebas experimentales de la etapa SSF. Los datos reportados son la cantidad de alcohol obtenida, así como el consumo energético para las dos etapas del proceso .
+
+\subsubsection{ Hidrólisis y fermentación para pretratamiento Biológico}
+
+Cada pretratamiento realizado fue seguido de una hidrólisis y fermentación simultáneas. En la Tabla \ref{ssf Pretratamiento Biologico} se presentan las condiciones de las 6 pruebas con pretratamiento biológico de la biomasa. De las pruebas se registró la energía consumida por etapa, dada en kWh, y el contenido de ethanol en el producto.
+
+\begin{table}[H]
+	\centering
+	\caption{SSF con pretratamiento biológico.}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{Núm }& \textbf{Temperatura}  & \textbf{Tamaño} & \textbf{Consumo } & \textbf{Consumo }  & \textbf{Producción} \\ 
+		\textbf{de}&\textbf{(°C)} &\textbf{de bagazo} & \textbf{energético} & \textbf{energético }&\textbf{de alcohol}\\ 
+		\textbf{exp.}&& & \textbf{ pretrata (kWh)} & \textbf{ SSF (kWh)}&\textbf{(\%)}\\ \hline
+		
+		1 & \multirow{2}{*}{45} & TNUB & 4.55 & 2.8  & 11.5 \\ \cline{1-1} \cline{3-6}
+		2 &                     & 1 cm & 3.81 & 2.7  & 14 \\ \hline
+		3 & \multirow{2}{*}{40} & TNUB & 2.77 & 2.56 & 11 \\ \cline{1-1} \cline{3-6}
+		4 &                     & 1 cm & 2.81 & 1.74  & 11 \\  \hline
+		5 & \multirow{2}{*}{30} & TNUB & 4.55 &2.7  & 11 \\ \cline{1-1} \cline{3-6}
+		6 &                     & 1 cm & 1.11 &3.01 & 11 \\ \hline
+	\end{tabular}
+	\label{ssf Pretratamiento Biologico}
+\end{table}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{ Hidrólisis y fermentación para pretratamiento Alcalino}
 
 Para las pruebas de SSF con bagazo pretratado con hidróxido de sodio, se utilizó lo reportado en el diseño de experimentos en el apartado \ref{SacariSF}, la Tabla \ref{ssf con Pretratamiento Alcalino}  muestra las pruebas con bagazo de 1 mm hasta 10 cm y 1 cm como tamaño de partícula. De las pruebas podemos observar que el cambio de temperatura del pretratamiento si influye en el resultado de la producción de bioetanol.
 
 
-\begin{table}[h!]
+\begin{table}[H]
 	\centering
 	\caption{SSF con pretratamiento alcalino.}
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -1431,6 +1972,8 @@ Para las pruebas de SSF con bagazo pretratado con hidróxido de sodio, se utilizó
 
 
 Como podemos observar en la Tabla \ref{ssf con Pretratamiento Alcalino} se realizaron 10 pruebas de las 12 planeadas debido a un problema con los insumos y el biorreactor, sin embargo podemos concluir que un tiempo de 7870 mejora la producción de bioetanol.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 \subsection{Costos en la producción de bioetanol}
@@ -1653,8 +2196,121 @@ Clasificando las pruebas experimentales en pretratamientos realizados anteriorme
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{ Conclusión y comparación}
+\chapter{Comparativa de los resultados experimentales}
 
+Para obtener un panorama general sobre los resultados del trabajo experimental, en la Tabla \ref{energi_2} se muestra el promedio de los datos de precios, gasto energético y la producción de bioetanol 2G para cada pretratamiento. La comparación de esta información ayuda a determinar cuál pretratamiento puede ser más conveniente en función de la relación entre producción y costos.
+
+
+\begin{table}[H]
+	\centering
+	\caption{Comparativa del gasto energético.}
+	\label{energi_2}
+	{\fontsize{8}{11}\selectfont
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			\textbf{Prueba} & \textbf{Total de costo por} &\textbf{ Gasto energético}  & \textbf{Gasto total} & \textbf{Producción de} \\ 
+			~ &  \textbf{pretratamiento} & \textbf{ promedio (\$ USD)} & \textbf{  (\$ USD)} &\textbf{  alcohol obtenido (\%)  }\\ \hline
+			
+			
+			Pretratamiento biológico, &  \multirow{2}{*}{20.13} & \multirow{2}{*}{0.33}&\multirow{2}{*}{19.58} & \multirow{2}{*}{11.15}  \\ 
+			SSF Y acondicionamiento &  &&&   \\ \hline
+			
+			
+			Pretratamiento alcalino, &  \multirow{2}{*}{25.09} & \multirow{2}{*}{0.18}&\multirow{2}{*}{24.49} & \multirow{2}{*}{12.8}  \\ 
+			SSF Y acondicionamiento &  &&&   \\ \hline
+			
+			
+	\end{tabular}	}
+\end{table}
+
+
+
+
+
+
+A continuación, se muestra la producción de alcohol obtenida para el proceso con pretratamiento biológico. En la primera gráfica se observa un cambio significativo en la producción al variar la temperatura, lo que indica una clara influencia de este parámetro. Por otro lado, en la segunda gráfica no se detectan variaciones en la producción, a pesar de que la temperatura haya sido modificada, lo que sugiere que, bajo esas condiciones, tiene menor influencia en el rendimiento del proceso.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{8 cm}
+		\includegraphics[width=9cm, height=6.2cm]{imagenes/biologico_11}
+		\caption{Producción de bioetanol con pretratamiento biológico con bagazo de caña  de TNUB.}
+		\label{fig:imagen1}
+	\end{subfigure}
+	\hfill % Espacio horizontal entre imágenes
+	\begin{subfigure}[b]{8 cm}
+		\includegraphics[width=9cm, height=6.2cm]{imagenes/biologico_TNUB}
+		\caption{Producción de bioetanol con pretratamiento biológico con bagazo de caña de 1 cm.}
+		\label{fig:imagen2}
+	\end{subfigure}
+	\caption{Producción de bioetanol con pretratamiento biológico.}
+	\label{fig:pareja}
+\end{figure}
+
+
+
+
+
+Para el pretratamiento alcalino se observa que al utilizar TNUB (tamaño no uniforme de biomasa), la variación de temperatura no genera cambios significativos en el proceso. Sin embargo, al emplear un tamaño de partícula de 1 cm, se detectan diferencias notables en el rendimiento, especialmente a una temperatura de 90 °C, donde se registra un impacto significativo en la producción de bioetanol 2G. Para ello podemos ver la Figura \ref{produccion}.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.48\textwidth}
+		\includegraphics[width=\linewidth]{imagenes/alcalino_TNUB.png}
+		\caption{Producción de bioetanol con pretratamiento alcalino con bagazo de caña de TNUB.}
+		\label{bipoo}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+		\includegraphics[width=\linewidth]{imagenes/alcalino_1cm.png}
+		\caption{Producción de bioetanol con pretratamiento alcalino con bagazo de caña de 1 cm.}
+		\label{fig:imagen11}
+	\end{subfigure}
+	\caption{Producción de bioetanol con pretratamiento alcalino.}
+	\label{produccion}
+\end{figure}
+
+
+Para analizar el consumo energético promedio en cada etapa del proceso, la Figura \ref{grafica3} muestra un comparativo detallado entre los dos tipos de pretratamiento evaluados ( pretratamiento biológico,pretratamiento alcalino), además, se incluye a la vez una comparación entre los dos tamaños de partícula estudiados (TNUB y 1 cm).
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=16cm, height=7cm]{imagenes/consumoenergetico}
+	\caption{Consumo energético para los dos tipos de pretratamiento. }
+	\label{grafica3}
+\end{figure}
+
+Los resultados presentados en la Figura \ref{grafica1} permiten establecer que el pretratamiento biológico demanda un consumo energético 3.7 veces superior al requerido por el pretratamiento alcalino. No obstante, el menor costo unitario por kWh asociado al proceso biológico mitiga sustancialmente su impacto económico global, manteniendo su competitividad como alternativa viable.
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=16cm, height=7cm]{imagenes/CONSUMOENERGETICOSSF}
+	\caption{Consumo energético para SSF. }
+	\label{grafica1}
+\end{figure}
+
+
+Los resultados indican que, durante la SSF, el consumo energético en promedio presentó variaciones mínimas. Este comportamiento podría atribuirse a la influencia del cambio en la temperatura ambiental durante el proceso, ya que las condiciones del lugar posiblemente generan ligeras pérdidas que a su vez implican una demanda ligeramente superior de energía.
+En cuanto al costo de producción, en la Figura \ref{grafica} podemos observar el costo total de producción de bioetanol 2G, clasificado por el pretratamiento utilizado, que se obtiene sumando el costo del insumo, el consumo energético promedio y el costo del acondicionamiento del pretratamiento y la SSF.
+
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=16cm, height=7cm]{imagenes/costos}
+	\caption{Costo de los insumos y consumo energético para SSF. }
+	\label{grafica}
+\end{figure}
+%%%%%%%
+\subsubsection{Relación costo producción}
+De acuerdo con las observaciones hechas a partir de las tablas antes presentadas, podemos discutir varios aspectos relevantes. En primer lugar, el pretratamiento que produce mayor rendimiento de bioetanol de segunda generación es el alcalino, alcanzando un máximo del 17\% de bioetanol. Sin embargo, al compararlo con el pretratamiento biológico ( cuyo máximo rendimiento fue del 14\% ) encontramos que el costo del pretratamiento alcalino resulta 3.7 veces superior al del tratamiento biológico.
+
+Por lo tanto, el pretratamiento más conveniente desde un punto de vista económico y operativo es el biológico. Aunque presenta un rendimiento ligeramente menor, la diferencia porcentual del contenido de etanol en el producto proveniente de ambos métodos es menor que la diferencia de costo de producción del bioetanol 2G obtenido por estos. Por otro lado, aun quedan por explorar diferentes configuraciones del proceso con tratamiento biológico que pudieran permitir incrementar el contenido de bioetanol en producto. Este es un método que hasta el momento no se ha usado para la producción de bioetanol (ya que originalmente fue propuesto para producir hidrógeno) y aun quedan por analizar más extensamente los efectos de las condiciones de operación.
+
+Respecto a la comparativa de los tamaños de bagazo, los datos muestran que el uso de bagazo de caña de diferentes tamaños genera una menor producción de bioetanol. En consecuencia, la combinación óptima consiste en utilizar un pretratamiento biológico con bagazo de 1 cm, lo que proporciona la mejor relación costo-producción.
+
+
+%hacer de las tablas el nombre mas grande ................
 
 
 
@@ -1664,8 +2320,18 @@ Clasificando las pruebas experimentales en pretratamientos realizados anteriorme
 
 \singlespacing
 \chapter{Conclusiones y trabajos futuros}
+
+\singlespacing
 \section{Conclusiones}
 \onehalfspacing
+
+Con respecto a lo mencionado anteriormente podemos concluir que en el pretratamiento biológico existe un cambio modificando el tamaño de partícula, así como la temperatura con mayor producción es de 45°.
+Para el pretratamiento alcalino podemos observar que un tiempo de  5400 s no presenta cambios en la producción de bioetanol, aun modificando el tamaño de partícula y la temperatura. En general, se puede concluir que, aunque el pretratamiento con hidróxido de sodio genera una mayor producción promedio de bioetanol en comparación con el humus de lombriz, la diferencia en rendimiento no justifica necesariamente su uso frente al pretratamiento biológico. Este último permite obtener una producción similar con un costo aproximadamente 5 dólares menor, además de presentar una ventaja ambiental clave: no contamina de la misma manera que el hidróxido de sodio, lo que lo convierte en una alternativa más sostenible.
+
+Por otro lado, al evaluar las variables de procesamiento, se observa que el tamaño de partícula de 1 cm en el bagazo es el que proporciona la mayor producción de bioetanol, lo que refuerza la viabilidad del pretratamiento biológico como método eficiente y ecológico para la producción de bioetanol de segunda generación (2G).
+
+En resumen, el pretratamiento con humus de lombriz no solo resulta económicamente favorable, sino también ambientalmente responsable, posicionándose como una opción prometedora para la industria del bioetanol 2G.
+
 
 
 
@@ -1679,7 +2345,7 @@ Clasificando las pruebas experimentales en pretratamientos realizados anteriorme
 %\end{itemize}
 
 
-
+%
 %\bibliographystyle{apalike}
 %\bibliography{bibliografia}
 %\addcontentsline{toc}{chapter}{Bibliografía}
