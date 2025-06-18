@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {2.1.3}Bagazo de ca\~na}{10}{}%
 \contentsline {subsection}{\numberline {2.1.4}Pretratamientos}{10}{}%
 \contentsline {subsection}{\numberline {2.1.5} Sacarificaci\'on enzim\'atica de la biomasa pretratada y la fermentaci\'on}{12}{}%
-\contentsline {subsection}{\numberline {2.1.6}Sacarificaci\'on y fermentaci\'on simultanea}{13}{}%
+\contentsline {subsection}{\numberline {2.1.6}Sacarificaci\'on y fermentaci\'on simult\'anea}{13}{}%
 \contentsline {section}{\numberline {2.2}Estado del arte}{14}{}%
 \contentsline {subsection}{\numberline {2.2.1}Tecnolog\IeC {\'\i }a de bioetanol de segunda generaci\'on.}{15}{}%
 \contentsline {subsection}{\numberline {2.2.2}Pretratamientos.}{15}{}%
@@ -53,13 +53,13 @@
 \contentsline {subsubsection}{Variables}{44}{}%
 \contentsline {subsubsection}{Dise\~no experimental del pretratamiento Biol\'ogico}{45}{}%
 \contentsline {subsubsection}{ Dise\~no experimental del pretratamiento Alcalino}{47}{}%
-\contentsline {subsubsection}{Dise\~no de experimentos para la configuraci\'on: sacarificaci\'on y fermentaci\'on simultaneas (SSF)}{48}{}%
+\contentsline {subsubsection}{Dise\~no de experimentos para la configuraci\'on: sacarificaci\'on y fermentaci\'on simult\'aneas (SSF)}{48}{}%
 \contentsline {chapter}{\numberline {5}Pruebas experimentales}{50}{}%
 \contentsline {section}{\numberline {5.1}Pre-Pretratamiento}{50}{}%
 \contentsline {section}{\numberline {5.2}Pretratamiento Biol\'ogico}{52}{}%
 \contentsline {subsubsection}{Pretratamiento Alcalino}{55}{}%
 \contentsline {subsubsection}{Acondicionamiento para el material pretratado}{57}{}%
-\contentsline {subsubsection}{Hidr\'olisis y fermentaci\'on en etapas simultaneas}{60}{}%
+\contentsline {subsubsection}{Hidr\'olisis y fermentaci\'on en etapas simult\'aneas}{60}{}%
 \contentsline {chapter}{\numberline {6}Resultados experimentales del proceso de producci\'on de bioetanol 2 G con pretratamiento Alcalino y Biol\'ogico}{64}{}%
 \contentsline {subsubsection}{Pretratamiento Biol\'ogico}{64}{}%
 \contentsline {subsubsection}{ Hidr\'olisis y fermentaci\'on para pretratamiento Alcalino}{65}{}%
