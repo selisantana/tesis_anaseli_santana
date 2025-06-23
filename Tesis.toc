@@ -17,19 +17,20 @@
 \contentsline {subsection}{\numberline {2.1.1}Bioetanol de segunda generaci\'on}{9}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}lignocelulosa}{10}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Bagazo de ca\~na}{10}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Pretratamientos}{10}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5} Sacarificaci\'on enzim\'atica de la biomasa pretratada y la fermentaci\'on}{12}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.4}Pretratamientos}{11}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5} Sacarificaci\'on enzim\'atica de la biomasa pretratada y la fermentaci\'on}{13}{subsection.2.1.5}%
 \contentsline {subsection}{\numberline {2.1.6}Sacarificaci\'on y fermentaci\'on simult\'anea}{13}{subsection.2.1.6}%
-\contentsline {section}{\numberline {2.2}Estado del arte}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.1.7}Sistema: Entrada de la Se\~nal PRBS}{14}{subsection.2.1.7}%
+\contentsline {section}{\numberline {2.2}Estado del arte}{15}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Tecnolog\IeC {\'\i }a de bioetanol de segunda generaci\'on.}{15}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Pretratamientos.}{15}{subsection.2.2.2}%
-\contentsline {subsubsection}{Pretratamiento Biol\'ogico}{15}{section*.15}%
-\contentsline {subsubsection}{Pretratamiento Alcalino}{15}{section*.16}%
-\contentsline {subsubsection}{Otros pretratamientos}{16}{section*.17}%
-\contentsline {subsection}{\numberline {2.2.3}Configuraciones en la producci\'on de bioetanol}{17}{subsection.2.2.3}%
-\contentsline {subsubsection}{Sacarificaci\'on enzim\'atica de la biomasa pretratada y la fermentaci\'on separadas}{17}{section*.18}%
-\contentsline {subsubsection}{Sacarificaci\'on y fermentaci\'on simult\'aneas}{17}{section*.19}%
-\contentsline {subsection}{\numberline {2.2.4}Producci\'on de bioetanol de segunda generaci\'on en reactores tipo Batch}{17}{subsection.2.2.4}%
+\contentsline {subsubsection}{Pretratamiento Biol\'ogico}{15}{section*.16}%
+\contentsline {subsubsection}{Pretratamiento Alcalino}{16}{section*.17}%
+\contentsline {subsubsection}{Otros pretratamientos}{16}{section*.18}%
+\contentsline {subsection}{\numberline {2.2.3}Configuraciones en la producci\'on de bioetanol}{18}{subsection.2.2.3}%
+\contentsline {subsubsection}{Sacarificaci\'on enzim\'atica de la biomasa pretratada y la fermentaci\'on separadas}{18}{section*.19}%
+\contentsline {subsubsection}{Sacarificaci\'on y fermentaci\'on simult\'aneas}{18}{section*.20}%
+\contentsline {subsection}{\numberline {2.2.4}Producci\'on de bioetanol de segunda generaci\'on en reactores tipo Batch}{18}{subsection.2.2.4}%
 \contentsline {chapter}{\numberline {3}Instrumentaci\'on del sistema y control }{19}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Planta: Adaptaci\'on del biorreactor}{19}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Biorreactor}{20}{subsection.3.1.1}%
@@ -38,45 +39,47 @@
 \contentsline {section}{\numberline {3.2}Configuraci\'on de sensores de temperatura}{24}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1} Programa para poder leer las temperaturas}{25}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Convertidor: dise\~no y construcci\'on}{25}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3} Descripci\'on del Sistema de control de temperatura dentro del reactor }{27}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Sistema identificado y control}{28}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Se\~nal PWM}{29}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Pruebas para observar el comportamiento del sistema con PWM}{30}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Se\~nal PRBS}{34}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Respuesta de la planta aplicando una Se\~nal PRBS}{35}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Identificaci\'on del sistema de la planta}{37}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}Control PID}{38}{subsection.3.4.6}%
-\contentsline {section}{\numberline {3.5}Descripci\'on del Sistema de control de temperatura dentro del reactor }{40}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Pretratamiento }{40}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Hidr\'olisis y fermentaci\'on}{41}{subsection.3.5.2}%
-\contentsline {chapter}{\numberline {4}Dise\~no de experimentos}{42}{chapter.4}%
-\contentsline {subsubsection}{Variables}{42}{section*.54}%
-\contentsline {subsubsection}{Dise\~no experimental del pretratamiento Biol\'ogico}{43}{section*.55}%
-\contentsline {subsubsection}{ Dise\~no experimental del pretratamiento Alcalino}{44}{section*.59}%
-\contentsline {subsubsection}{Dise\~no de experimentos para la configuraci\'on: sacarificaci\'on y fermentaci\'on simult\'aneas (SSF)}{47}{section*.63}%
-\contentsline {chapter}{\numberline {5}Pruebas experimentales}{48}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Pre-Pretratamiento}{48}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Pretratamiento Biol\'ogico}{50}{section.5.2}%
-\contentsline {subsubsection}{Pretratamiento Alcalino}{53}{section*.72}%
-\contentsline {subsubsection}{Acondicionamiento para el material pretratado}{55}{section*.77}%
-\contentsline {subsubsection}{Hidr\'olisis y fermentaci\'on en etapas simult\'aneas}{58}{section*.82}%
-\contentsline {chapter}{\numberline {6}Resultados experimentales del proceso de producci\'on de bioetanol 2 G con pretratamiento Alcalino y Biol\'ogico}{62}{chapter.6}%
-\contentsline {subsubsection}{Pretratamiento Biol\'ogico}{62}{section*.88}%
-\contentsline {subsubsection}{ Hidr\'olisis y fermentaci\'on para pretratamiento Alcalino}{63}{section*.90}%
-\contentsline {subsection}{\numberline {6.0.1}Resultados experimentales del proceso de producci\'on de bioetanol en la etapa de hidr\'olisis y fermentaci\'on utilizando diferentes tipos de pretratamiento}{64}{subsection.6.0.1}%
-\contentsline {subsubsection}{ Hidr\'olisis y fermentaci\'on para pretratamiento Biol\'ogico}{64}{section*.92}%
-\contentsline {subsubsection}{ Hidr\'olisis y fermentaci\'on para pretratamiento Alcalino}{65}{section*.94}%
-\contentsline {subsection}{\numberline {6.0.2}Costos en la producci\'on de bioetanol}{66}{subsection.6.0.2}%
-\contentsline {subsubsection}{Costos en la producci\'on de bioetanol solo para pretratamiento biol\'ogico}{66}{section*.96}%
-\contentsline {subsubsection}{Costos en la producci\'on de bioetanol con pretratamiento Alcalino }{67}{section*.99}%
-\contentsline {subsubsection}{Costos en la producci\'on de bioetanol en la etapa de hidr\'olisis y fermentaci\'on}{68}{section*.102}%
-\contentsline {chapter}{\numberline {7}Comparativa de los resultados experimentales}{70}{chapter.7}%
-\contentsline {subsubsection}{Relaci\'on costo producci\'on}{74}{section*.112}%
-\contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{75}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Conclusiones}{75}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Trabajos futuros}{75}{section.8.2}%
-\contentsline {chapter}{Anexo A}{76}{chapter*.113}%
-\contentsline {section}{\numberline {8.3} Instalaci\'on del sistema operativo en la Raspberry }{76}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1} Actualizaci\'on del sistema operativo}{76}{subsection.8.3.1}%
-\contentsline {chapter}{Anexo B}{78}{chapter*.117}%
-\contentsline {section}{\numberline {8.4}Programa para la lectura de la temperatura para los sensores DHT11 y termopar tipo k}{78}{section.8.4}%
+\contentsline {section}{\numberline {3.3}Sistema: Entradas en la planta}{26}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Sistema: Identificaci\'on del sistema y control}{27}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Se\~nal PWM}{27}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Pruebas para observar el comportamiento del sistema con PWM}{28}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Sistema: Entrada de la Se\~nal PRBS}{33}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Respuesta de la planta aplicando una Se\~nal PRBS}{33}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Identificaci\'on del sistema de la planta}{35}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Control PID}{36}{subsection.3.4.6}%
+\contentsline {section}{\numberline {3.5} Descripci\'on del Sistema de control de temperatura dentro del reactor }{38}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Descripci\'on del Sistema de control de temperatura dentro del reactor }{40}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Pretratamiento }{40}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Hidr\'olisis y fermentaci\'on}{41}{subsection.3.6.2}%
+\contentsline {chapter}{\numberline {4}Dise\~no de experimentos}{43}{chapter.4}%
+\contentsline {subsubsection}{Variables}{43}{section*.55}%
+\contentsline {subsubsection}{Dise\~no experimental del pretratamiento Biol\'ogico}{44}{section*.56}%
+\contentsline {subsubsection}{ Dise\~no experimental del pretratamiento Alcalino}{46}{section*.60}%
+\contentsline {subsubsection}{Dise\~no de experimentos para la configuraci\'on: sacarificaci\'on y fermentaci\'on simult\'aneas (SSF)}{48}{section*.64}%
+\contentsline {chapter}{\numberline {5}Pruebas experimentales}{50}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Pre-Pretratamiento}{50}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Pretratamiento Biol\'ogico}{52}{section.5.2}%
+\contentsline {subsubsection}{Pretratamiento Alcalino}{55}{section*.73}%
+\contentsline {subsubsection}{Acondicionamiento para el material pretratado}{57}{section*.78}%
+\contentsline {subsubsection}{Hidr\'olisis y fermentaci\'on en etapas simult\'aneas}{60}{section*.83}%
+\contentsline {chapter}{\numberline {6}Resultados experimentales del proceso de producci\'on de bioetanol 2 G con pretratamiento Alcalino y Biol\'ogico}{64}{chapter.6}%
+\contentsline {subsubsection}{Pretratamiento Biol\'ogico}{64}{section*.89}%
+\contentsline {subsubsection}{ Hidr\'olisis y fermentaci\'on para pretratamiento Alcalino}{65}{section*.91}%
+\contentsline {subsection}{\numberline {6.0.1}Resultados experimentales del proceso de producci\'on de bioetanol en la etapa de hidr\'olisis y fermentaci\'on utilizando diferentes tipos de pretratamiento}{66}{subsection.6.0.1}%
+\contentsline {subsubsection}{ Hidr\'olisis y fermentaci\'on para pretratamiento Biol\'ogico}{66}{section*.93}%
+\contentsline {subsubsection}{ Hidr\'olisis y fermentaci\'on para pretratamiento Alcalino}{67}{section*.95}%
+\contentsline {subsection}{\numberline {6.0.2}Costos en la producci\'on de bioetanol}{68}{subsection.6.0.2}%
+\contentsline {subsubsection}{Costos en la producci\'on de bioetanol solo para pretratamiento biol\'ogico}{68}{section*.97}%
+\contentsline {subsubsection}{Costos en la producci\'on de bioetanol con pretratamiento Alcalino }{69}{section*.100}%
+\contentsline {subsubsection}{Costos en la producci\'on de bioetanol en la etapa de hidr\'olisis y fermentaci\'on}{70}{section*.103}%
+\contentsline {chapter}{\numberline {7}Comparativa de los resultados experimentales}{73}{chapter.7}%
+\contentsline {subsubsection}{Relaci\'on costo producci\'on}{77}{section*.113}%
+\contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{78}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Conclusiones}{78}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Trabajos futuros}{78}{section.8.2}%
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{81}{chapter*.114}%
+\contentsline {chapter}{Anexo A}{82}{chapter*.115}%
+\contentsline {section}{\numberline {8.3} Instalaci\'on del sistema operativo en la Raspberry }{82}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1} Actualizaci\'on del sistema operativo}{83}{subsection.8.3.1}%
+\contentsline {chapter}{Anexo B}{84}{chapter*.119}%
+\contentsline {section}{\numberline {8.4}Programa para la lectura de la temperatura para los sensores DHT11 y termopar tipo k}{84}{section.8.4}%

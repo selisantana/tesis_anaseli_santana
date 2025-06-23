@@ -5,56 +5,57 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliografia.bib
-Illegal end of database file---line 963 of file bibliografia.bib
- : @article
- :         
+Warning--entry type for "Perez2024" isn't style-file defined
+--line 139 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 397 of file bibliografia.bib
+ :   
+ :   url        = {iea.org/reports/key-world-energy-statistics-2021},
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "EIA"
-Warning--I didn't find a database entry for "2019"
-Warning--I didn't find a database entry for "zuliani"
-Warning--I didn't find a database entry for "2021"
+Warning--I didn't find a database entry for "Arturo2022evaluacion"
 Warning--I didn't find a database entry for "portalproduccion"
+Warning--I didn't find a database entry for "wang2024theoretical"
 Warning--I didn't find a database entry for "CFE2023"
-Warning--can't use both volume and number fields in Arturo2022evaluacion
-You've used 20 entries,
+Warning--can't use both volume and number fields in Figueroa2022evaluacion
+You've used 23 entries,
             1935 wiz_defined-function locations,
-            613 strings with 9177 characters,
-and the built_in function-call counts, 7885 in all, are:
-= -- 759
-> -- 359
-< -- 9
-+ -- 126
-- -- 122
-* -- 694
-:= -- 1416
-add.period$ -- 60
-call.type$ -- 20
-change.case$ -- 159
-chr.to.int$ -- 20
-cite$ -- 21
-duplicate$ -- 282
-empty$ -- 518
-format.name$ -- 144
-if$ -- 1502
+            634 strings with 9981 characters,
+and the built_in function-call counts, 8878 in all, are:
+= -- 856
+> -- 406
+< -- 11
++ -- 142
+- -- 138
+* -- 775
+:= -- 1605
+add.period$ -- 68
+call.type$ -- 23
+change.case$ -- 183
+chr.to.int$ -- 23
+cite$ -- 24
+duplicate$ -- 317
+empty$ -- 578
+format.name$ -- 163
+if$ -- 1685
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 17
-newline$ -- 102
-num.names$ -- 60
-pop$ -- 124
+missing$ -- 18
+newline$ -- 116
+num.names$ -- 69
+pop$ -- 141
 preamble$ -- 1
-purify$ -- 161
+purify$ -- 184
 quote$ -- 0
-skip$ -- 216
+skip$ -- 244
 stack$ -- 0
-substring$ -- 518
-swap$ -- 31
+substring$ -- 570
+swap$ -- 32
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
+type$ -- 138
 warning$ -- 1
-while$ -- 60
+while$ -- 68
 width$ -- 0
-write$ -- 260
+write$ -- 296
 (There was 1 error message)
