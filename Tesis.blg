@@ -17,45 +17,46 @@ Warning--I didn't find a database entry for "portalproduccion"
 Warning--I didn't find a database entry for "wang2024theoretical"
 Warning--I didn't find a database entry for "CFE2023"
 Warning--can't use both volume and number fields in Figueroa2022evaluacion
-You've used 23 entries,
+Warning--empty journal in Posada2005modulacion
+You've used 25 entries,
             1935 wiz_defined-function locations,
-            634 strings with 9981 characters,
-and the built_in function-call counts, 8878 in all, are:
-= -- 856
-> -- 406
-< -- 11
-+ -- 142
-- -- 138
-* -- 775
-:= -- 1605
-add.period$ -- 68
-call.type$ -- 23
-change.case$ -- 183
-chr.to.int$ -- 23
-cite$ -- 24
-duplicate$ -- 317
-empty$ -- 578
-format.name$ -- 163
-if$ -- 1685
+            649 strings with 10486 characters,
+and the built_in function-call counts, 9544 in all, are:
+= -- 920
+> -- 431
+< -- 12
++ -- 150
+- -- 146
+* -- 831
+:= -- 1726
+add.period$ -- 73
+call.type$ -- 25
+change.case$ -- 197
+chr.to.int$ -- 25
+cite$ -- 27
+duplicate$ -- 344
+empty$ -- 625
+format.name$ -- 173
+if$ -- 1810
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 18
-newline$ -- 116
-num.names$ -- 69
-pop$ -- 141
+missing$ -- 20
+newline$ -- 125
+num.names$ -- 75
+pop$ -- 154
 preamble$ -- 1
-purify$ -- 184
+purify$ -- 198
 quote$ -- 0
-skip$ -- 244
+skip$ -- 265
 stack$ -- 0
-substring$ -- 570
-swap$ -- 32
+substring$ -- 610
+swap$ -- 33
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 138
-warning$ -- 1
-while$ -- 68
+type$ -- 150
+warning$ -- 2
+while$ -- 74
 width$ -- 0
-write$ -- 296
+write$ -- 319
 (There was 1 error message)

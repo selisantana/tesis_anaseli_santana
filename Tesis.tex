@@ -207,14 +207,15 @@ El objetivo es obtener la configuración que proporcione la mayor producción de b
 
 
 
-\singlespacing
+
 \section{Justificación}
-\onehalfspacing
+
 En la última década, se han implementado nuevos métodos para la conservación de nuestro medio ambiente. En las energías limpias se encuentra la producción de combustibles que son considerados como no contaminantes. Este tipo de combustibles se llama biocombustibles. De la producción de biocombustible se deriva la obtención de bioetanol implementado con masa que es tratada como materia desechable. Un ejemplo de ello es el bagazo de caña; este tipo de materia suele ser llamada materia lignocelulosa.
 Ya que este tipo de biomasa es considerada basura, tiene la característica de no generar ningún inconveniente en su uso. Analizando los procesos de producción de biocombustibles, se pueden mejorar las técnicas de pretratamiento para el mayor aprovechamiento de los residuos agrícolas.
-\singlespacing
+
+
 \section{Alcances}
-\onehalfspacing
+
 
 \begin{enumerate}
 	\item Se llevarán a cabo experimentos configurando variables, como la temperatura, en dos pretratamientos, para luego concluir con la caracterización de las variables principales que permitan obtener una mayor producción de biocombustible.
@@ -304,7 +305,7 @@ Ya que no es un componente tóxico, ni contaminante el alcohol etílico contiene p
 \onehalfspacing
 
 \singlespacing
-\subsection{lignocelulosa}
+\subsection{Lignocelulosa}
 \onehalfspacing
 
 Proveniente de la fotosíntesis, la lignocelulosa es uno de los componentes más abundantes y principal de la biomasa, esta forma la pared celular de las plantas. Entre las plantas, la composición y porcentajes de lignocelulosa varían dependiendo de la edad y etapa de crecimiento de las plantas \cite{cuervo2009lignocelulosa}.
@@ -415,17 +416,7 @@ Las enzimas hidrolíticas son adaptables al frío y las levaduras termófilas son i
 \end{figure}
 
 
-\singlespacing
-\subsection{Sistema: Entrada de la Señal PRBS}
-\onehalfspacing
-Una PRBS (Pseudorandom binary sequence) es una señal binaria pseudoaleatoria. Esta utiliza números binarios en una secuencia de bits que aparecen de manera aparentemente aleatoria. Tiene la ventaja de ser sencilla y controlable,\cite{wang2024theoretical}. La señal tiene una forma cuadrada, como se muestra en la Figura \ref{prbs}.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=12cm, height=6cm]{imagenes/PRBS.png}
-	\caption{Señal PRBS. }
-	\label{prbs}
-\end{figure}
 
 
 \section{Estado del arte}
@@ -531,10 +522,10 @@ En otra investigación sobre la producción de bioetanol a partir de la cáscara de
 \section{Planta: Adaptación del biorreactor}
 \onehalfspacing
 
-En el laboratorio de procesos se encuentra un biorreactor que en 2008 fue utilizado para la producción de diésel (ver Figura \ref{Biorreactor}).
+En el laboratorio de procesos se encuentra un biorreactor que en 2008 fue utilizado para la producción de biodiésel (ver Figura \ref{Biorreactor}).
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=6cm, height=7cm]{imagenes/Biorreactor.png}
+	\includegraphics[width=5cm, height=6cm]{imagenes/Biorreactor.png}
 	\caption{Biorreactor utilizado para la producción de biodiésel}
 	\label{Biorreactor}
 \end{figure}
@@ -546,7 +537,7 @@ $10.38 x 10^6  $ $ mm^3$. Dentro de este reactor se llevarán a cabo los pretrata
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm, height=7cm]{imagenes/Reactor.png}
-	\caption{Reactor}
+	\caption{Dimensiones del reactor en milímetros.}
 	\label{Reactor}
 \end{figure}
 
@@ -555,9 +546,8 @@ $10.38 x 10^6  $ $ mm^3$. Dentro de este reactor se llevarán a cabo los pretrata
 \subsection{Biorreactor}
 
 
-La planta consta de un biorreactor que contiene una resistencia que calienta la solución, una estructura que se soldó y modifico para poder adaptar correctamente los sensores y el reactor como lo muestra la figura \ref{fig:soldado1}.
+La planta consta de un biorreactor que contiene una resistencia para calentar la solución, una estructura que se soldó y modificó para adaptar correctamente los sensores tipo K y el tanque agitado con un mezclador, como se muestra en la figura. \ref{fig:soldado1}.
 
-% TODO: \usepackage{graphicx} required
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=6cm, height=7cm]{imagenes/soldado1.png}
@@ -565,50 +555,56 @@ La planta consta de un biorreactor que contiene una resistencia que calienta la 
 	\label{fig:soldado1}
 \end{figure}
 
+La estructura estaba reforzada con barras angulares en forma de "L" que inicialmente se encontraban superpuestas. Para garantizar una mayor estabilidad, estas se soldaron entre sí y se añadieron refuerzos adicionales. Además, se soldó en una parte de la estructura una base para servir como soporte fijo del biorreactor, ya que originalmente este solo estaba colocado sobre él sin ningún soporte.
 
-Para el caso de del reactor se mando a soldar unos tubos que tienen el propósito de mantener los sensores en su lugar, y estos no se enreden con el mezclador. Son tres tubos que tienen un diámetro de 1 cm, estos están distribuidos dentro reactor, como lo muestra la figura \ref{Reactor con 3 tubos.}, cada tubo corresponde a cada sensor dentro del reactor.
-% TODO: \usepackage{graphicx} required
+Para el caso de del tanque agitado, se mandó a soldar unos tubos que tienen el propósito de mantener los sensores en su lugar, y estos no se enreden con el mezclador. Son tres tubos que tienen un diámetro de 1 cm, estos están distribuidos dentro del reactor, como lo muestra la figura \ref{Reactor con 3 tubos.}, cada tubo corresponde a cada sensor dentro del reactor.
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm, height=5cm]{imagenes/reactor_tubos}
+	\includegraphics[width=6.5cm, height=5cm]{imagenes/reactor_tubos}
 	\caption{Tres tubos soldados dentro del reactor.}
 	\label{Reactor con 3 tubos.}
 \end{figure}
 
 
-Otro de los elementos con que cuenta la planta es el mezclador que fue previamente diseñado y construido, este ayuda a mantener una temperatura constante dentro del biorreactor, dado que los tubos dentro del reactor fueron mas grande de lo planeado, se acortaron 2 cm las dimensiones del mezclador, sin embargo esto no influye al momento de mantener la temperatura constante.
 
-Como se realizaron las modificaciones, la planta cuenta con las especificaciones necesarias para realizar los pretratamientos, como se puede observar en la figura \ref{reactorcompleto}.
-% TODO: \usepackage{graphicx} required
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=7cm, height=7cm]{imagenes/reactor_completo}
-	\caption{Planta con los elementos necesarios para realizar los pretratamientos.}
-	\label{reactorcompleto}
-\end{figure}
 
 \subsection{Motor}
 
 
-El tercer elemento que fue modificado del biorreactor fue el motor; el motor de la figura  anterior era de corriente alterna a 127 v, a 50-60 hz, con 142 rpm, lamentablemente no contaba con el torque necesario para mover los 6 l de agua con biomasa bagazo de caña.
+El tercer elemento que fue modificado del biorreactor fue el motor; el motor de la figura  anterior era de corriente alterna a 127 v, a 50-60 hz, con 142 rpm, lamentablemente no contaba con el torque necesario para mover los 6 l de agua con biomasa bagazo de caña como lo muestra la figura .
 
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=5cm, height=7cm, angle=90]{imagenes/motorchico}
+	\caption{Motor que se utilizaba en la producción de biodisel.}
+	\label{motorchico}
+\end{figure}
 
 Se busco uno que tuviera esa capacidad, por lo que se utilizara un motor-reductor que cuente con el torque como el que se muestra en la figura \ref{motorreductor}
 % TODO: \usepackage{graphicx} required
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=5cm, height=7cm, angle=90]{imagenes/motorreductor.png}
+	\includegraphics[width=5cm, height=6cm, angle=90]{imagenes/motorreductor.png}
 	\caption{Moto-reductor}
 	\label{motorreductor}
 \end{figure}
-El motor cuenta con 142 rpm, trabaja a 24 V , trabaja con un torque nominal de 3.9 kN/m, se programo con ayuda de un rele para prender 10 segundos y que se apague otros 10 segundos, con el propósito de observar el comportamiento de la temperatura.
-
+El motor cuenta con una velocidad nominal de 142 rpm, a un voltaje de operación de 24 V, trabaja con un torque nominal de 3.9 kN/m. Se utiliza un relé programable para ciclos de encendido/apagado, donde el motor se mantiene 10 segundos encendido y otros 10 segundos apagado, con el propósito de no mantenerlo en un esfuerzo constante.
 
 
 \subsection{Mezclador}
 \label{Mezclador}
-En el proceso de pretratamiento y en la etapa de hidrólisis y fermentación, se requiere mantener una temperatura constante, así como lograr una mezcla homogénea. Por ello, es esencial contar con un mezclador que posea las características necesarias para homogeneizar todo el compuesto. Anteriormente, el biorreactor contaba con un mezclador, pero lamentablemente se encontraba oxidado y en malas condiciones. Por este motivo, se procedió a su re-diseño (en las imágenes  \ref{Medidas del mezclador vista lateral} se presentan las dimensiones del nuevo mezclador), y se encargó su construcción a un profesional especializado.
+En el proceso de pretratamiento y en la etapa de hidrólisis y fermentación, se requiere mantener una temperatura uniforme dentro del reactor, así como lograr una mezcla homogénea. Por ello, es esencial contar con un mezclador que posea las características necesarias para homogeneizar todo el compuesto. Anteriormente, el biorreactor contaba con un mezclador, pero lamentablemente se encontraba oxidado y en malas condiciones, como se muestra en la figura \ref{Mezclador viejo}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=9cm,height=6cm]{imagenes/mezcladorantiguo}
+	\caption{Mezclador utilizado para la producción de biodisel.}
+	\label{Mezclador viejo}
+\end{figure}
+
+ Por este motivo, se procedió a su re-diseño (en las imágenes  \ref{Medidas del mezclador vista lateral} se presentan las dimensiones del nuevo mezclador), y se encargó su construcción a un profesional especializado.
 
 
 \begin{figure}[H]
@@ -637,19 +633,19 @@ Se construyó en acero inoxidable de acuerdo con las especificaciones, se puede o
 	\label{reactor y mezclador}
 \end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\section{Configuración de sensores de temperatura}
+\section{Adecuación de la planta para control de temperatura}
 \onehalfspacing
 
 \label{diseno del control de temp}
 
-Dado que la temperatura es una variable importante en los pretratamientos y en la etapa de hidrólisis y fermentación, se requiere tomar notas al respecto; en los siguientes apartados se programarán los sensores DHT11, que leerán la temperatura y la humedad en el ambiente, así como un termopar tipo K que medirá la temperatura dentro del biorreactor.
+Dado que la temperatura es una variable importante en los pretratamientos y en la etapa de hidrólisis y fermentación, se requiere tomar un registro de la temperatura durante todo el proceso; en los siguientes apartados se programarán los sensores DHT11, que leerán la temperatura y la humedad en el ambiente, así como un termopar tipo K que medirá la temperatura dentro del biorreactor.
 
 La temperatura ambiente es un elemento importante, dado que puede impactar en la temperatura dentro del reactor. Para tener un mejor control, es necesario que sea monitoreada constantemente durante todo el tiempo que dure el experimento.
 
@@ -664,14 +660,12 @@ La temperatura ambiente es un elemento importante, dado que puede impactar en la
 \end{itemize}
 
 
-La Raspberry Pi es una mini computadora con un sistema operativo tipo Linux. La ventaja de esta es que puede interactuar con el mundo exterior. Para poder realizar el programa que lea los datos y se grafiquen, se configura la Raspberry Pi 3 en dos pasos: instalación del sistema operativo e instalación de las librerías. Después de la instalación, se inicia la programación de los sensores. Para conocer cómo se instaló y actualizó el sistema operativo de la Raspberry Pi 3, así como las librerías que se utilizaron para programar los sensores, consulta el anexo \ref{anexo a}.
+La Raspberry Pi es una mini computadora con un sistema operativo tipo Linux. La ventaja de esta es que puede interactuar con el mundo exterior. Para poder realizar el programa que lea los datos y se grafiquen, se configura la Raspberry Pi 3 en dos pasos: instalación del sistema operativo(Raspberry Pi OS, anteriormente llamado como Raspbian)  e instalación de las librerías (Pandas, Numpy, entre otras). Después de la instalación, se inicia la programación de los sensores. Para conocer cómo se instaló y actualizó el sistema operativo de la Raspberry Pi 3, así como las librerías que se utilizaron para programar los sensores, consulta el anexo \ref{anexo a}.
 
-\subsection{ Programa para poder leer las temperaturas}
-
-
-El programa que leerá los sensores DHT11 y termopar tipo K se detalla en el anexo \ref{anexo B}. Para obtener más información sobre el programa, se presenta el diagrama en la figura \ref{Diagrama1}.
+\subsection{ Lectura y registro de las temperaturas.}
 
 
+El programa que leerá los sensores DHT11 y termopar tipo K se detalla en el anexo \ref{anexo B} donde se menciona el programa completo en lenguaje python, realizado en Raspberry Pi OS. Para obtener más información sobre el programa, se presenta el diagrama en la figura \ref{Diagrama1}.
 
 \begin{figure}[H]
 	\centering
@@ -680,12 +674,11 @@ El programa que leerá los sensores DHT11 y termopar tipo K se detalla en el anex
 	\label{Diagrama1}
 \end{figure}
 
-En el documento CSV se pueden visualizar los datos obtenidos por el termopar tipo K. Se programó para que, cada vez que se cancela la medición, guarde los datos en un documento que nosotros nombramos. Este tipo de archivo puede visualizarse en Excel.
+El programa en general lee la señal mandada por los termopares K, posteriormente esta señal es convertida en un valor de temperatura, otro dato que es leído es la fecha y hora, para posteriormente ser guardado en una tira de datos dentro de un documento con formato CSV, este conteo y guardado se genera cada 5 segundos. Cada vez que los datos son guardados, serán mostrados en la pantalla. Finalmente, cuando interrumpimos manualmente el programa, finalizando el tiempo de pretratamiento, nos muestra una gráfica con los valores y podemos ver el archivo guardado. El archivo CSV puede visualizarse en Excel.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Convertidor: diseño y construcción}
 \onehalfspacing
-
-Dado que la temperatura máxima obtenida con la fuente del laboratorio no era suficiente, se optó por realizar un convertidor que ayudará a transformar de corriente alterna a corriente directa, permitiendo introducir una señal a la resistencia para controlar la temperatura y obtener una función de transferencia mediante identificación. El diseño del convertidor se puede observar en la Figura \ref{convertidor diagrama}.
+Se tiene una resistencia con una potencia de 600 w por lo que se busca que cuando entre la señal de entrada sea suficiente para utilizar la resistencia por lo que se optó por realizar un convertidor que ayudará a aumentar la potencia de entrada. El diseño del convertidor se puede observar en la Figura \ref{convertidor diagrama}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=6.8cm, height=6cm]{imagenes/convertidor diagrama.png}
@@ -693,8 +686,7 @@ Dado que la temperatura máxima obtenida con la fuente del laboratorio no era suf
 	\label{convertidor diagrama}
 \end{figure}
 
-
-Con el diseño del convertidor se procedió a la construcción, se soldó y aisló, como se muestra en la figura \ref{Construccion del convertidor}.
+El convertidor tiene diferentes etapas de trabajo donde primero toma un voltaje externo de corriente alterna (CA) y lo rectifica, convirtiéndolo en corriente directa (CD). Posteriormente, mediante un MOSFET  el voltaje proveniente del ciclo de trabajo es regulado y potenciado. El ciclo de trabajo de la señal PWM es generado por un Arduino, al cual se le incorporaron protecciones para garantizar un funcionamiento seguro y estable. Finalmente, el convertidor entrega un voltaje variable en el rango de 0 a 147 V CD, el cual es aplicado a la resistencia del biorreactor. Este diseño permite uso preciso de la energía mientras protege los componentes electrónicos involucrados.
 
 \begin{figure}[H]
 	\centering
@@ -702,13 +694,23 @@ Con el diseño del convertidor se procedió a la construcción, se soldó y aisló, c
 	\caption{Construcción del convertidor}
 	\label{Construccion del convertidor}
 \end{figure}
-
+Una vez finalizado el diseño del convertidor, se procedió a su implementación física. Durante la etapa de construcción, se realizó el ensamble de los componentes electrónicos, la soldadura cuidadosa de las conexiones y el aislamiento adecuado de los elementos críticos para garantizar la seguridad y el correcto funcionamiento del sistema. El resultado final de este proceso de fabricación puede observarse en la figura \ref{Construccion del convertidor}, donde se aprecia el convertidor completamente ensamblado y listo para su puesta en marcha. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Planta final}
+Gracias a las modificaciones realizadas, la planta ahora cumple con las especificaciones requeridas para llevar a cabo tanto los pretratamientos, como la etapa en conjunta de hidrólisis y fermentación, tal como se muestra en la figura \ref{reactorcompleto}.
+% TODO: \usepackage{graphicx} required
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm, height=7cm]{imagenes/reactor_completo}
+	\caption{Planta con los elementos necesarios para realizar los pretratamientos, así como la hidrólisis y fermentación..}
+	\label{reactorcompleto}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\section{Sistema: Entradas en la planta}
+\section{Sistema en lazo abierto}
 
 \onehalfspacing
 Nuestra planta tiene una resistencia donde tiene una potencia de 600 W, dado que la resistencia requiere una potencia de esa magnitud, necesita un convertidor que aporte la energía necesaria, obteniendo este voltaje externo de la corriente alterna, obteniendo así la entrada que necesite nuestra resistencia.
@@ -719,17 +721,13 @@ Nuestra planta tiene una resistencia donde tiene una potencia de 600 W, dado que
 	\label{Entradaenplanta}
 \end{figure}
 
- En la figura 	\ref{Entradaenplanta}, se muestra un esquema de cómo entra una señal b(t) que entra al convertidor en forma de voltaje, esta señal se potencia con ayuda de una señal externa (es decir un voltaje de CA) y posteriormente se mete a la resistencia. Finalmente, se obtiene una señal de salida [y(t)] en forma de temperatura. La temperatura dentro de esta es leída con ayuda de unos termopares que se encuentran dentro del reactor.
+En la Figura \ref{Entradaenplanta} se ilustra el proceso completo del sistema: una señal de ciclo de trabajo $d(t)$ (que varía del 0\% al 100\%) es convertida a un voltaje de 0 a 5 V, el cual sirve como referencia para el convertidor. Este voltaje, con ayuda de una señal externa de corriente alterna (CA), que es rectificada y amplificada mediante un arreglo de transistores MOSFET, llamado convertidor, genera un voltaje de salida variable que se mete a la resistencia del reactor. Finalmente, la respuesta del sistema se mide a través de la señal de salida $y(t)$, que corresponde a valores de temperatura registrados mediante termopares tipo K, obteniendo así el comportamiento de la planta.
 
-\singlespacing
-\section{Sistema: Identificación del sistema y control}
-\onehalfspacing
 
-A continuación se presenta una descripción de como se obtuvo el sistema identificado y también el diseño del control.
-\singlespacing
-\subsection{Señal PWM}
-\onehalfspacing
-Para entender cómo se comporta el sistema en general, se debe generar una señal PWM (Pulse Width Modulation),una señal PWM es una técnica de modulación escalar, donde muestran valores de 0 a 1 generalmente, produciendo un tren de pulsos con un ancho especifico, %\cite{posada2005modulacion}, esta es una técnica de modulación de ancho de pulso de una señal donde se modifica el ciclo de trabajo de la señal periódica. El ciclo de trabajo de una señal periódica \textit{D} se define como la relación entre la duración de su parte positiva \textit{W} y el período total de la señal \textit{T}, \cite{cortes2011generacion}. Con ayuda de Simulink se puede generar esta señal para poder ser ingresada al sistema, ver Figura \ref{Senal en simulink}
+
+\subsection{Ciclo de trabajo vs Señal PWM}
+
+Para entender cómo se comporta el sistema en general, se debe generar una señal PWM (Pulse Width Modulation),una señal PWM es una técnica de modulación escalar, donde muestran valores de 0 a 1 generalmente, produciendo un tren de pulsos con un ancho especifico (\cite{Posada2005modulacion}), esta es una técnica de modulación de ancho de pulso de una señal donde se modifica el ciclo de trabajo de la señal periódica. El ciclo de trabajo de una señal periódica \textit{d(t)} se define como la relación entre la duración de su parte positiva \textit{W} y el período total de la señal \textit{T}, \cite{cortes2011generacion}. Con ayuda de Simulink se puede generar y configurar esta señal para poder ser ingresada al sistema, ver Figura \ref{Senal en simulink}
 
 
 \begin{figure}[H]
@@ -739,9 +737,8 @@ Para entender cómo se comporta el sistema en general, se debe generar una señal 
 	\label{Senal en simulink}
 \end{figure}
 
-Esta señal PWM entrara al sistema modificando los ciclos de trabajo, para saber el comportamiento, así como observar la linealidad de nuestro sistema, con los resultados obtenidos se configurara una señal PRBS que ayude a identificar el sistema, para obtener una identificación que lo modele.
-
-La señal PWM tiene la forma que se observa en la figura \ref{Senal PWM}.
+Esta señal PWM entrara al sistema modificando los ciclos de trabajo (0, 100\%), para saber el comportamiento de la temperatura dentro de la planta, así como observar la linealidad de nuestro sistema, con los resultados obtenidos se configurara una señal PRBS que ayude a identificar el sistema, para obtener una identificación que lo modele.
+Para conocer comportamiento de una señal PWM podemos observar la figura \ref{Senal PWM}, la cual nos muestra una señal con una frecuencia de 60 hz al 50\% del ciclo de trabajo..
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm, height=6.5cm]{imagenes/Senal PWM.png}
@@ -751,11 +748,11 @@ La señal PWM tiene la forma que se observa en la figura \ref{Senal PWM}.
 
 
 \singlespacing
-\subsection{Pruebas para observar el comportamiento del sistema con PWM}
+\subsection{ Análisis del comportamiento del Sistema ante variaciones en la entrada}
 \onehalfspacing
 
 
-Para obtener el sistema de la planta se debe observar el comportamiento de la temperatura dentro del biorreactor. Para ello, se realizaron distintas pruebas con PWM modificando el ciclo de trabajo que, con ayuda del convertidor, ingresa a la resistencia.
+Se observa el comportamiento de la temperatura dentro del biorreactor, realizando distintas pruebas con PWM modificando el ciclo de trabajo \textit{d(t)} que, con ayuda del convertidor, ingresa a la resistencia.
 
 \singlespacing
 \textbf{Ciclo de trabajo al 90\%}
@@ -835,7 +832,7 @@ En la Figura \ref{prueba 10_1} se muestra la temperatura registrada por el termo
 \textbf{Resolución de las pruebas}
 \onehalfspacing
 
-Al comparar las pruebas realizadas con un PWM al 90\%, 50\% y 10\%, se puede observar que existe una diferencia significativa entre la temperatura con un PWM al 10\% del ciclo de trabajo y la temperatura con un PWM al 50\% del ciclo de trabajo. Sin embargo, entre la temperatura con un PWM al 50\%  del ciclo de trabajo y la temperatura con un PWM al 90\%  del ciclo de trabajo, no se observa una diferencia muy marcada. Esto podría indicar una no linealidad en el sistema, y se trabajaría en un rango de 50\%  a  90\%.
+Al comparar las pruebas realizadas con un PWM con ciclo de trabajo \textit{d(t)} al 90\%, 50\% y 10\%, se puede observar que existe una diferencia significativa entre la temperatura con un señal al 10\% del ciclo de trabajo \textit{d(t)} y la temperatura con una señal al 50\% del ciclo de trabajo\textit{d(t)}. Sin embargo, entre la temperatura con un PWM al 50\%  del ciclo de trabajo y la temperatura con un PWM al 90\%  del ciclo de trabajo, no se observa una diferencia muy marcada. Esto podría indicar una no linealidad en el sistema, y se trabajaría en un rango de 50\% a 90\%. También nos dice que nuestro sistema puede iniciar a estabilizarse en un tiempo estimado de $0.4 x10^4$.
 
 \begin{figure}[H]
 	\centering
@@ -846,9 +843,17 @@ Al comparar las pruebas realizadas con un PWM al 90\%, 50\% y 10\%, se puede obs
 
 
 \singlespacing
-\subsection{Sistema: Entrada de la Señal PRBS}
+\subsection{Diseño de una Entrada con fines de identificación}
 \onehalfspacing
 
+Una PRBS (Pseudorandom binary sequence) es una señal binaria pseudoaleatoria. Esta utiliza números binarios en una secuencia de bits que aparecen de manera aparentemente aleatoria. Tiene la ventaja de ser sencilla y controlable,\cite{wang2024theoretical}. La señal tiene una forma cuadrada, como se muestra en la Figura \ref{prbs}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm, height=6cm]{imagenes/PRBS.png}
+	\caption{Señal PRBS. }
+	\label{prbs}
+\end{figure}
 Esta señal, con ayuda del convertidor, entrará a la resistencia y será utilizada para modular la potencia. Se toma la temperatura dentro del reactor para poder realizar una identificación del sistema. Dado que se realizó una prueba de linealidad, se puede observar que es necesario modificar la amplitud de la señal PRBS en caso de que el sistema presente no linealidad. Dado que se realizaron las pruebas con la PWM modificando el ciclo de trabajo se puede configurando la PRBS  de tal manera que trabaje en el rango que sea necesario para tener mayor variación en nuestro sistema, esta información se puede observar en la conclusión de las variaciones del PWM, obteniendo como resultado una señal PRBS con amplitud y longitud variable, como se muestra en la figura .
 
 
@@ -863,7 +868,7 @@ Esta señal, con ayuda del convertidor, entrará a la resistencia y será utilizada
 
 
 \singlespacing
-\subsection{Respuesta de la planta aplicando una Señal PRBS}
+\subsection{Respuesta experimental de la planta aplicando la entrada para identificación}
 \onehalfspacing
 
 La señal PRBS entra  mediante la salida PWM del Arduino a un convertidor, pasando después a la resistencia como se muestra en el diagrama de la Figura \ref{ diagrama_prbs}
@@ -898,10 +903,11 @@ La gráfica de la Figura \ref{ Temperatura neta_con PRBS} muestrala temperatura d
 
 
 \singlespacing
-\subsection{Identificación del sistema de la planta}
+\subsection{Identificación de la planta}
 \onehalfspacing
 
-Se necesita un sistema que modele el comportamiento de la temperatura de la planta, por lo que se realizaron técnicas de identificación, como es el caso de la técnica OE (error de salida por sus siglas en ingles) donde se obtiene el sistema 
+Una identificación del sistema describe matemáticamente el modelo de la planta utilizando una entrada que excite nuestro sistema, obteniendo como salida una señal de temperatura.
+Se necesita un sistema que modele el comportamiento de la temperatura de la planta, por lo que se realizaron técnicas de identificación, como es el caso de la técnica OE (error de salida por sus siglas en ingles) donde se obtiene el sistema en discreto, pasándolo a un sistema en continuo, obtenemos el siguiente sistema en forma de función de transferencia:
 
 
 \begin{equation}
@@ -925,9 +931,11 @@ Para observar el comportamiento del sistema se puede ver los polos y ceros del s
 	\caption{Polos y ceros del sistema}
 	\label{polos y ceros}
 \end{figure}
+ Como se puede observar en la colocación de polos tenemos un polo colocado en -0.323, otro polo en -0.00834 y por ultimo se tiene un polo en -0.0001.
+ Teniendo ceros en -0.534 y otro cero en -0.0286 .
+ Esto significa que un sistema que es estable.
 
-
-Con una respuesta del sistema exponencial convergente como se muestra en la imagen
+Con una respuesta del sistema exponencial convergente como se muestra en la figura 	\ref{respuesta}
 
 \begin{figure} [H]
 	\centering
@@ -936,18 +944,32 @@ Con una respuesta del sistema exponencial convergente como se muestra en la imag
 	\label{respuesta}
 \end{figure}
 
-
+La respuesta sistema tiene un tiempo de establecimiento de $9x10^4$ segundos, sin sobretiros.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Control PID}
-
+\section{Lazo de Control}
+Después de conocer el comportamiento de la temperatura dentro de la planta y tener un modelo con ayuda de una técnica para identificar la dinámica de mi sistema, se busca controlar la temperatura, por lo que cerramos el lazo utilizando la temperatura de salida, retroalimentando y comparando con la señal de referencia.
+Un control PID (control proporcional integral derivativo) es una técnica de control que ayuda a reducir el error de la entrada.
 Un control PID puede ser calculado con la siguiente ecuación 
 
 \begin{equation}
 	C(t) = K_p \, e(t) + K_i \int e(t) \, dt + K_d \frac{d e(t)}{dt}
 \end{equation}
+ dónde 
+  
+ \begin{tabular}{r l}
+ 	
+ 	$K_p$ &  Es el valor la ganancia proporcional P. \\
+ $e(t)$ &  Es el error en la entrada.\\
+  $K_i$ & Es el valor para la ganancia integral I. \\
+ $k_d$ &Es el valor de la ganancia derivativa D.\\
+   &
+ \end{tabular}
+ 
+ Con los valores correspondientes se sintoniza el control que nos ayuda a mantener una temperatura homogenea dentro del reactor.
+ 
 Para el control PID se utilizo la herramienta de MATLAB que tiene por nombre PID TUNER (Transfer function Based).
 En la configuración para utilizar la herramienta de MATLAB, se configura los factores de PID del control, observando el comportamiento de la respuesta.
 \begin{figure}[H]
@@ -1059,6 +1081,8 @@ En la producción de bioetanol se lleva a cabo la etapa de pretratamiento, a cont
 	\caption{Diagrama del proceso de pretratamiento de material lignocelulósico (bagazo de caña).}
 	\label{descrip}
 \end{figure}
+
+
 El sistema general del proceso de la etapa del pretratamiento se muestra en la imagen \ref{descrip}. Donde inicia ingresando los insumos dentro de un tanque agitado de 10.38 L, con 6 litros de capacidad de trabajo, tales como el agua desmineralizada,  la materia lignocelulósica (el bagazo de caña) y finalmente el humus de lombriz o hidróxido de sodio. Durante el pretratamiento se mezclan los compuestos, por lo que tenemos condiciones de mezclado, es decir, 142 rpm por parte del motor, encendiendo y apagando el motor cada 10 segundos, con el propósito de observar el comportamiento en la producción de bioetanol, y el efecto del consumo energético. También durante el proceso de pretratamiento se lee la temperatura dentro del biorreactor (o tanque agitado, llamado así por el mezclado durante el pretratamiento), esa señal de temperatura se le llama señal de salida, esta señal de salida se registra en una tira de datos, al mismo tiempo es una señal que se retroalimenta y compara con una señal de referencia, es decir la temperatura de retroalimentación se compara con la temperatura de referencia. La diferencia de las temperaturas (señal de error) se ingresa al control PID, el control PID nos dará un valor que lo pasaremos a traducir con ayuda de un arduino, a un voltaje de 0 a 5 V. La resistencia de calentamiento del reactor necesita una potencia mayor, es necesario utilizar más voltaje, el convertidor toma energía alterna del tomacorriente (0-127 V) y la convierte en corriente directa para posteriormente con ayuda de un mosfet potenciar la energía saliente del PID ( señal de control convertida a voltaje), para finalmente entrará a la resistencia de calentamiento en el reactor. El ciclo de medición y calentamiento se lleva a cabo durante el tiempo que dure el pretratamiento.
 
 \subsection{Hidrólisis y fermentación}
@@ -2381,7 +2405,7 @@ En resumen, el pretratamiento con humus de lombriz no solo resulta económicament
 \section{ Instalación del sistema operativo en la Raspberry }
 \label{anexo a}
 
-Se descargó el programa desde la página oficial para instalar el sistema operativo y después el programa se monta la imagen a la memoria de 256 GB.
+Se descargó el sistema operativo Raspberry Pi OS (anteriormente conocido como Raspbian), desde la página oficial para instalar el sistema operativo y posteriormente se monta la imagen a la memoria de 256 GB.
 
 
 \begin{figure}[H]
