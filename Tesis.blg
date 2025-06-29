@@ -5,6 +5,10 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliografia.bib
+You're missing a field name---line 51 of file bibliografia.bib
+ :   author={Aimaretti}, 
+ :                       {N.} {Ybalo}, {C.} {Escorcia} {M.} {Codevilla} {A Rojas} {M.} {L} {Plou} {F},
+I'm skipping whatever remains of this entry
 Warning--entry type for "Perez2024" isn't style-file defined
 --line 139 of file bibliografia.bib
 I was expecting a `,' or a `}'---line 397 of file bibliografia.bib
@@ -12,51 +16,54 @@ I was expecting a `,' or a `}'---line 397 of file bibliografia.bib
  :   url        = {iea.org/reports/key-world-energy-statistics-2021},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+You're missing a field name---line 931 of file bibliografia.bib
+ :   author={Ventura R{\'i}os}, 
+ :                              {J.} and {Honorato Salazar}, {J. A.} and {Hern{\'a}ndez Garay},{A.} and {Aburto Anell}, {J. A.} and {Vaquera Huerta},{ H.} and {Enr{\'i}quez Quiroz}, {J. F},
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Arturo2022evaluacion"
 Warning--I didn't find a database entry for "portalproduccion"
-Warning--I didn't find a database entry for "wang2024theoretical"
 Warning--I didn't find a database entry for "CFE2023"
 Warning--can't use both volume and number fields in Figueroa2022evaluacion
 Warning--empty journal in Posada2005modulacion
-You've used 25 entries,
+You've used 26 entries,
             1935 wiz_defined-function locations,
-            649 strings with 10486 characters,
-and the built_in function-call counts, 9544 in all, are:
-= -- 920
-> -- 431
+            655 strings with 10737 characters,
+and the built_in function-call counts, 10048 in all, are:
+= -- 962
+> -- 474
 < -- 12
-+ -- 150
-- -- 146
-* -- 831
-:= -- 1726
-add.period$ -- 73
-call.type$ -- 25
-change.case$ -- 197
-chr.to.int$ -- 25
-cite$ -- 27
-duplicate$ -- 344
-empty$ -- 625
-format.name$ -- 173
-if$ -- 1810
++ -- 168
+- -- 162
+* -- 882
+:= -- 1821
+add.period$ -- 76
+call.type$ -- 26
+change.case$ -- 210
+chr.to.int$ -- 26
+cite$ -- 28
+duplicate$ -- 357
+empty$ -- 646
+format.name$ -- 190
+if$ -- 1899
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 20
-newline$ -- 125
-num.names$ -- 75
-pop$ -- 154
+missing$ -- 21
+newline$ -- 130
+num.names$ -- 78
+pop$ -- 165
 preamble$ -- 1
-purify$ -- 198
+purify$ -- 211
 quote$ -- 0
-skip$ -- 265
+skip$ -- 276
 stack$ -- 0
-substring$ -- 610
-swap$ -- 33
+substring$ -- 624
+swap$ -- 34
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 150
+type$ -- 156
 warning$ -- 2
-while$ -- 74
+while$ -- 76
 width$ -- 0
-write$ -- 319
-(There was 1 error message)
+write$ -- 332
+(There were 3 error messages)

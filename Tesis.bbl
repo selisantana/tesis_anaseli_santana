@@ -92,7 +92,7 @@ Jara~Huacacolqui, E.~L., Leiva~Cabrera, F.~A., Martin~Alva, E.~A.,
 \newblock {\em Arnaldoa}, 29(1):163--176.
 
 \bibitem[Moonsamy et~al., 2022]{MOONSAMY2022115675}
-Moonsamy, T.~A., Mandegari, M., Farzad, S., and Görgens, J.~F. (2022).
+Moonsamy, T.~A., Mandegari, M., Farzad, S., and G\"orgens, J. (2022).
 \newblock A new insight into integrated first and second-generation bioethanol
   production from sugarcane.
 \newblock {\em Industrial Crops and Products}, 188:115675.
@@ -160,8 +160,15 @@ Valles~S{\'a}ez, A. (2022).
 
 \bibitem[Verdejo, 2024]{Perez2024}
 Verdejo, C.~P. (2024).
-\newblock [dise{\~n}o de un biorreactor para la obtenci{\'o}n de 2,3-butanodiol
+\newblock Dise{\~n}o de un biorreactor para la obtenci{\'o}n de 2,3-butanodiol
   a partir de destr{\'i}o de zanahoria mediante sacarificaci{\'o}n y
   fermentaci{\'o}n simult{\'a}neas.
+
+\bibitem[Zhu et~al., 2024]{Zhu14209198}
+Zhu, Y., Li, Y., Li, D., Dong, L., Liu, X., Yan, A., Liu, Y., and Wang, Z.
+  (2024).
+\newblock A theoretical and experimental analysis of the time-domain
+  characteristics of a prbs phase-modulated laser system.
+\newblock {\em Applied Sciences}, 14(20).
 
 \end{thebibliography}

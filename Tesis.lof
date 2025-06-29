@@ -18,80 +18,80 @@
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Mezclador y reactor vista frontal}}{24}{figure.caption.29}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Programaci\'on de los sensores}}{26}{figure.caption.30}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Diagrama del convertidor}}{27}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Construcci\'on del convertidor}}{27}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Planta con los elementos necesarios para realizar los pretratamientos, as\IeC {\'\i } como la hidr\'olisis y fermentaci\'on..}}{28}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Diagrama que muestra las entradas a la planta}}{29}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagrama para generar una se\~nal PWM en Simulink}}{30}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Se\~nal PWM}}{30}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Prueba 1,Termopar k 1 y 2 con un ciclo de trabajo de 90\%. }}{31}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Prueba 1, modificando el ciclo de trabajo al 90\%. }}{32}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Prueba 2, modificando el ciclo de trabajo al 50\%. }}{32}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Prueba 2, termopar k 1, modificando el ciclo de trabajo al 50\%. }}{33}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Prueba 1, modificando el ciclo de trabajo al 10\%. }}{33}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Prueba 1, modificando el ciclo de trabajo al 10\%. }}{34}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Temperaturas con PWM al 90\%, 50\% y 10\%. }}{34}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Se\~nal PRBS. }}{35}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Senal PRBS con amplitud y longitud aleatoria}}{36}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Entrada de la se\~nal al reactor. }}{36}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Comportamiento de la temperatura dentro del reactor con se\~nal de entrada PRBS }}{37}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.29}{\ignorespaces Comportamiento de la temperatura sin la temperatura ambiente dentro del laboratorio. }}{37}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.30}{\ignorespaces Comparaci\'on del sistema con la identificaci\'on.}}{38}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.31}{\ignorespaces Polos y ceros del sistema}}{39}{figure.caption.50}%
-\contentsline {figure}{\numberline {3.32}{\ignorespaces Respuesta del sistema}}{39}{figure.caption.51}%
-\contentsline {figure}{\numberline {3.33}{\ignorespaces Ventana de la herramienta PID Tuner}}{40}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.34}{\ignorespaces Sistema simulado con control de temperatura a 90 \IeC {\textdegree }C}}{41}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.35}{\ignorespaces Diagrama del sistema}}{42}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.36}{\ignorespaces Diagrama del proceso de pretratamiento de material lignocelul\'osico (bagazo de ca\~na).}}{44}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.37}{\ignorespaces Diagrama del proceso de la etapa de hidr\'olisis y fermentaci\'on (bagazo de ca\~na).}}{45}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Construcci\'on del convertidor}}{31}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Planta con los elementos necesarios para realizar los pretratamientos, as\IeC {\'\i } como la hidr\'olisis y fermentaci\'on..}}{32}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Diagrama que muestra las entradas a la planta}}{32}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagrama para generar una se\~nal PWM en Simulink}}{33}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Se\~nal PWM}}{34}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Prueba 1,Termopar k 1 y 2 con un ciclo de trabajo de 90\%. }}{35}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Prueba 1, modificando el ciclo de trabajo al 90\%. }}{35}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Prueba 2, modificando el ciclo de trabajo al 50\%. }}{36}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Prueba 2, termopar k 1, modificando el ciclo de trabajo al 50\%. }}{36}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Prueba 1, modificando el ciclo de trabajo al 10\%. }}{37}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Prueba 1, modificando el ciclo de trabajo al 10\%. }}{37}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Temperaturas con PWM al 90\%, 50\% y 10\%. }}{38}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Se\~nal PRBS. }}{38}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Senal PRBS con amplitud y longitud aleatoria}}{39}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Entrada de la se\~nal al reactor. }}{39}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Comportamiento de la temperatura dentro del reactor con se\~nal de entrada PRBS }}{40}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Comportamiento de la temperatura sin la temperatura ambiente dentro del laboratorio. }}{40}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Comparaci\'on del sistema con la identificaci\'on.}}{41}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Polos y ceros del sistema}}{42}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Respuesta del sistema}}{42}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.33}{\ignorespaces Ventana de la herramienta PID Tuner}}{44}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Sistema simulado con control de temperatura a 90 \IeC {\textdegree }C}}{45}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Diagrama del sistema}}{45}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.36}{\ignorespaces Diagrama del proceso de pretratamiento de material lignocelul\'osico (bagazo de ca\~na).}}{47}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.37}{\ignorespaces Diagrama del proceso de la etapa de hidr\'olisis y fermentaci\'on (bagazo de ca\~na).}}{48}{figure.caption.56}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de los factores del pretratamiento biol\'ogico.}}{49}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama del pretratamiento alcalino con los factores.}}{51}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de los factores del pretratamiento biol\'ogico.}}{52}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama del pretratamiento alcalino con los factores.}}{54}{figure.caption.65}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Bagazo de ca\~na tendido sobre una lona.}}{54}{figure.caption.68}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces El bagazo es cernido con ayuda de la malla de 1 cm.}}{54}{figure.caption.68}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Momento donde el bagazo es clasificado.}}{55}{figure.caption.69}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Clasificaci\'on con colador para trozos grandes.}}{55}{figure.caption.69}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces El bagazo cernido es colocado en la bolsa y se pesado en una bascula.}}{55}{figure.caption.70}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Medici\'on de masa del bagazo de ca\~na, clasificado por tama\~no de part\IeC {\'\i }cula (1 mm a 10 cm), previo al proceso de bioetanol.}}{56}{figure.caption.71}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Pesaje del humus de lombriz con ayuda de una bascula.}}{56}{figure.caption.71}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Fotograf\IeC {\'\i }a muestra el reactor tipo batch despu\'es de limpiarlo.}}{57}{figure.caption.72}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Carga del bagazo de ca\~na en el reactor tipo batch.}}{57}{figure.caption.72}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Fotograf\IeC {\'\i }a que muestra como se le agrega el humus de lombriz al reactor.}}{57}{figure.caption.73}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Esta fotograf\IeC {\'\i }a muestra el reactor despu\'es de sellarlo.}}{57}{figure.caption.73}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Programa de la temperatura ambiente en marcha.}}{58}{figure.caption.74}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Programa del control en marcha.}}{58}{figure.caption.74}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Bagazo de 1 cm.}}{59}{figure.caption.76}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces El hidr\'oxido es pesado en una bascula.}}{59}{figure.caption.76}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Reactor tipo batch previamente enjuagado con agua desmineralizada.}}{59}{figure.caption.77}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Se agrega el bagazo de ca\~na al reactor con agua desmineralizada.}}{60}{figure.caption.78}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Se agrega el hidr\'oxido y se mezcla hasta incorporarse.}}{60}{figure.caption.78}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces El reactor se sella con ayuda de algod\'on, papel aluminio y cinta de aislar o cinta t\'ermica.}}{60}{figure.caption.79}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Se muestra el programa en funcionamiento.}}{60}{figure.caption.79}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Se observa el wat\IeC {\'\i }metro que se encuentra en la estructura y mide la energ\IeC {\'\i }a que entra al convertidor.}}{61}{figure.caption.81}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Bagazo pretratado biol\'ogicamente en el biorreactor.}}{61}{figure.caption.81}%
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Cubeta con colador y manta para colar el bagazo pretratado.}}{61}{figure.caption.82}%
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Bagazo previamente pretratado.}}{61}{figure.caption.82}%
-\contentsline {figure}{\numberline {5.25}{\ignorespaces En la fotograf\IeC {\'\i }a muestra como se retira el exceso de agua exprimiendo.}}{62}{figure.caption.83}%
-\contentsline {figure}{\numberline {5.26}{\ignorespaces El bagazo es secado en un horno.}}{62}{figure.caption.83}%
-\contentsline {figure}{\numberline {5.27}{\ignorespaces En la fotograf\IeC {\'\i }a muestra el bagazo despu\'es de filtrar el agua.}}{62}{figure.caption.84}%
-\contentsline {figure}{\numberline {5.28}{\ignorespaces El bagazo se coloca en un pl\'astico para retirar el agua y la humedad.}}{62}{figure.caption.84}%
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Agua desmineralizada que ayudar\'a a limpiar el reactor.}}{64}{figure.caption.86}%
-\contentsline {figure}{\numberline {5.30}{\ignorespaces Levadura y \'acido c\IeC {\'\i }trico.}}{64}{figure.caption.86}%
-\contentsline {figure}{\numberline {5.31}{\ignorespaces Reactor con bagazo previamente pretratado.}}{64}{figure.caption.87}%
-\contentsline {figure}{\numberline {5.32}{\ignorespaces La levadura se agrega al reactor.}}{64}{figure.caption.87}%
-\contentsline {figure}{\numberline {5.33}{\ignorespaces Se agrega la enzima al reactor con ayuda de la micropipeta. }}{65}{figure.caption.88}%
-\contentsline {figure}{\numberline {5.34}{\ignorespaces Se mide el pH de la mezcla con ayuda del medidor hanna instruments.}}{65}{figure.caption.88}%
-\contentsline {figure}{\numberline {5.35}{\ignorespaces El algod\'on es colocado entre la tapa para tratar de que el reactor sea lo mas herm\'etico posible. }}{65}{figure.caption.89}%
-\contentsline {figure}{\numberline {5.36}{\ignorespaces Puesta en marcha del control en la etapa de SSF en un reactor tipo batch.}}{65}{figure.caption.89}%
-\contentsline {figure}{\numberline {5.37}{\ignorespaces Medici\'on del pH de la mezcla despu\'es de la SSF.}}{66}{figure.caption.90}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Bagazo de ca\~na tendido sobre una lona.}}{57}{figure.caption.68}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces El bagazo es cernido con ayuda de la malla de 1 cm.}}{57}{figure.caption.68}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Momento donde el bagazo es clasificado.}}{58}{figure.caption.69}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Clasificaci\'on con colador para trozos grandes.}}{58}{figure.caption.69}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces El bagazo cernido es colocado en la bolsa y se pesado en una bascula.}}{58}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Medici\'on de masa del bagazo de ca\~na, clasificado por tama\~no de part\IeC {\'\i }cula (1 mm a 10 cm), previo al proceso de bioetanol.}}{59}{figure.caption.71}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Pesaje del humus de lombriz con ayuda de una bascula.}}{59}{figure.caption.71}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Fotograf\IeC {\'\i }a muestra el reactor tipo batch despu\'es de limpiarlo.}}{60}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Carga del bagazo de ca\~na en el reactor tipo batch.}}{60}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Fotograf\IeC {\'\i }a que muestra como se le agrega el humus de lombriz al reactor.}}{60}{figure.caption.73}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Esta fotograf\IeC {\'\i }a muestra el reactor despu\'es de sellarlo.}}{60}{figure.caption.73}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Programa de la temperatura ambiente en marcha.}}{61}{figure.caption.74}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Programa del control en marcha.}}{61}{figure.caption.74}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Bagazo de 1 cm.}}{62}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces El hidr\'oxido es pesado en una bascula.}}{62}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Reactor tipo batch previamente enjuagado con agua desmineralizada.}}{62}{figure.caption.77}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Se agrega el bagazo de ca\~na al reactor con agua desmineralizada.}}{63}{figure.caption.78}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Se agrega el hidr\'oxido y se mezcla hasta incorporarse.}}{63}{figure.caption.78}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces El reactor se sella con ayuda de algod\'on, papel aluminio y cinta de aislar o cinta t\'ermica.}}{63}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Se muestra el programa en funcionamiento.}}{63}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Se observa el wat\IeC {\'\i }metro que se encuentra en la estructura y mide la energ\IeC {\'\i }a que entra al convertidor.}}{64}{figure.caption.81}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Bagazo pretratado biol\'ogicamente en el biorreactor.}}{64}{figure.caption.81}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Cubeta con colador y manta para colar el bagazo pretratado.}}{64}{figure.caption.82}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Bagazo previamente pretratado.}}{64}{figure.caption.82}%
+\contentsline {figure}{\numberline {5.25}{\ignorespaces En la fotograf\IeC {\'\i }a muestra como se retira el exceso de agua exprimiendo.}}{65}{figure.caption.83}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces El bagazo es secado en un horno.}}{65}{figure.caption.83}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces En la fotograf\IeC {\'\i }a muestra el bagazo despu\'es de filtrar el agua.}}{65}{figure.caption.84}%
+\contentsline {figure}{\numberline {5.28}{\ignorespaces El bagazo se coloca en un pl\'astico para retirar el agua y la humedad.}}{65}{figure.caption.84}%
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Agua desmineralizada que ayudar\'a a limpiar el reactor.}}{67}{figure.caption.86}%
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Levadura y \'acido c\IeC {\'\i }trico.}}{67}{figure.caption.86}%
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Reactor con bagazo previamente pretratado.}}{67}{figure.caption.87}%
+\contentsline {figure}{\numberline {5.32}{\ignorespaces La levadura se agrega al reactor.}}{67}{figure.caption.87}%
+\contentsline {figure}{\numberline {5.33}{\ignorespaces Se agrega la enzima al reactor con ayuda de la micropipeta. }}{68}{figure.caption.88}%
+\contentsline {figure}{\numberline {5.34}{\ignorespaces Se mide el pH de la mezcla con ayuda del medidor hanna instruments.}}{68}{figure.caption.88}%
+\contentsline {figure}{\numberline {5.35}{\ignorespaces El algod\'on es colocado entre la tapa para tratar de que el reactor sea lo mas herm\'etico posible. }}{68}{figure.caption.89}%
+\contentsline {figure}{\numberline {5.36}{\ignorespaces Puesta en marcha del control en la etapa de SSF en un reactor tipo batch.}}{68}{figure.caption.89}%
+\contentsline {figure}{\numberline {5.37}{\ignorespaces Medici\'on del pH de la mezcla despu\'es de la SSF.}}{69}{figure.caption.90}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Producci\'on de bioetanol con pretratamiento biol\'ogico.}}{77}{figure.caption.110}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Producci\'on de bioetanol con pretratamiento alcalino.}}{78}{figure.caption.111}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Consumo energ\'etico para los dos tipos de pretratamiento. }}{78}{figure.caption.112}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Consumo energ\'etico para SSF. }}{79}{figure.caption.113}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Costo de los insumos y consumo energ\'etico para SSF. }}{80}{figure.caption.114}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Producci\'on de bioetanol con pretratamiento biol\'ogico.}}{80}{figure.caption.110}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Producci\'on de bioetanol con pretratamiento alcalino.}}{81}{figure.caption.111}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Consumo energ\'etico para los dos tipos de pretratamiento. }}{81}{figure.caption.112}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Consumo energ\'etico para SSF. }}{82}{figure.caption.113}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Costo de los insumos y consumo energ\'etico para SSF. }}{83}{figure.caption.114}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Programaci\'on de los sensores}}{85}{figure.caption.118}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Pantalla principal del sistema operativo de la rasberry.}}{86}{figure.caption.119}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Pesta\~na LXTerminal.}}{86}{figure.caption.120}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Programaci\'on de los sensores}}{88}{figure.caption.118}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Pantalla principal del sistema operativo de la rasberry.}}{89}{figure.caption.119}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Pesta\~na LXTerminal.}}{89}{figure.caption.120}%
