@@ -231,13 +231,13 @@ Ya que este tipo de biomasa es considerada basura, tiene la característica de no
 \singlespacing
 \section{Limitaciones}
 \onehalfspacing
- Para la producción de bioetanol se tienen distintas limitaciones, una de ellas es
+ Para la producción de bioetanol se tienen distintas limitaciones, una de las limitaciones son las características del motor, dado que tiene poca capacidad de mover el reactivo durante el pretratamiento, otra limitación es la variaciones en las condiciones de operación, es decir, la temperatura ambiente. La temperatura ambiente es un factor que impacta en la temperatura dentro del reactor, cualquier cambio de temperatura en el ambiente hace que se consuma más energía. Para la condiciones de operación, se considera otra limitación, la potencia de la resistencia, dado que es una resistencia pequeña para la capacidad máxima de carga que se utiliza dentro del reactor, y esta calienta demasiado lento.En la adquisición de datos, el sistema cuenta con un arduino que nos ayuda a leer, y codificar las señales
  
  
- 
- motor
  Variación en las condiciones de operación: la temperatura ambiente, la resistencia
- en la adquisición de datos se cuenta con poca capacidad.
+ 
+ 
+  en la adquisición de datos se cuenta con poca capacidad.
  tiempo en el que tarda hacerse una prueba, ¡por que?
  
 
@@ -527,10 +527,10 @@ En otra investigación sobre la producción de bioetanol a partir de la cáscara de
 \chapter{Instrumentación del sistema  y control  }
 \onehalfspacing
 
-\section{Planta: Adaptación del biorreactor}
+\section{Planta piloto de producción de biodiésel}
 \onehalfspacing
 
-En el laboratorio de procesos se encuentra un biorreactor que en 2008 fue utilizado para la producción de biodiésel (ver Figura \ref{Biorreactor}).
+En el laboratorio de procesos se encuentra una planta piloto que en 2008 fue utilizado para la producción de biodiésel, en la Figura \ref{Biorreactor} se puede observar como se encontraba antes la estructura.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=5cm, height=6cm]{imagenes/Biorreactor.png}
@@ -539,9 +539,8 @@ En el laboratorio de procesos se encuentra un biorreactor que en 2008 fue utiliz
 \end{figure}
 
 
-El biorreactor consta de 7 elementos: reactor, recipiente contenedor de aceite, recipiente contenedor de metóxido, motor agitador, válvula solenoide, resistencia eléctrica de calentamiento y armadura de soporte %(\cite{torres2008diseno}). Dado que se requiere adaptar el biorreactor, por el momento solo se utilizarán 5 de los 7 elementos para los experimentos del pretratamiento, así como la etapa de hidrólisis y fermentación.
-El elemento denominado "reactor" tiene una capacidad de 10.38 litros, equivalente a un volumen de 
-$10.38 x 10^6  $ $ mm^3$. Dentro de este reactor se llevarán a cabo los pretratamientos y la etapa de hidrólisis y fermentación. En la Figura \ref{Reactor}, se pueden observar las dimensiones del reactor.
+El biorreactor consta de 8 elementos: reactor, recipiente contenedor de aceite, recipiente contenedor de metóxido, motor agitador, válvula solenoide, resistencia eléctrica de calentamiento, mezclador y armadura de soporte (\cite{Torres2008,}). Dado que se requiere adaptar el biorreactor, por el momento solo se utilizarán 6 de los 8 elementos para los experimentos del pretratamiento, así como la etapa de hidrólisis y fermentación.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm, height=7cm]{imagenes/Reactor.png}
@@ -551,10 +550,10 @@ $10.38 x 10^6  $ $ mm^3$. Dentro de este reactor se llevarán a cabo los pretrata
 
 
 
-\subsection{Biorreactor}
+\subsection{Planta: Adaptación del biorreactor}
 
 
-La planta consta de un tanque agitado que contiene una resistencia para calentar la solución, una estructura que se soldó y modificó para adaptar correctamente los sensores tipo K y un mezclador que mantiene la temperatura homogénea, como se muestra en la figura. \ref{fig:soldado1}.
+La planta consta de un tanque agitado que contiene una resistencia para calentar la solución, una estructura que se soldó y modificó para adaptar correctamente los sensores tipo K y un mezclador que mantiene la temperatura homogénea, la figura \ref{fig:soldado1} muestra la estructura .
 
 \begin{figure}[H]
 	\centering
@@ -565,6 +564,7 @@ La planta consta de un tanque agitado que contiene una resistencia para calentar
 
 La estructura estaba reforzada con barras angulares en forma de "L" que inicialmente se encontraban superpuestas. Para garantizar una mayor estabilidad, estas se soldaron entre sí y se añadieron refuerzos adicionales. Además, se soldó en una parte de la estructura una base para servir como soporte fijo del biorreactor, ya que originalmente este solo estaba colocado sobre él sin ningún soporte.
 
+El elemento tanque agitado, tiene una capacidad de 10.38 litros, equivalente a un volumen de  $10.38 x 10^6  $ $ mm^3$. Dentro de este reactor se llevarán a cabo los pretratamientos y la etapa de hidrólisis y fermentación. En la Figura \ref{Reactor}, se pueden observar las dimensiones del reactor.
 Para el caso de del tanque agitado, se mandó a soldar unos tubos que tienen el propósito de mantener los sensores termopar k en su lugar, y estos no se enreden con el mezclador. Son tres tubos que tienen un diámetro de 1 cm, estos están distribuidos dentro del reactor, como lo muestra la figura \ref{Reactor con 3 tubos.}.
 \begin{figure}[H]
 	\centering
