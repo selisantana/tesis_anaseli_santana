@@ -24,7 +24,9 @@
 \usepackage{enumitem} % Para personalizar listas
 \usepackage{float} % Necesario para [H]
 \usepackage{subcaption} % Para subfiguras y sus captions
-
+\usepackage{siunitx} %para el sistema internacional
+\DeclareSIUnit{\rpm}{rpm} % Define la unidad "rpm"
+\sisetup{per-mode = symbol}
 
 \author{Ana Seli Santana Marquina}
 
@@ -118,49 +120,37 @@ To achieve this objective,
 \chapter{Introducción} \setcounter{page}{1} \pagenumbering{arabic}
 \onehalfspacing
 
-De acuerdo con las estadísticas de la Agencia Internacional de Energía (EIA, por sus siglas en inglés), 2019 (\cite{EIA2019}), del total de energía consumida en el mundo, 40.4\% provino del petróleo, 19.7\% corresponde al consumo de electricidad, 16.4\% provino de gas natural, 9.5\% de carbón y 3.6\% son otros tipos de energía, finalmente solo el 10.4\% de energía consumida provino de biocombustibles y residuos. Estas estadísticas ponen en evidencia el uso incesante de combustibles fósiles que ha provocado una disminución constante de estos recursos no renovables, que se estima podrían agotarse en unas cuantas décadas. Por lo tanto, a nivel mundial se están considerando nuevas fuentes energéticas que proporcionen una menor huella de carbono. La biomasa es un recurso renovable que comúnmente se quema o se desecha como basura. Algunas alternativas para aprovechar recursos naturales es producir combustibles sólidos como pellets de madera, gaseosos como el metano, o líquidos como el etanol, o el diésel. La búsqueda de nuevas fuentes de energía necesita del diseño de nuevos procesos para la transformación de biomasa en combustibles. Un ejemplo claro es la producción de bioetanol de segunda generación, obtenido a partir de desechos orgánicos (\cite{zuliani, 2021}). 
-El bioetanol puede ser producido a partir de distintas materias primas y con diferentes tecnologías. Una de estas, es la tecnología de bioetanol de primera generación (1G) que utiliza materia prima con alto contenido de azúcares. Tal es el caso de la fruta como la manzana o jugo de caña, entre otros. Una alternativa es la tecnología de bioetanol de segunda generación, que usa materia prima que no es competencia en el mercado de los alimentos, como los desechos orgánicos. Ejemplos de este tipo de materia prima son las hojas de los árboles, el bagazo de caña, etc. En esta tesis, la investigación se centra en la producción de bioetanol a partir de bagazo de caña. La idea es utilizar los residuos que se obtienen en la producción de azúcar. Uno de estos es el bagazo de caña que comúnmente es quemado en la industria como energético, sin embargo, es posible diseñar un proceso que pueda darle un segundo uso a este material de desecho, al generar bioetanol como biocombustible. 
+De acuerdo con las estadísticas de la Agencia Internacional de Energía (EIA, por sus siglas en inglés), 2019 (\cite{EIA2019}), del total de energía consumida en el mundo, 40.4\% provino del petróleo, 19.7\% corresponde al consumo de electricidad, 16.4\% provino de gas natural, 9.5\% de carbón y 3.6\% son otros tipos de energía, finalmente solo el 10.4\% de energía consumida provino de biocombustibles y residuos. Estas estadísticas ponen en evidencia el uso incesante de combustibles fósiles que ha provocado una disminución constante de estos recursos no renovables, que se estima podrían agotarse en unas cuantas décadas. Por lo tanto, a nivel mundial se están considerando nuevas fuentes energéticas que proporcionen una menor huella de carbono. La biomasa es un recurso renovable que comúnmente se quema o se desecha como basura. Algunas alternativas para aprovechar recursos naturales son producir combustibles sólidos como pellets de madera, gaseosos como el metano, o líquidos como el etanol, o el diésel. La búsqueda de nuevas fuentes de energía necesita del diseño de nuevos procesos para la transformación de biomasa en combustibles. Un ejemplo claro es la producción de bioetanol de segunda generación, obtenido a partir de desechos orgánicos \cite{zuliani2021biorefinery}. 
+El bioetanol puede ser producido a partir de distintas materias primas y con diferentes tecnologías. Una de estas, es la tecnología de bioetanol de primera generación (1G) que utiliza materia prima con alto contenido de azúcares. Tal es el caso de la fruta como la manzana o el jugo de caña, entre otros. Una alternativa es la tecnología de bioetanol de segunda generación, que usa materia prima que no es competencia en el mercado de los alimentos, como los desechos orgánicos. Ejemplos de este tipo de materia prima son las hojas de los árboles, el bagazo de caña, etc. Este trabajo de tesis se centra en la producción de bioetanol a partir de los residuos que se obtienen con la producción del azúcar, como el bagazo de caña. La idea es utilizar los residuos que se obtienen en la producción de azúcar. Uno de estos es el bagazo de caña, que comúnmente es quemado en la industria como energético; sin embargo, es posible diseñar un proceso que pueda darle un segundo uso a este material de desecho, al generar bioetanol como biocombustible. 
 Para producir bioetanol o alcohol etílico de segunda generación, se requieren una serie de etapas, tales como la adecuación de la biomasa, el pretratamiento, la hidrólisis y la fermentación (según el caso de configuración estas dos últimas etapas pueden llevarse a cabo de manera simultánea, o por separado), la destilación binaria para purificar el producto, obteniendo un etanol de mayor concentración, y algún proceso de separación de mezclas no ideales para obtener etanol anhidro, es decir una mayor pureza en el alcohol.
 
 Las energías limpias han ido evolucionando al paso de los años y se buscan técnicas que proporcionen un mayor rendimiento, utilizando materia lignocelulosa, la cual es la materia más abundante en nuestro planeta, ya que la lignina, la celulosa y la hemicelulosa se encuentran en la pared celular de los árboles, plantas, desechos orgánicos, entre otros. La producción de bioetanol de segunda generación se da a partir de desechos orgánicos, teniendo como limitante la extracción del azúcar. Con esto, se requiere incorporar una etapa que permita obtener la mayor cantidad de azúcar, como un pretratamiento.
-Siendo una de las etapas importantes para la producción de bioetanol, dado que reduce la cantidad de lignina y hemicelulosa, generando una celulosa más susceptible al ataque enzimático. Esto se realiza rompiendo las barreras de la lignina por la modificación de la estructura del bagazo. Existen distintos tipos de pretratamientos, entre los que se destacan los del tipo químico, térmico, biológico y mecánico.Los cuales serán descritos en el apartado \ref{}.
+Siendo una de las etapas importantes para la producción de bioetanol, dado que reduce la cantidad de lignina y hemicelulosa, generando una celulosa más susceptible al ataque enzimático. Esto se realiza rompiendo las barreras de la lignina por la modificación de la estructura del bagazo. Existen distintos tipos de pretratamientos, entre los que se destacan los del tipo químico, térmico, biológico y mecánico \cite{ADITIYA2016631}.
 
-Después del pretratamiento, la biomasa es sometida a una hidrólisis y a una fermentación. La hidrólisis y fermentación Se realiza en un mismo contenedor donde la biomasa se convierte en azúcares fermentables posteriormente en alcohol etílico.
+Después del pretratamiento, la biomasa es sometida a una hidrólisis y a una fermentación. La producción de bioetanol de segunda generación se puede llevar a cabo mediante diferentes configuraciones. Una configuración consta de una primera etapa de sacarificación enzimática de la biomasa pretratada y una segunda etapa de fermentación, la cual se denomina Sacarificación enzimática de la biomasa pretratada y la fermentación en etapas separadas (SHF, por sus siglas en inglés). Otra configuración es la sacarificación y fermentación simultáneas (SSF, por sus siglas en inglés), donde la hidrólisis y fermentación se realizan en un mismo contenedor, convirtiendo la biomasa en azúcares fermentables y finalmente en alcohol etílico. 
 
-La producción de bioetanol de segunda generación se puede llevar a cabo mediante diferentes configuraciones. Una configuración consta de una primera etapa de sacarificación enzimática de la biomasa pretratada y una segunda etapa de fermentación, la cual se denomina Sacarificación enzimática de la biomasa pretratada y la fermentación en etapas separadas (SHF por sus siglas en inglés). Otra configuración es la sacarificación y fermentación simultáneas (SSF por sus siglas en inglés). 
+Este trabajo de tesis estudia los procesos de producción de bioetanol de segunda generación. El estudio abarca desde los procesos de pre-pretratamiento de la biomasa de segunda generación, tales como la clasificación y limpieza del bagazo, hasta la comparación de costos en  la producción de bioetanol. Incluye la comparación de dos pretratamientos y se considera únicamente la configuración SSF para obtener como producto final, bioetanol diluido, que es acondicionado después del proceso SSF. Los pretratamientos considerados son uno químico (alcalino) y uno biológico (utilizando humus de lombriz). Las condiciones de operación se enfocan en tener una temperatura controlada en estas dos etapas.
 
-La siguiente tesis estudia los procesos de producción de bioetanol de segunda generación, dando una particular importancia a la etapa de pretratamiento. El estudio abarca desde los procesos de pre-pretratamiento de la biomasa de segunda generación, tales como la clasificación y limpieza del bagazo. Incluye la comparación de dos pretratamientos y se considera solo la configuración SSF para obtener como producto final, bioetanol diluido, que es acondicionado después del proceso SSF. Los pretratamientos considerados son uno químico (alcalino) y uno biológico (usando humus de lombriz). Las condiciones de operación Enfocándose en tener una temperatura controlada en estas dos etapas.
+Las variables del proceso que determinan la producción de bioetanol incluyen, para la etapa de pretratamiento, la temperatura, el tamaño de partícula del bagazo (grado de molienda) y el tiempo de tratamiento; mientras que para el proceso SSF se consideran la temperatura, el pH, la carga enzimática y el volumen de la mezcla. Los experimentos se realizaron secuencialmente en un reactor tipo batch, manteniendo constantes el volumen de mezcla, la carga enzimática y la masa de levadura durante el proceso SSF. Cada serie experimental se efectuó empleando una temperatura de pretratamiento (T$_P$) constante y una temperatura de SSF (T$_P$) también constante, donde T$_P$  $\neq$   T$_s$.
 
-Las variables del proceso que determinan la calidad del producto son: para la etapa de pretratamiento, la temperatura, el tamaño de partícula del bagazo (grado de molienda), y el tiempo de la etapa. Para el proceso SSF, las variables son la temperatura, el pH, la carga enzimática, y el volumen de la mezcla. Los experimentos de del proceso en etapas de pretratameinto y SSF se llevan a cabo en un reactor tipo Batch secuencialmente. El proceso SSF se realiza a volumen de mezcla, carga enzimática y masa de levadura constantes. Cada serie de experimentos se efectúa a una temperatura de pretratamiento(T$_P$) constante y una temperatura de SSF (T$_s$) también constante ($T_P$ $?$ T$_s$).
+Para evaluar el efecto de las condiciones de pretratamiento de la biomasa, se diseñó una serie de experimentos considerando 2 tamaños de partícula de bagazo, tres temperaturas de pretratamiento y 2 tiempos de duración del pretratamiento. Todos los experimentos de SSF se realizan a temperatura de \SI{43}{\degreeCelsius} y utilizando condiciones de operación fijas dentro del reactor batch, durante el proceso.
 
-Para evaluar el efecto las condiciones de pretratamiento de la biomasa, se diseñó una serie de experimentos considerando 2 tamaños de partícula de bagazo, tres temperaturas de pretratamiento y 2 tiempos de duración del pretratamiento. Todos los experimentos de SSF se realizan a temperatura de 43 °C y pH alrededor de 5, el volumen de la mezcla es de 2 L, conteniendo 100 g de bagazo, 1.8 ml de carga enzimática y 160 g de levadura.
+Con el fin de mantener condiciones de temperatura estables, se implementaron dos controladores PID en la etapa de pretratamiento, sintonizados mediante un modelo de identificación que relaciona la temperatura del reactor batch con el voltaje aplicado a la resistencia de calentamiento. El pH se reguló utilizando una solución de ácido cítrico, midiéndose tanto el pH inicial como el final en cada prueba de SSF. En cada experimento se cuantificó el contenido de bioetanol (\% v/v) y se evaluaron los costos asociados al proceso.
 
-Con el fin de mantener la temperatura constante se diseñaron dos controladores PID para regular la temperatura de las etapas de pretratamiento y SSF. Para sintonizar los controladores se obtuvo un modelo por identificación que relaciona la temperatura dentro del reactor Batch con el voltaje que entra a la resistencia de banda para el calentamiento. El pH se mantiene alrededor de un valor añadiendo una solución buffer de ácido cítrico. Solo se mide el pH inicial y el pH final. Para cada serie de experimentos se obtiene el contenido de alcohol (bioetanol) en el producto, medido en porcentaje de volumen, así como los costos de producción.
-A continuación, se describe la organización del documento.
-La primera sección contiene la introducción al tema, el planteamiento del problema, los objetivos del proyecto, las metas, la justificación del trabajo, los alcances, y las limitaciones.
-En la segunda parte de nuestro documento se encuentra un marco conceptual para definir la terminología asociada al tema, así como el estado del arte.
-En la tercera parte del documento se describe el sistema de reactor Batch y sus variables. También se describen los materiales y métodos para construir el módulo experimental del reactor Batch y su instrumentación. Al final de esta sección se presenta el diseño del controlador de temperatura para los procesos de pretratamiento. 
-En el apartado cuatro del documento se muestra un diseño factorial de experimentos, para analizar el efecto de las condiciones de operación de los pretratamientos estudiados, parte central del trabajo.  
-En la quinta sección se detallan las pruebas de laboratorio en función del diseño de experimentos. Explicando el procedimiento de cada etapa, 
-En la sección 6 se presentan y discuten los resultados de las pruebas. Por último, se presentan las conclusiones del trabajo.
-
-
+El objetivo de esta tesis es analizar el impacto de las variables clave (tamaño de partícula, temperatura y tiempo de pretratamiento) en la producción de bioetanol a partir de desechos orgánicos (bagazo de caña) mediante una configuración SSF, comparando la eficiencia de dos pretratamientos distintos (químico y biológico) y su influencia en el rendimiento del biocombustible.
 
 \newpage
 \singlespacing
 \section{Planteamiento del problema}
 \onehalfspacing
- 
-Este proyecto busca mejorar la producción de bioetanol de segunda generación a partir de biomasa lignocelulósica mediante la evaluación de dos métodos de pretratamiento: biológico y alcalino. El estudio se centra en determinar las condiciones más adecuadas (temperatura, tamaño de partícula y tiempo) para lograr mayores rendimientos, menores costos y un consumo energético más eficiente.
+La producción de bioetanol de segunda generación (2G) enfrenta desafíos técnicos y económicos derivados de la naturaleza compleja de los desechos orgánicos lignocelulósicos. A diferencia de las materias primas convencionales, estos residuos no contienen azúcares fermentables fácilmente accesibles, lo que exige etapas de pretratamiento costosas y energéticamente intensivas para liberar celulosa y hemicelulosa. Además, la poca eficiencia en la fermentación de los azúcares que se liberan baja mucho la cantidad final de etanol.
 
-Como parte del proceso, se implementa hidrólisis y fermentación simultáneas (SSF) como configuración de producción, siguiendo la metodología propuesta por \cite{Arturo2022evaluacion}, con el propósito de acortar los tiempos de producción y reducir gastos operativos. El análisis comparará no solo la eficiencia en la conversión a etanol, sino también el impacto económico y energético de cada alternativa de pretratamiento.
-El objetivo es obtener la configuración que proporcione la mayor producción de bioetanol de segunda generación (2G), analizando el efecto de las variables de la etapa de pretratamiento, el costo de producción y el consumo energético.
-
+Estos problemas se ven afectados directamente por factores esenciales como el tamaño de partícula, la temperatura y el tiempo de pretratamiento, además del método de pretratamiento utilizado (biológico y alcalino).
+Sin embargo, pocos estudios han comparado ambos métodos en condiciones de hidrólisis y fermentación simultáneas (SSF), una configuración prometedora para reducir tiempos y costos \citep{Figueroa2022evaluacion}. Por ello, este estudio evaluará el impacto de estas variables en la producción de bioetanol 2G, con el fin de analizar y proponer un modelo técnicamente viable y económicamente competitivo para la producción de bioetanol.
 
 
 
 
-\newpage
 \singlespacing
 \section{Objetivos} 
 \subsection{Objetivo general}
@@ -169,7 +159,9 @@ El objetivo es obtener la configuración que proporcione la mayor producción de b
 	Analizar experimentalmente los efectos del tamaño de partícula de biomasa, temperatura y tiempo de procesamiento para dos tipos de pretratamiento de bagazo de caña de azúcar, previos a la producción de bioetanol de segunda generación (2G) mediante una hidrólisis y fermentación en etapas simultáneas (SSF). \newline 
 
 
+\singlespacing
 \subsection{Objetivos específicos}
+\onehalfspacing
 \begin{itemize}
 	\item Diseñar los experimentos para analizar los tres factores considerados, con diferentes niveles, para modificar los pretratamientos.
 	\item Acondicionar e instrumentar un reactor tipo batch para llevar a cabo separadamente las etapas de pretratamiento y SSF.
@@ -208,12 +200,19 @@ El objetivo es obtener la configuración que proporcione la mayor producción de b
 
 
 
+\singlespacing
 \section{Justificación}
-
+\onehalfspacing
 En la última década, se han implementado nuevos métodos para la conservación de nuestro medio ambiente. En las energías limpias se encuentra la producción de combustibles que son considerados como no contaminantes. Este tipo de combustibles se llama biocombustibles. De la producción de biocombustible se deriva la obtención de bioetanol implementado con masa que es tratada como materia desechable. Un ejemplo de ello es el bagazo de caña; este tipo de materia suele ser llamada materia lignocelulosa.
 Ya que este tipo de biomasa es considerada basura, tiene la característica de no generar ningún inconveniente en su uso. Analizando los procesos de producción de biocombustibles, se pueden mejorar las técnicas de pretratamiento para el mayor aprovechamiento de los residuos agrícolas.
 
+Este proyecto busca mejorar la producción de bioetanol de segunda generación a partir de biomasa lignocelulósica mediante la evaluación de dos métodos de pretratamiento: biológico y alcalino. El estudio se centra en determinar las condiciones más adecuadas (temperatura, tamaño de partícula y tiempo) para lograr mayores rendimientos, menores costos y un consumo energético más eficiente.
 
+
+Esta investigación se justifica al abordar dos limitantes críticas en la producción de bioetanol a partir de bagazo de caña. La primera es la baja eficiencia en la liberación de azúcares debido a la materia lignocelulósica, y la segunda los altos costos asociados a métodos convencionales. Para resolver estas limitantes resulta de gran importancia el estudio de las variables como la temperatura, el tamaño de bagazo y el tiempo en el pretratamiento. El obtener los valores para obtener la mayor producción de bioetanol, permitiría hacer más eficiente el proceso.  Asimismo, es de gran importancia conocer las ventajas y resultados experimentales de los tipos de pretratamientos que pueden implementarse en la producción de bioetanol; el alcalino y el biológico, implementados en una configuración SSF. Estas variables y parámetros en el proceso productivo, deben de compararse también desde un punto de vista de costos y eficiencia energética, a modo de contar con un panorama más completo de los beneficios de cada pretratamiento.
+ 
+ 
+ 
 \section{Alcances}
 
 
@@ -273,13 +272,30 @@ Ya que este tipo de biomasa es considerada basura, tiene la característica de no
 \singlespacing
 \section{Organización del documento}
 \onehalfspacing
-La información presentada en este documento se organiza en cinco capítulos. A continuación se describe el contenido de cada capítulo brevemente.\\
+La información presentada en este documento se organiza en ocho capítulos. A continuación se describe el contenido de cada capítulo brevemente.\\
 \textbf{Capitulo 2: Marco teórico y estado del arte}
 En esta sección se integraran los conocimientos para la contextualización de la investigación de los temas relacionados a la producción de bioetanol de segunda generación. Así como las investigaciones que se llevaron a cabo sobre los temas como la producción de bioetanol de segunda generación, los pretratamientos que se han llevado a cabo, entre otros.
 \newline
 \textbf{Capitulo 3: Instrumentación de la planta y control} La planta y el control de una de las variables mas importantes es uno de los retos mas importantes, por lo que en este capitulo se presenta el diseño, la instrumentación del control en la planta.
 \newline
 \textbf{Capitulo 4: Diseño de experimentos} Se presentan los datos y el 
+\newline
+\textbf{Capitulo 5:}
+\newline
+\textbf{Capitulo 6:}
+\newline
+\textbf{Capitulo 7:}
+\newline
+\textbf{Capitulo 8:Conclusiones y trabajos futuros}
+
+A continuación, se describe la organización del documento.
+La primera sección contiene la introducción al tema, el planteamiento del problema, los objetivos del proyecto, las metas, la justificación del trabajo, los alcances, y las limitaciones.
+En la segunda parte de nuestro documento se encuentra un marco conceptual para definir la terminología asociada al tema, así como el estado del arte.
+En la tercera parte del documento se describe el sistema de reactor Batch y sus variables. También se describen los materiales y métodos para construir el módulo experimental del reactor Batch y su instrumentación. Al final de esta sección se presenta el diseño del controlador de temperatura para los procesos de pretratamiento. 
+En el apartado cuatro del documento se muestra un diseño factorial de experimentos, para analizar el efecto de las condiciones de operación de los pretratamientos estudiados, parte central del trabajo.  
+En la quinta sección se detallan las pruebas de laboratorio en función del diseño de experimentos. Explicando el procedimiento de cada etapa, 
+En la sección 6 se presentan y discuten los resultados de las pruebas. Por último, se presentan las conclusiones del trabajo.
+
 
 %El \textbf{Capitulo 2} presenta la revisión del estado del arte que abarcó modelos matemáticos del sistema de inyección de combustible y el marco teórico de motores de combustión interna, sistemas de inyección de combustible, redes neuronales y detección y diagnóstico de fallas.\\
 
@@ -303,8 +319,8 @@ A continuación se presentan los conceptos claves como bioetanol, lignocelulosa, 
 \singlespacing
 \subsection{Bioetanol de segunda generación}
 \onehalfspacing
-Este combustible, también conocido como alcohol etílico, puede ser utilizado como sustituto de gasolina, así como potenciador de esta. El combustible es considerado ecológico generando un ciclo en el que comprende una producción de biocombustible que al ser quemado libera dióxido de carbono, las plantas consumen este gas y, por último, estas plantas son utilizadas para generar más biocombustible \cite{castro2012produccion}.
-Ya que no es un componente tóxico, ni contaminante el alcohol etílico contiene propiedades que ayudan en su uso, también su facilidad de ser producido en grandes cantidades, mediante la fermentación de materias bases a partir de residuos orgánicos, esta fermentación proporciona hidratos de carbono que es adaptable para el sustituto de gasolina en motores de encendido por chispa \cite{ballesteros2002proceso}.
+Este combustible, también conocido como alcohol etílico, puede ser utilizado como sustituto de gasolina, así como potenciador de esta. El combustible es considerado ecológico generando un ciclo en el que comprende una producción de biocombustible que al ser quemado libera dióxido de carbono, las plantas consumen este gas y, por último, estas plantas son utilizadas para generar más biocombustible \citep{castro2012produccion}.
+Ya que no es un componente tóxico, ni contaminante el alcohol etílico contiene propiedades que ayudan en su uso, también su facilidad de ser producido en grandes cantidades, mediante la fermentación de materias bases a partir de residuos orgánicos, esta fermentación proporciona hidratos de carbono que es adaptable para el sustituto de gasolina en motores de encendido por chispa\citep{ballesteros2002proceso}.
 
 
 
@@ -316,8 +332,8 @@ Ya que no es un componente tóxico, ni contaminante el alcohol etílico contiene p
 \subsection{Lignocelulosa}
 \onehalfspacing
 
-Proveniente de la fotosíntesis, la lignocelulosa es uno de los componentes más abundantes y principal de la biomasa, esta forma la pared celular de las plantas. Entre las plantas, la composición y porcentajes de lignocelulosa varían dependiendo de la edad y etapa de crecimiento de las plantas \cite{cuervo2009lignocelulosa}.
-Es viable utilizar este material por su bajo costo, su alta disponibilidad y aprovechamiento variado. Un ejemplo es en la industria de los materiales compuestos \cite{jara2022principales}.
+Proveniente de la fotosíntesis, la lignocelulosa es uno de los componentes más abundantes y principal de la biomasa, esta forma la pared celular de las plantas. Entre las plantas, la composición y porcentajes de lignocelulosa varían dependiendo de la edad y etapa de crecimiento de las plantas \citep{cuervo2009lignocelulosa}.
+Es viable utilizar este material por su bajo costo, su alta disponibilidad y aprovechamiento variado. Un ejemplo es en la industria de los materiales compuestos \citep{jara2022principales}.
 Ya que son viables, se han desarrollado usos alternativos para aprovechar este subproducto agroindustrial, utilizándolo en la creación de biocombustibles.
 La lignocelulosa está conformada por celulosa, hemicelulosa y lignina, siendo una fuente de carbono y energía renovable \cite{portalproduccion}. 
 
@@ -326,8 +342,8 @@ La lignocelulosa está conformada por celulosa, hemicelulosa y lignina, siendo un
 \singlespacing
 \subsection{Bagazo de caña}
 \onehalfspacing
-El material es recuperado de la producción de azúcar, se obtiene después de un triturado después de obtener el jugo de la caña, este tipo de biomasa no es aprovechada. Esta biomasa tiene un 28\% en peso de la caña, y también, un 45\% de fibra, 2-3\% de sólidos insolubles y otro mismo porcentaje de sólidos solubles, finalmente la mitad de este material está conformado de agua \cite{olmo2015bagazo}.
-El bagazo representa el de mayor tonelaje y volumen de la producción de azúcar de caña, generando un promedio de 270 kg de bagazo por tonelada \cite{perez2022efecto}.
+El material es recuperado de la producción de azúcar, se obtiene después de un triturado después de obtener el jugo de la caña, este tipo de biomasa no es aprovechada. Esta biomasa tiene un 28\% en peso de la caña, y también, un 45\% de fibra, 2-3\% de sólidos insolubles y otro mismo porcentaje de sólidos solubles, finalmente la mitad de este material está conformado de agua \citep{olmo2015bagazo}.
+El bagazo representa el de mayor tonelaje y volumen de la producción de azúcar de caña, generando un promedio de 270 kg de bagazo por tonelada \citep{perez2022efecto}.
 
 \begin{figure}[H]
 	\centering
@@ -340,11 +356,11 @@ El bagazo representa el de mayor tonelaje y volumen de la producción de azúcar d
 \singlespacing
 \subsection{Pretratamientos}
 \onehalfspacing
-Obteniendo la materia prima, se puede realizar un pretratamiento que ayudará a degradar la materia y producir un mayor porcentaje de concentración de biocombustible. El procesamiento de biomasa lignocelulósica complementa la hidrólisis enzimática y posibilita la obtención de altos rendimientos. Siendo necesario ya que la lignina en las paredes celulares en la planta crea barreras contra en ataque enzimático \cite{Riano2010produccion} 
+Obteniendo la materia prima, se puede realizar un pretratamiento que ayudará a degradar la materia y producir un mayor porcentaje de concentración de biocombustible. El procesamiento de biomasa lignocelulósica complementa la hidrólisis enzimática y posibilita la obtención de altos rendimientos. Siendo necesario ya que la lignina en las paredes celulares en la planta crea barreras contra en ataque enzimático \citep{Riano2010produccion}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm, height=6cm]{imagenes/pretrata_1}
-	\caption[Efecto del pretratamiento de biomasa ligno- celulósica]{}
+	\caption{Efecto del pretratamiento de biomasa ligno- celulósica}
 	\label{fig:pretrata1}
 \end{figure}
 
@@ -354,7 +370,7 @@ En la Tabla \ref{tipos de pretratamientos} se listan los principales pretratamie
 
 \begin{table}[H]
 	\centering  
-	\caption{Tipos de pretratamiento \citep{ADITIYA2016631} }
+	\caption{Tipos de pretratamiento \citep{ADITIYA2016631} }.
 	\begin{tabular}{  | p{5cm} | p{9cm} |}
 		\hline Tipo de pretratamiento & Método\\ \hline 
 		Ácido     & Percolación de amoníaco reciclado Ácido diluido  \\ 
@@ -381,8 +397,8 @@ En la Tabla \ref{tipos de pretratamientos} se listan los principales pretratamie
 \begin{itemize}
 	\item  {\textbf{Pretratamiento alcalino}} \\
 	\onehalfspacing
-	El pretratamiento con NaOH es uno de los más utilizados en pretratamientos alcalinos,  ya que genera un incremento en la hidrólisis \cite{espinosa2021pretratamiento}, en cambio, producen una perdida de celulosa y hemicelulosa, generando una menor producción de azúcares y bioetanol.
-	El pretratamiento utiliza, hidróxido sódico, amoniaco o cal, generando menos inhibidores, lo cual obtiene una mayor deslignificación en comparación con tratamiento con ácidos \cite{valles2022estudio}.
+	El pretratamiento con NaOH es uno de los más utilizados en pretratamientos alcalinos,  ya que genera un incremento en la hidrólisis \citep{espinosa2021pretratamiento}, en cambio, producen una perdida de celulosa y hemicelulosa, generando una menor producción de azúcares y bioetanol.
+	El pretratamiento utiliza, hidróxido sódico, amoniaco o cal, generando menos inhibidores, lo cual obtiene una mayor deslignificación en comparación con tratamiento con ácidos \citep{valles2022estudio}.
 	
 	\item  {\textbf{Pretratamiento biológico}} \\
 	\onehalfspacing
@@ -393,8 +409,8 @@ En la Tabla \ref{tipos de pretratamientos} se listan los principales pretratamie
 \singlespacing
 \subsection{ Sacarificación enzimática de la biomasa pretratada y la fermentación} 
 \onehalfspacing
-El proceso de sacarificación enzimática y fermentación (SHF) se realiza por separado debido a que la temperatura que se tiene en las distintas fases son diferentes, en el caso de las enzimas hidrolíticas se tiene un promedio de 50°c, y una temperatura más baja en el caso de la fermentación de 30 °C-32 °C. 
-La producción de biocombustible por etapas separadas es una de las técnicas más antiguas, realizando un pretratado de enzimas para su hidrólisis y posteriormente una fermentación de la biomasa resultante \cite{CHOUDHARY201682}.
+El proceso de sacarificación enzimática y fermentación (SHF) se realiza por separado debido a que la temperatura que se tiene en las distintas fases son diferentes, en el caso de las enzimas hidrolíticas se tiene un promedio de \SI{50}{\degreeCelsius}, y una temperatura más baja en el caso de la fermentación de \SI{30}{\degreeCelsius}-\SI{32}{\degreeCelsius}. 
+La producción de biocombustible por etapas separadas es una de las técnicas más antiguas, realizando un pretratado de enzimas para su hidrólisis y posteriormente una fermentación de la biomasa resultante \citep{CHOUDHARY201682}.
 
 \begin{figure}[H]
 	\centering
@@ -429,7 +445,7 @@ Las enzimas hidrolíticas son adaptables al frío y las levaduras termófilas son i
 
 \section{Estado del arte}
 
-El pretratamiento es un paso muy importante para la producción de bioetanol de segunda generación, algunos de los pretratamientos que existen son: Ácido, Térmico, Biológico, alcalino, Químico, Mecánico (\cite{ADITIYA2016631}).
+El pretratamiento es un paso muy importante para la producción de bioetanol de segunda generación, algunos de los pretratamientos que existen son: Ácido, Térmico, Biológico, alcalino, Químico, Mecánico \citep{ADITIYA2016631}.
 El pretratamiento con NaOH es uno de los más utilizados como pretratamientos alcalinos, este promueve la hidrólisis \cite{espinosa2021pretratamiento}. Una desventaja de este es la pérdida de celulosa y hemicelulosa, y la reducción de azúcares y bioetanol.
 En general, el pretratamiento alcalino genera menos inhibidores y favorece la deslignificación, en comparación con tratamiento con ácidos, según \cite{valles2022estudio}. 
 
@@ -464,9 +480,9 @@ El pretratamiento alcalino consiste en sumergir un material lignocelulósico en u
 % REF. % Galbe, M., & Zacchi, G. (2012). Pretreatment: The key to efficient utilization of lignocellulosic materials. Biomass and Bioenergy, 46, 70?78.
 Enseguida se describen algunas investigaciones sobre pretratamientos alcalinos como medio para favorecer la hidrólisis enzimática de la biomasa, que para la actual revisión es el bagazo de caña.
 
-\citet{Nasution_2022} presentó una revisión de los pretratamientos más usados en los últimos años. Como pretratamiento alcalino se destaca el uso del NaOH. Comúnmente se recomienda manejar una concentración al 2 \% de NaOH, una relación de agua destilada de 1:10 solido-liquido, y una temperatura de operación de 80 °C, así como un tiempo de tratamiento de 2h.
+\citet{Nasution_2022} presentó una revisión de los pretratamientos más usados en los últimos años. Como pretratamiento alcalino se destaca el uso del NaOH. Comúnmente se recomienda manejar una concentración al 2 \% de NaOH, una relación de agua destilada de 1:10 solido-liquido, y una temperatura de operación de \SI{80}{\degreeCelsius}, así como un tiempo de tratamiento de 2h.
 
-En un estudio afin, \citet{Arturo2022evaluacion} utilizó como biomasa bagazo de caña para producir bioetanol con dos modos diferentes de producción: sacarificación enzimática y fermentación en etapas separadas (SHF), y Sacarificación y fermentación simultáneas (SSF). Se probaron 4 tipos de pretratamientos de la materia prima, entre estos se aplicó un pretratamiento alcalino usando como base NaOH al 2 \% p/v y una carga de bagazo del 4\% p/v. El pretratamiento se llevó a cabo a 97°C durante un tiempo de 90 minutos. Al finalizar este tiempo, la biomasa tratada se acondicionó mediante etapas de enjuagado, filtrado y secado para después ser procesada por cada modo de producción, SHF o SSF. Comparando el porcentaje de alcohol obtenido a partir de cada proceso (SHF o SSF), se concluyó que el proceso SHF obtuvo un producto más concentrado, con 15 \% de alcohol, mientras que el producto del proceso SSF tenía un contenido de alcohol menor de 11 \%. En contra parte se concluyó que el proceso SSF reduce en un 80\% el tiempo consumido por el proceso SHF.
+En un estudio afín, \citet{Figueroa2022evaluacion} utilizó como biomasa bagazo de caña para producir bioetanol con dos modos diferentes de producción: sacarificación enzimática y fermentación en etapas separadas (SHF), y Sacarificación y fermentación simultáneas (SSF). Se probaron 4 tipos de pretratamientos de la materia prima, entre estos se aplicó un pretratamiento alcalino usando como base NaOH al 2 \% p/v y una carga de bagazo del 4\% p/v. El pretratamiento se llevó a cabo a \SI{97}{\degreeCelsius} durante un tiempo de 90 minutos. Al finalizar este tiempo, la biomasa tratada se acondicionó mediante etapas de enjuagado, filtrado y secado para después ser procesada por cada modo de producción, SHF o SSF. Comparando el porcentaje de alcohol obtenido a partir de cada proceso (SHF o SSF), se concluyó que el proceso SHF obtuvo un producto más concentrado, con 15 \% de alcohol, mientras que el producto del proceso SSF tenía un contenido de alcohol menor de 11 \%. En contra parte se concluyó que el proceso SSF reduce en un 80\% el tiempo consumido por el proceso SHF.
 
 
 
@@ -480,19 +496,19 @@ En un estudio afin, \citet{Arturo2022evaluacion} utilizó como biomasa bagazo de 
 \textbf{Pretratamiento ácido} 
 
 El pretratamiento ácido se realiza impregnando en un ácido diluido el material lignocelulósico. Comúnmente se usan ácidos minerales como el ácido sulfúrico (H$_2$SO$_4$), que fragmenta los componentes de la biomasa en moléculas más pequeñas \citep{Galbe2012}. Como ejemplo se citan los siguientes estudios. 
-Regresando al trabajo de \cite{Figueroa2022evaluacion}, entre los pretratamientos que se presentaron está también uno con ácido sulfúrico ($H_2 S0_4$) y agua destilada. Para este caso se efectuaron experimentos con 3 porcentajes de carga de biomasa (4\%, 6\%, 8\%) a temperatura máxima de 97°C y con duración de 60 minutos. Para el proceso SSF se obtuvo un producto con 7 \% de alcohol, es decir un rendimiento menor que el obtenido con el pretratamiento alcalino desarrollado en el mismo trabajo para bagazo de caña.
+Regresando al trabajo de \cite{Figueroa2022evaluacion}, entre los pretratamientos que se presentaron está también uno con ácido sulfúrico ($H_2 S0_4$) y agua destilada. Para este caso se efectuaron experimentos con 3 porcentajes de carga de biomasa (4\%, 6\%, 8\%) a temperatura máxima de \SI{97}{\degreeCelsius} y con duración de 60 minutos. Para el proceso SSF se obtuvo un producto con 7 \% de alcohol, es decir un rendimiento menor que el obtenido con el pretratamiento alcalino desarrollado en el mismo trabajo para bagazo de caña.
 
 Otro trabajo sobre producción de bioetanol con bagazo de caña  pretratado con ácido es el de \citet{TANTAYOTAI2022102499}, quienes compararon la efectividad de dos ácidos, uno orgánico y otro mineral. Como resultado, se concluyó que el pretratamiento con ácidos orgánicos fue más efectivo porque se logró mayor rendimiento.
 
 %%%%%
-\citet{rojas2010analisis} y sus colaboradores también expusieron sus resultados para 3 pretratamientos de bagazo de caña, incluido uno ácido. Su objetivo fue comparar el impacto ambiental de los tres pretratamientos. Al igual que en los trabajos antes citados, el pretratamiento se hizo con H$_2$SO$_4$. Se usó el ácido al 1.5 \% en peso y se procesó a 160°C. Se obtuvo como resultado la degradación del 90\% de la hemicelulosa y una completa solubilidad de la lignina. Después del pretratamiento se efectuaron la fermentación, la destilación y la purificación del producto. La etapa de SSF se concluyó con un rendimiento de 85 \% de la sacarificación y fermentación de la celulosa, mientras que el rendimiento del proceso SHF fue de 75 \%  con respecto a la fermentación de azucares. Finalmente, se concluyó que al comparar los tres tipos de pretratamientos efectuados, el ácido no se encuentra entre los mas contaminantes.
+\citet{rojas2010analisis} y sus colaboradores también expusieron sus resultados para 3 pretratamientos de bagazo de caña, incluido uno ácido. Su objetivo fue comparar el impacto ambiental de los tres pretratamientos. Al igual que en los trabajos antes citados, el pretratamiento se hizo con H$_2$SO$_4$. Se usó el ácido al 1.5 \% en peso y se procesó a \SI{160}{\degreeCelsius}. Se obtuvo como resultado la degradación del 90\% de la hemicelulosa y una completa solubilidad de la lignina. Después del pretratamiento se efectuaron la fermentación, la destilación y la purificación del producto. La etapa de SSF se concluyó con un rendimiento de 85 \% de la sacarificación y fermentación de la celulosa, mientras que el rendimiento del proceso SHF fue de 75 \%  con respecto a la fermentación de azucares. Finalmente, se concluyó que al comparar los tres tipos de pretratamientos efectuados, el ácido no se encuentra entre los mas contaminantes.
 
 %%revisar
 
 \textbf{Pretratamiento térmico } 
 
 
-Regresando al trabajo de \citet{rojas2010analisis}, otro de los pretratamiento probados para el bagazo de caña fue un pretratamiento térmico en condiciones de temperaturas y presiones elevadas, de 220 °C y 22.9 atm. Al analizar los niveles de contaminación de los pretratamientos, se concluyó que dada la cantidad de energía que se requiere para llegar a altas temperaturas, el pretratamiento térmico resultó el más contaminante.
+Regresando al trabajo de \citet{rojas2010analisis}, otro de los pretratamiento probados para el bagazo de caña fue un pretratamiento térmico en condiciones de temperaturas y presiones elevadas, de \SI{220}{\degreeCelsius} y 22.9 atm. Al analizar los niveles de contaminación de los pretratamientos, se concluyó que dada la cantidad de energía que se requiere para llegar a altas temperaturas, el pretratamiento térmico resultó el más contaminante.
 
 El trabajo de \citet{MOONSAMY2022115675} tuvo como objetivo lograr una producción autosustentable, creando distintos escenarios. Un aspecto escencial de su análisis fue explorar la vialidad de combinar procesos de primera y segunda generación a partir de melazas y material lignocelulósico provenientes de la caña de azúcar. El pretratamiento propuesto fue el de explosión de vapor. Este consiste en hacer pasar una corriente líquida de hemicelulosa con una parte solida de celulosa y lignina. Posteriormente, dependiendo del escenario se realizó una SSF o una SHF. La conclusión fue que la ventaja del proceso combinado es su factibilidad económica, el reto es evitar la inhibición o supresión de la glucosa.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -515,8 +531,8 @@ La producción de bioetanol en etapas simultáneas se realizan
 
 
 \subsection{Producción de bioetanol de segunda generación en reactores tipo Batch}
-En la tesis de \cite{Perez2024}, realiza una hidrólisis y fermentación simultánea con objetivo de diseñar un biorreactor para la producción de 2,3 -butanodiol  a partir de zanahoria, mencionando que el diseño del biorreactor tiene un sistema de agitación. Uno de los datos en los que concluye es que mediante el agitado, la glucosa es mas abundante en el proceso. El reactor mencionado es de capacidad de 2 L, trabajando a una carga enzimática de 5 FPU/g y 10 FPU/g con temperaturas de 37 °C. Otra conclusión obtenida fue que la carga enzimática no afecto en la producción.
-En otra investigación sobre la producción de bioetanol a partir de la cáscara de piña como biomasa, se empleó un reactor tipo batch con tanque agitado, elegido por su facilidad de manejo. Como conclusión, se destaca que factores como la temperatura han influido positivamente en el aumento del rendimiento del proceso. Ver el articulo  \cite{Segura2018}
+En la tesis de \cite{Perez2024}, realiza una hidrólisis y fermentación simultánea con objetivo de diseñar un biorreactor para la producción de 2,3 -butanodiol  a partir de zanahoria, mencionando que el diseño del biorreactor tiene un sistema de agitación. Uno de los datos en los que concluye es que mediante el agitado, la glucosa es mas abundante en el proceso. El reactor mencionado es de capacidad de 2 L, trabajando a una carga enzimática de 5 FPU/g y 10 FPU/g con temperaturas de \SI{37}{\degreeCelsius}. Otra conclusión obtenida fue que la carga enzimática no afecto en la producción.
+En otra investigación sobre la producción de bioetanol a partir de la cáscara de piña como biomasa, se empleó un reactor tipo batch con tanque agitado, elegido por su facilidad de manejo. Como conclusión, se destaca que factores como la temperatura han influido positivamente en el aumento del rendimiento del proceso. Ver el artículo  \cite{Segura2018}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -534,12 +550,47 @@ En el laboratorio de procesos se encuentra una planta piloto que en 2008 fue uti
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=5cm, height=6cm]{imagenes/Biorreactor.png}
-	\caption{Biorreactor utilizado para la producción de biodiésel}
+	\caption{Planta piloto utilizada para la producción de biodiésel}
 	\label{Biorreactor}
 \end{figure}
 
 
-El biorreactor consta de 8 elementos: reactor, recipiente contenedor de aceite, recipiente contenedor de metóxido, motor agitador, válvula solenoide, resistencia eléctrica de calentamiento, mezclador y armadura de soporte (\cite{Torres2008,}). Dado que se requiere adaptar el biorreactor, por el momento solo se utilizarán 6 de los 8 elementos para los experimentos del pretratamiento, así como la etapa de hidrólisis y fermentación.
+El biorreactor consta de 8 elementos: reactor, recipiente contenedor de aceite, recipiente contenedor de metóxido, motor agitador, válvula solenoide, resistencia eléctrica de calentamiento, mezclador y armadura de soporte \citep{Torres2008}. Dado que se requiere adaptar el biorreactor, por el momento solo se utilizarán 6 de los 8 elementos para los experimentos del pretratamiento, así como la etapa de hidrólisis y fermentación.
+
+
+
+\subsection{Planta: Adaptación del biorreactor}
+La planta piloto utilizada para producción de biodiésel, se modificó y adaptó para la producción de bioetanol
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=6cm, height=7cm]{imagenes/reactor_antes}
+	\caption{Estructura sin acondicionar}
+	\label{fig:soldad}
+\end{figure}
+
+La estructura se reforzó con barras angulares en forma de "L" que inicialmente se encontraban superpuestas. Para garantizar una mayor estabilidad, estas se soldaron entre sí y se añadieron refuerzos adicionales. Además, se soldó en una parte de la estructura una base para servir como soporte fijo del biorreactor, ya que originalmente este solo estaba colocado sobre él sin ningún soporte, en la figura.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=6cm, height=7cm]{imagenes/soldado1.png}
+	\caption{Estructura soldada y acondicionada}
+	\label{fig:soldado1}
+\end{figure}
+
+
+
+El elemento tanque agitado, tiene una capacidad de \SI{10.38}{\liter}, equivalente a un volumen de  $10.38 \times 10^6  $ $ mm^3$. Dentro de este reactor se llevarán a cabo los pretratamientos y la etapa de hidrólisis y fermentación. En la Figura \ref{Reactor}, se pueden observar las dimensiones del reactor. Dentro del tanque agitado, se mandó a soldar unos tubos que tienen el propósito de mantener los sensores termopar K en su lugar, y estos no se enreden con el mezclador. Son tres tubos que tienen un diámetro de 1 cm, estos están distribuidos dentro del reactor, como lo muestra la figura \ref{Reactor con 3 tubos.}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=6.5cm, height=5cm]{imagenes/reactor_tubos}
+	\caption{Tres tubos soldados dentro del reactor.}
+	\label{Reactor con 3 tubos.}
+\end{figure}
+
+El tanque agitado consta de una resistencia para calentar la solución, una estructura que se soldó y modificó para adaptar correctamente los sensores tipo K y un mezclador que mantiene la temperatura homogénea, la figura \ref{fig:soldado1} muestra la estructura.
+
 
 \begin{figure}[H]
 	\centering
@@ -549,37 +600,10 @@ El biorreactor consta de 8 elementos: reactor, recipiente contenedor de aceite, 
 \end{figure}
 
 
-
-\subsection{Planta: Adaptación del biorreactor}
-
-
-La planta consta de un tanque agitado que contiene una resistencia para calentar la solución, una estructura que se soldó y modificó para adaptar correctamente los sensores tipo K y un mezclador que mantiene la temperatura homogénea, la figura \ref{fig:soldado1} muestra la estructura .
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=6cm, height=7cm]{imagenes/soldado1.png}
-	\caption{Estructura soldada y acondicionada}
-	\label{fig:soldado1}
-\end{figure}
-
-La estructura estaba reforzada con barras angulares en forma de "L" que inicialmente se encontraban superpuestas. Para garantizar una mayor estabilidad, estas se soldaron entre sí y se añadieron refuerzos adicionales. Además, se soldó en una parte de la estructura una base para servir como soporte fijo del biorreactor, ya que originalmente este solo estaba colocado sobre él sin ningún soporte.
-
-El elemento tanque agitado, tiene una capacidad de 10.38 litros, equivalente a un volumen de  $10.38 x 10^6  $ $ mm^3$. Dentro de este reactor se llevarán a cabo los pretratamientos y la etapa de hidrólisis y fermentación. En la Figura \ref{Reactor}, se pueden observar las dimensiones del reactor.
-Para el caso de del tanque agitado, se mandó a soldar unos tubos que tienen el propósito de mantener los sensores termopar k en su lugar, y estos no se enreden con el mezclador. Son tres tubos que tienen un diámetro de 1 cm, estos están distribuidos dentro del reactor, como lo muestra la figura \ref{Reactor con 3 tubos.}.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=6.5cm, height=5cm]{imagenes/reactor_tubos}
-	\caption{Tres tubos soldados dentro del reactor.}
-	\label{Reactor con 3 tubos.}
-\end{figure}
-
-
-
-
 \subsection{Motor}
 
 
-El tercer elemento que fue modificado del biorreactor fue el motor; el motor de la figura  anterior era de corriente alterna a 127 v, a 50-60 hz, con 142 rpm, lamentablemente no contaba con el torque necesario para mover los 6 l de agua con biomasa bagazo de caña como lo muestra la figura 	\ref{motorchico} .
+El tercer elemento que fue modificado del biorreactor fue el motor; el motor de la figura  anterior era de corriente alterna a \SI{127}{\volt}, a  \SI{50}{\hertz}-\SI{60}{\hertz}, con \SI{142}{\rpm}, lamentablemente no contaba con el torque necesario para mover los \SI{6}{\liter} de agua con biomasa bagazo de caña como lo muestra la figura 	\ref{motorchico} .
 
 \begin{figure}[H]
 	\centering
@@ -596,7 +620,7 @@ Se busco uno que tuviera esa capacidad, por lo que se utilizara un motor-reducto
 	\caption{Moto-reductor}
 	\label{motorreductor}
 \end{figure}
-El motor cuenta con una velocidad nominal de 142 rpm, a un voltaje de operación de 24 V, trabaja con un torque nominal de 3.9 kN/m. Se utiliza un relé programable para ciclos de encendido/apagado, donde el motor se mantiene 10 segundos encendido y otros 10 segundos apagado, con el propósito de no mantenerlo en un esfuerzo constante.
+El motor cuenta con una velocidad nominal de \SI{142}{\rpm} 142, a un voltaje de operación de \SI{24}{\volt}, trabaja con un torque nominal de \SI{3.9}{\kilo\newton\per\meter}. Se utiliza un relé programable para ciclos de encendido/apagado, donde el motor se mantiene \SI{10}{\second} encendido y otros \SI{10}{\second} apagado, con el propósito de no mantenerlo en un esfuerzo constante.
 
 
 \subsection{Mezclador}
@@ -659,7 +683,7 @@ La temperatura ambiente es un elemento importante, dado que puede impactar en la
 
 \textbf{ Material:}
 \begin{itemize}
-	\item[$\blacksquare$] Termopar tipo k
+	\item[$\blacksquare$] Termopar tipo K
 	\item[$\blacksquare$] Sensor DHT 11
 	\item[$\blacksquare$] Monitor
 	\item[$\blacksquare$] Cable HDMI
@@ -671,7 +695,7 @@ La Raspberry Pi es una mini computadora con un sistema operativo tipo Linux. La 
 
 \subsection{ Lectura y registro de las temperaturas.}
 
-El termopar K es uno de los sensores mas utilizados, fabricado de dos materiales distintos, leyendo temperaturas hasta de 1200 °C.
+El termopar K es uno de los sensores mas utilizados, fabricado de dos materiales distintos, leyendo temperaturas hasta de \SI{1200}{\degreeCelsius}.
 El programa que leerá los sensores DHT11 y termopar tipo K se detalla en el anexo \ref{anexo B} donde se menciona el programa completo en lenguaje python, realizado en Raspberry Pi OS. Para obtener más información sobre el programa, se presenta el diagrama en la figura \ref{Diagrama1}.
 
 \begin{figure}[H]
@@ -937,7 +961,7 @@ En la Figura \ref{Entradaenplanta} se ilustra el proceso completo del sistema: u
 
 \subsection{Ciclo de trabajo vs Señal PWM}
 
-Para entender cómo se comporta el sistema en general, se debe generar una señal PWM (Pulse Width Modulation),una señal PWM es una técnica de modulación escalar, donde muestran valores de 0 a 1 generalmente, produciendo un tren de pulsos con un ancho especifico (\cite{Posada2005modulacion}), esta es una técnica de modulación de ancho de pulso de una señal donde se modifica el ciclo de trabajo de la señal periódica. El ciclo de trabajo de una señal periódica \textit{d(t)} se define como la relación entre la duración de su parte positiva \textit{W} y el período total de la señal \textit{T}, \cite{cortes2011generacion}. Con ayuda de Simulink se puede generar y configurar esta señal para poder ser ingresada al sistema, ver Figura \ref{Senal en simulink}
+Para entender cómo se comporta el sistema en general, se debe generar una señal PWM (Pulse Width Modulation),una señal PWM es una técnica de modulación escalar, donde muestran valores de 0 a 1 generalmente, produciendo un tren de pulsos con un ancho especifico \citep{Posada2005modulacion}, esta es una técnica de modulación de ancho de pulso de una señal donde se modifica el ciclo de trabajo de la señal periódica. El ciclo de trabajo de una señal periódica \textit{d(t)} se define como la relación entre la duración de su parte positiva \textit{W} y el período total de la señal \textit{T}, \citep{cortes2011generacion}. Con ayuda de Simulink se puede generar y configurar esta señal para poder ser ingresada al sistema, ver Figura \ref{Senal en simulink}
 
 
 \begin{figure}[H]
@@ -976,11 +1000,11 @@ Inicialmente, se modificó el ciclo de trabajo de la señal PWM al 90\%. Los resul
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm, height=6cm]{imagenes/1.png}
-	\caption{Prueba 1,Termopar k 1 y 2 con un ciclo de trabajo de 90\%. }
+	\caption{Prueba 1,Termopar K 1 y 2 con un ciclo de trabajo de 90\%. }
 	\label{prueba 90}
 \end{figure}
 
-Se encuentran tres sensores termopar tipo K dentro del reactor. En la Figura \ref{prueba 90} se pueden observar las tres señales. Sin embargo, el termopar K1 y el termopar K2 convergen a 97°C, como se muestra en la Figura \ref{prueba a 90_k12}, lo cual es un poco más alto que la temperatura de evaporación del agua en Cuernavaca (94°C-95°C). No obstante, el sensor termopar K muestra un error de 10°C en comparación con los otros dos sensores termopar K3, debido al ruido en el sensor y una falla en el mismo. En cuanto a la temperatura ambiente, osciló en un rango de 30°C a 34°C.
+Se encuentran tres sensores termopar tipo K dentro del reactor. En la Figura \ref{prueba 90} se pueden observar las tres señales. Sin embargo, el termopar K1 y el termopar K2 convergen a \SI{97}{\degreeCelsius}, como se muestra en la Figura \ref{prueba a 90_k12}, lo cual es un poco más alto que la temperatura de evaporación del agua en Cuernavaca (\SI{94}{\degreeCelsius}-\SI{95}{\degreeCelsius}). No obstante, el sensor termopar K muestra un error de \SI{10}{\degreeCelsius} en comparación con los otros dos sensores termopar K3, debido al ruido en el sensor y una falla en el mismo. En cuanto a la temperatura ambiente, osciló en un rango de \SI{30}{\degreeCelsius} a \SI{34}{\degreeCelsius}.
 
 \begin{figure}[H]
 	\centering
@@ -1008,7 +1032,7 @@ Como se muestra en la Figura \ref{prueba 50}, dos de los 3 termopares que se enc
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm, height=6cm]{imagenes/4_1.png}
-	\caption{Prueba 2, termopar k 1, modificando el ciclo de trabajo al 50\%. }
+	\caption{Prueba 2, termopar K 1, modificando el ciclo de trabajo al 50\%. }
 	\label{termopar k, 1}
 \end{figure}
 
@@ -1090,7 +1114,7 @@ La señal PRBS entra  mediante la salida PWM del Arduino a un convertidor, pasand
 	\label{ diagrama_prbs}
 \end{figure}
 
-En el reactor se mide mediante los sensores termopar k  la temperatura, esta temperatura ingresando la señal PRBS tiene la forma siguiente como lo muestra la Figura \ref{ Temperatura_con PRBS}
+En el reactor se mide mediante los sensores termopar K la temperatura, esta temperatura ingresando la señal PRBS tiene la forma siguiente como lo muestra la Figura \ref{ Temperatura_con PRBS}
 
 \begin{figure}[H]
 	\centering
@@ -1230,7 +1254,7 @@ Con estos valores se observa el control en las variables en el reactor, utilizan
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm, height=6cm]{imagenes/sistema_controlado}
-	\caption{Sistema simulado con control de temperatura a 90 °C}
+	\caption{Sistema simulado con control de temperatura a \SI{90}{\degreeCelsius}}
 	\label{sistema simulado}
 \end{figure}
 
@@ -1370,7 +1394,7 @@ El diseño de experimentos para la producción de bioetanol pretratado con humus d
 
 El diseño de experimentos contempla los factores que son importantes para la configuración en la producción de bioetanol 2G. Los factores en este caso son las variables que modificamos (temperatura y tamaño de bagazo de caña).	Los niveles son los valores en que los factores fueron utilizados en las experimentaciones, modificando en 1, 2 o 3 niveles.
 
-Para el pretratamiento biológico, específicamente se tomó un nivel 1 de tiempo de pretratamiento, es decir las experimentaciones se realizaron en 5 días. Para el factor A ( tamaño de bagazo de caña), se plantearon dos niveles siendo estos Tamaño No Uniforme de Bagazo (TNUB) y bagazo con partículas de 1 cm. La idea es saber que impacto tiene modificar el tamaño de partícula, en el caso del factor B, el cual es la temperatura, se plantearon 3 niveles: 45 °C ,40 °C, y 30 °C. La Tabla \ref{biologico2} muestra el detalle de los 6 experimentos resultantes de la combinación de factores y niveles seleccioandos para el pretratamiento biológico.
+Para el pretratamiento biológico, específicamente se tomó un nivel 1 de tiempo de pretratamiento, es decir las experimentaciones se realizaron en 5 días. Para el factor A ( tamaño de bagazo de caña), se plantearon dos niveles siendo estos Tamaño No Uniforme de Bagazo (TNUB) y bagazo con partículas de 1 cm. La idea es saber que impacto tiene modificar el tamaño de partícula, en el caso del factor B, el cual es la temperatura, se plantearon 3 niveles: \SI{45}{\degreeCelsius}, \SI{40}{\degreeCelsius} y \SI{30}{\degreeCelsius}. La Tabla \ref{biologico2} muestra el detalle de los 6 experimentos resultantes de la combinación de factores y niveles seleccionados para el pretratamiento biológico.
 
 
 
@@ -1413,7 +1437,7 @@ En la Figura \ref{biologico2} se puede observar un diagrama que plantea a detall
 \subsubsection{ Diseño experimental del pretratamiento Alcalino}
 
 
-Para el caso del pretratamiento alcalino con hidróxido de sodio las temperaturas que se trabajaron fueron 80 °C, 90 °C y 95 °C. También se modificó el tamaño de las partículas de bagazo y el tiempo de producción. En la Tabla \ref{tab:Variablesalcalino} se mencionan las cantidades por insumo que se utilizaron para las pruebas con pretratamiento alcalino. El mezclado del reactivo es importante dado que nos ayuda a mantener la mezcla y la temperatura homogénea dentro del reactor tipo Batch, por lo que también menciona las condiciones de mezclado.
+Para el caso del pretratamiento alcalino con hidróxido de sodio las temperaturas que se trabajaron fueron \SI{80}{\degreeCelsius}, \SI{90}{\degreeCelsius} y \SI{95}{\degreeCelsius}. También se modificó el tamaño de las partículas de bagazo y el tiempo de producción. En la Tabla \ref{tab:Variablesalcalino} se mencionan las cantidades por insumo que se utilizaron para las pruebas con pretratamiento alcalino. El mezclado del reactivo es importante dado que nos ayuda a mantener la mezcla y la temperatura homogénea dentro del reactor tipo Batch, por lo que también menciona las condiciones de mezclado.
 
 
 \begin{table}[H]
@@ -1442,7 +1466,7 @@ Para el caso del pretratamiento alcalino con hidróxido de sodio las temperaturas
 
 
 
-De la misma forma, cada pretratamiento fue realizado modificando tres factores. El factor A es el tamaño de partícula, para el cual se consideraron dos niveles: TNUB y 1 cm. El factor B es la temperatura, y para este se consideraron tres niveles: 95 °C , 90 °C, 80 °C. Por último, el factor C que es el tiempo de pretratamiento, tiene dos niveles: 5400 s y 7870 s. En total se realizaron 12 experimentos para el pretratamiento alcalino, como se muestra en la Tabla \ref{alcalino}. 
+De la misma forma, cada pretratamiento fue realizado modificando tres factores. El factor A es el tamaño de partícula, para el cual se consideraron dos niveles: TNUB y 1 cm. El factor B es la temperatura, y para este se consideraron tres niveles: \SI{95}{\degreeCelsius}, \SI{90}{\degreeCelsius} y \SI{80}{\degreeCelsius}. Por último, el factor C que es el tiempo de pretratamiento, tiene dos niveles: 5400 s y 7870 s. En total se realizaron 12 experimentos para el pretratamiento alcalino, como se muestra en la Tabla \ref{alcalino}. 
 
 \begin{table}[H]
 	\centering
@@ -1489,7 +1513,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada vari
 
 %		\onehalfspacing
 
-La producción de bioetanol fue realizada usando la configuración de hidrólisis y fermentación simultáneas. Las condiciones de operación corresponden al diseño del proceso presentado en la tesis de \cite{Arturo2022evaluacion}. Se debe precisar la carga de biomasa, que es la cantidad de bagazo previamente pretratado con alguno de los dos métodos considerados, la levadura necesaria para una buena fermentación, el pH de la solución dentro del reactor, la carga enzimática que es un elemento clave  para llevar  cabo la hidrólisis, y por último la temperatura de la SSF. En la Tabla \ref{tab:Variables a modificar para la hidrolisis y fermentacion}, se muestran los valores de cada uno de los elementos a tomar en cuenta para la implementar el proceso SSF. \\[0.5em]
+La producción de bioetanol fue realizada usando la configuración de hidrólisis y fermentación simultáneas. Las condiciones de operación corresponden al diseño del proceso presentado en la tesis de \cite{Figueroa2022evaluacion}. Se debe precisar la carga de biomasa, que es la cantidad de bagazo previamente pretratado con alguno de los dos métodos considerados, la levadura necesaria para una buena fermentación, el pH de la solución dentro del reactor, la carga enzimática que es un elemento clave  para llevar  cabo la hidrólisis, y por último la temperatura de la SSF. En la Tabla \ref{tab:Variables a modificar para la hidrolisis y fermentacion}, se muestran los valores de cada uno de los elementos a tomar en cuenta para la implementar el proceso SSF. \\[0.5em]
 
 \begin{table} [H]
 	\centering
@@ -1503,7 +1527,7 @@ La producción de bioetanol fue realizada usando la configuración de hidrólisis y
 			&   & \textbf{ biomasa}  & \textbf{enzimática } & \textbf{de levadura } & &  &     \\
 			
 			\hline
-			\multirow{2}{*}{Bagazo de caña} &\multirow{2}{*}{2 l}  &\multirow{2}{*}{5\%}  & \multirow{2}{*}{20 UPF/g } & \multirow{2}{*}{10\% } &\multirow{2}{*}{ 5} & \multirow{2}{*}{43 °C} & \multirow{2}{*}{48h }   \\
+			\multirow{2}{*}{Bagazo de caña} &\multirow{2}{*}{2 l}  &\multirow{2}{*}{5\%}  & \multirow{2}{*}{20 UPF/g } & \multirow{2}{*}{10\% } &\multirow{2}{*}{ 5} & \multirow{2}{*}{\SI{43}{\degreeCelsius}} & \multirow{2}{*}{48h }   \\
 			&   & & &  &  & &     \\		
 			\hline
 	\end{tabular}}
@@ -1516,7 +1540,7 @@ La producción de bioetanol fue realizada usando la configuración de hidrólisis y
 \end{itemize}
 
 
-La carga enzimática se refiere a  la cantidad de enzimas que se introduce durante el proceso SSF y está dada en unidades de papel filtro por gramo de sustrato (UPF/g). UPF es una medida de laboratorio para expresar la actividad enzimática. La ecuación \ref{carga} permite calcular la carga enzimática en unidades de ml, en función de la cantidad de unidades de papel filtro (UPF),  \cite{Arturo2022evaluacion}).
+La carga enzimática se refiere a  la cantidad de enzimas que se introduce durante el proceso SSF y está dada en unidades de papel filtro por gramo de sustrato (UPF/g). UPF es una medida de laboratorio para expresar la actividad enzimática. La ecuación \ref{carga} permite calcular la carga enzimática en unidades de ml, en función de la cantidad de unidades de papel filtro (UPF),  \cite{Figueroa2022evaluacion}).
 
 \begin{equation}
 	\label{carga}
@@ -1865,7 +1889,7 @@ El pretratamiento alcalino de la biomasa se implementó usando Hidróxido de Sodio
 \\[0.5em] 
 \textbf{1.} Durante el pretratamiento biológico se registraron periódicamente los datos experimentales para garantizar su trazabilidad, y al finalizar el proceso, se almacenó toda la información recopilada. Adicionalmente, se registró el consumo energético mediante la lectura del watímetro (Figura \ref{watimetro}), el cual cuantificó la energía utilizada en kilovatios-hora (kWh) a lo largo del tratamiento.
 
-\textbf{2.} Bajo condiciones controladas, se desarmó el sistema, retirando primero los elementos de sellado (aluminio/algodón), luego los componentes electrónicos (sensores termopares tipo k) y finalmente el conjunto tapa-mezclador, dejando la configuración documentada en la Figura \ref{biologico1}.
+\textbf{2.} Bajo condiciones controladas, se desarmó el sistema, retirando primero los elementos de sellado (aluminio/algodón), luego los componentes electrónicos (sensores termopares tipo K) y finalmente el conjunto tapa-mezclador, dejando la configuración documentada en la Figura \ref{biologico1}.
 
 
 
@@ -1933,7 +1957,7 @@ El pretratamiento alcalino de la biomasa se implementó usando Hidróxido de Sodio
 
 
 
-\textbf{7.}Tras el escurrido manual, el material se sometió a secado pasivo en condiciones ambientales (25 $±$ 2 °C, humedad relativa menor a 60\%) hasta obtener peso constante, verificando la eliminación completa de humedad según se especifica en la Figura \ref{biologico4}.
+\textbf{7.}Tras el escurrido manual, el material se sometió a secado pasivo en condiciones ambientales (25 $±$ \SI{2}{\degreeCelsius}, humedad relativa menor a 60\%) hasta obtener peso constante, verificando la eliminación completa de humedad según se especifica en la Figura \ref{biologico4}.
 
 
 \begin{figure}[H]
@@ -2081,7 +2105,7 @@ Para la SSF se consideraron los datos del apartado del diseño factorial, a conti
 
 
   	
-\textbf{9.} Finalizado el proceso de SSF, se determina el pH final del producto (Figura \ref{hidrolisis 7}) y se transfiere a recipientes herméticos, los cuales se almacenan a temperaturas inferiores a 30 °C para preservar las muestras hasta la cuantificación del contenido alcohólico con ayuda de un refractometro manual. Finalmente el reactor tipo batch es lavado con agua desmineralizada.
+\textbf{9.} Finalizado el proceso de SSF, se determina el pH final del producto (Figura \ref{hidrolisis 7}) y se transfiere a recipientes herméticos, los cuales se almacenan a temperaturas inferiores a \SI{30}{\degreeCelsius} para preservar las muestras hasta la cuantificación del contenido alcohólico con ayuda de un refractometro manual. Finalmente el reactor tipo batch es lavado con agua desmineralizada.
 
 
 \begin{figure}[H]
@@ -2108,7 +2132,7 @@ En esta Sección se reportan los resultados de los experimentos implementados en 
 
 
 \subsubsection{Pretratamiento Biológico}
-Los pretratamientos biológicos realizados sobre bagazo de caña de azúcar (Tabla \ref{Pretratamiento Biologico}) comprendieron tres pruebas con granulometría de TNUB (1 mm - 10 cm) y tres pruebas con granulometría de 1 cm, bajo temperaturas controladas (30, 40 y 45 °C), registrándose el consumo energético (kWh) en cada caso. Este diseño experimental permitió evaluar comparativamente las diferencias en los costos asociados al consumo energético derivado principalmente el calentamiento del bioreactor a la temperatura de diseño para el procesamiento de la biomasa, específicamente se considera el consumo de la resistencia de calentamiento y del convertidor para implementar el control de temperatura durante toda la etapa de pretratamiento. 
+Los pretratamientos biológicos realizados sobre bagazo de caña de azúcar (Tabla \ref{Pretratamiento Biologico}) comprendieron tres pruebas con granulometría de TNUB (1 mm - 10 cm) y tres pruebas con granulometría de 1 cm, bajo temperaturas controladas (\SI{30}{\degreeCelsius}, \SI{40}{\degreeCelsius} y \SI{45}{\degreeCelsius}), registrándose el consumo energético (kWh) en cada caso. Este diseño experimental permitió evaluar comparativamente las diferencias en los costos asociados al consumo energético derivado principalmente el calentamiento del bioreactor a la temperatura de diseño para el procesamiento de la biomasa, específicamente se considera el consumo de la resistencia de calentamiento y del convertidor para implementar el control de temperatura durante toda la etapa de pretratamiento. 
 
 \begin{table}[H]
 	\centering
@@ -2134,7 +2158,7 @@ El tiempo de pretratamiento para las pruebas anteriores fue 5 días.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{ Hidrólisis y fermentación para pretratamiento Alcalino}
-Inicialmente se definió un tiempo para el pretratamiento alcalino según lo recomendado por \cite{Arturo2022evaluacion}, quien consideró condiciones reportadas en la literatura. En la práctica, ya que el proceso se llevó a cabo en la presente tesis usando un reactor más grande que el empleado en el trabajo de referencia, el control de temperatura se volvió crítico. El control de temperatura que fue implementado tiene un tiempo de establecimiento relativamente grande, durante el cual la temperatura no se encuentra todavía en la referencia. Un supuesto fue que un tiempo de pretratamiento más largo permitiría operar por más tiempo el reactor con la temperatura controlada, y que esta etapa podría resultar más efectiva. En concreto, como segunda condición se definió un tiempo de pretratamiento de 7870, manejando partículas de bagazo de caña de 1 mm hasta 10 cm. Los tamaños considerados fueron iguales al caso previo con pretratamiento biológico, se manejaron tamaños no uniformes de bagazo (TNUB) y partículas de 1 cm. En la Tabla \ref{Pretratamiento Alcalino} se muestran las condiciones de los 12 experimentos diseñados, indicando la energía consumida en cada una de las pruebas, expresada en unidades de kWh, la cual fue leída de un watímetro. Esta energía también corresponde al consumo debido al calentamiento del reactor, sumando específicamente el consumo de la resistencia de calentamiento y del convertidor del control durante el pretratamiento.
+Inicialmente se definió un tiempo para el pretratamiento alcalino según lo recomendado por \cite{Figueroa2022evaluacion}, quien consideró condiciones reportadas en la literatura. En la práctica, ya que el proceso se llevó a cabo en la presente tesis usando un reactor más grande que el empleado en el trabajo de referencia, el control de temperatura se volvió crítico. El control de temperatura que fue implementado tiene un tiempo de establecimiento relativamente grande, durante el cual la temperatura no se encuentra todavía en la referencia. Un supuesto fue que un tiempo de pretratamiento más largo permitiría operar por más tiempo el reactor con la temperatura controlada, y que esta etapa podría resultar más efectiva. En concreto, como segunda condición se definió un tiempo de pretratamiento de 7870, manejando partículas de bagazo de caña de 1 mm hasta 10 cm. Los tamaños considerados fueron iguales al caso previo con pretratamiento biológico, se manejaron tamaños no uniformes de bagazo (TNUB) y partículas de 1 cm. En la Tabla \ref{Pretratamiento Alcalino} se muestran las condiciones de los 12 experimentos diseñados, indicando la energía consumida en cada una de las pruebas, expresada en unidades de kWh, la cual fue leída de un watímetro. Esta energía también corresponde al consumo debido al calentamiento del reactor, sumando específicamente el consumo de la resistencia de calentamiento y del convertidor del control durante el pretratamiento.
 
 
 
@@ -2231,7 +2255,7 @@ Como podemos observar en la Tabla \ref{ssf con Pretratamiento Alcalino} se reali
 
 \subsection{Costos en la producción de bioetanol}
 Para conocer cuánto nos cuesta realizar las pruebas de producción de bioetanol aplicando pretratamientos biológicos y alcalinos, se realizaron un análisis de costos y una comparación de los mismos.
-El ccosto del consumo energético (kWh) se calculó a partir de la tarifa industrial de \$1.348 MXN/kWh o \$ 0.06 USD/kWh, establecida por la Comisión Federal de Electricidad, por sus siglas, CFE  \cite{CFE2023}, en media tensión en Cuernavaca, Morelos. Se consideró como referencia el mes de abril de 2025. Este precio se aplicó a todas las etapas del proceso, desde los pretratamientos hasta la hidrólisis y fermentación. Los costos están expresados en dólares estadounidenses (USD), con una tasa de cambio de 1 USD = 20.84 MXN, vigente al 8 de abril de 2025.
+El costo del consumo energético (kWh) se calculó a partir de la tarifa industrial de \$1.348 MXN/kWh o \$ 0.06 USD/kWh, establecida por la Comisión Federal de Electricidad, por sus siglas, CFE \citep{CFETarifas2023}, en media tensión en Cuernavaca, Morelos. Se consideró como referencia el mes de abril de 2025. Este precio se aplicó a todas las etapas del proceso, desde los pretratamientos hasta la hidrólisis y fermentación. Los costos están expresados en dólares estadounidenses (USD), con una tasa de cambio de 1 USD = 20.84 MXN, vigente al 8 de abril de 2025.
 
 
 \subsubsection{Costos en la producción de bioetanol solo para pretratamiento biológico}
@@ -2464,7 +2488,7 @@ Para obtener un panorama general sobre los resultados del trabajo experimental, 
 		 & \textbf{Total de costo por} &\textbf{ Gasto energético}  & \textbf{Gasto } & \textbf{Producción de} \\ 
 			\textbf{Prueba}&  \textbf{pretratamiento } & \textbf{ promedio } & \textbf{ total} &\textbf{  alcohol obtenido  }\\ 
 			
-				&  \textbf{ (\$ USD)} & \textbf{ (\$ USD)} & \textbf{  (\$ USD)} &\textbf{  (\%)  }\\ \hline
+				&  \textbf{ (\$ USD)} & \textbf{ (\$ USD)} & \textbf{  (\$ USD)} & \textbf{  (\%)  }\\ \hline
 				
 				
 			Pretratamiento biológico, &  \multirow{2}{*}{20.13} & \multirow{2}{*}{0.33}&\multirow{2}{*}{19.58} & \multirow{2}{*}{11.15}  \\ 
@@ -2506,7 +2530,7 @@ A continuación, se muestra la producción de alcohol obtenida para el proceso con
 
 
 
-Para el pretratamiento alcalino se observa que al utilizar TNUB (tamaño no uniforme de biomasa), la variación de temperatura no genera cambios significativos en el proceso. Sin embargo, al emplear un tamaño de partícula de 1 cm, se detectan diferencias notables en el rendimiento, especialmente a una temperatura de 90 °C, donde se registra un impacto significativo en la producción de bioetanol 2G. Para ello podemos ver la Figura \ref{produccion}.
+Para el pretratamiento alcalino se observa que al utilizar TNUB (tamaño no uniforme de biomasa), la variación de temperatura no genera cambios significativos en el proceso. Sin embargo, al emplear un tamaño de partícula de 1 cm, se detectan diferencias notables en el rendimiento, especialmente a una temperatura de \SI{90}{\degreeCelsius}, donde se registra un impacto significativo en la producción de bioetanol 2G. Para ello podemos ver la Figura \ref{produccion}.
 
 
 \begin{figure}[H]

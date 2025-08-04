@@ -50,6 +50,10 @@ Cuervo, L., Folch, J.~L., and Quiroz, R.~E. (2009).
   etanol.
 \newblock {\em BioTecnolog{\'\i}a}, 13(3):11--25.
 
+\bibitem[de~Electricidad, 2023]{CFETarifas2023}
+de~Electricidad, C.~F. (2023).
+\newblock Tarifas para gran demanda en media tensi{\'o}n ordinaria.
+
 \bibitem[Espinosa~Negr{\'\i}n et~al., 2021]{espinosa2021pretratamiento}
 Espinosa~Negr{\'\i}n, A.~M., L{\'o}pez~Gonz{\'a}lez, L.~M., and
   Casdelo~Guti{\'e}rrez, N.~L. (2021).
@@ -154,10 +158,11 @@ Tantayotai, P., Gundupalli, M.~P., Katam, K., Rattanaporn, K., Cheenkachorn,
 
 \bibitem[Torres~del Carmen, 2008]{Torres2008}
 Torres~del Carmen, F. d.~J. (2008).
-\newblock Diseño, construcción y pruebas de un prototipo para la producción
-  de biodiesel a partir de aceites provenientes de recursos renovables.
-\newblock Tesis de maestría, Instituto Tecnológico de Cuernavaca, Cuernavaca,
-  Morelos, México.
+\newblock Dise{\~n}o, construcci{\'o}n y pruebas de un prototipo para la
+  producci{\'o}n de biodiesel a partir de aceites provenientes de recursos
+  renovables.
+\newblock Tesis de maestr{\'i}a, Instituto Tecnol{\'o}gico de Cuernavaca,
+  Cuernavaca, Morelos, M{\'e}xico.
 
 \bibitem[Valles~S{\'a}ez, 2022]{valles2022estudio}
 Valles~S{\'a}ez, A. (2022).
@@ -177,5 +182,11 @@ Zhu, Y., Li, Y., Li, D., Dong, L., Liu, X., Yan, A., Liu, Y., and Wang, Z.
 \newblock A theoretical and experimental analysis of the time-domain
   characteristics of a prbs phase-modulated laser system.
 \newblock {\em Applied Sciences}, 14(20).
+
+\bibitem[Zuliani et~al., 2021]{zuliani2021biorefinery}
+Zuliani, L., Serpico, A., De~Simone, M., Frison, N., and Fusco, S. (2021).
+\newblock Biorefinery gets hot: thermophilic enzymes and microorganisms for
+  second-generation bioethanol production.
+\newblock {\em Processes}, 9(9):1583.
 
 \end{thebibliography}
