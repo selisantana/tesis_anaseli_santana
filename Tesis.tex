@@ -1291,7 +1291,7 @@ En la producción de bioetanol se lleva a cabo la etapa de pretratamiento, a cont
 \end{figure}
 
 
-El sistema general del proceso de la etapa del pretratamiento se muestra en la imagen \ref{descrip}. Donde inicia ingresando los insumos dentro de un tanque agitado de 10.38 L, con 6 litros de capacidad de trabajo, tales como el agua desmineralizada,  la materia lignocelulósica (el bagazo de caña) y finalmente el humus de lombriz o hidróxido de sodio. Durante el pretratamiento se mezclan los compuestos, por lo que tenemos condiciones de mezclado, es decir, 142 rpm por parte del motor, encendiendo y apagando el motor cada 10 segundos, con el propósito de observar el comportamiento en la producción de bioetanol, y el efecto del consumo energético. También durante el proceso de pretratamiento se lee la temperatura dentro del biorreactor (o tanque agitado, llamado así por el mezclado durante el pretratamiento), esa señal de temperatura se le llama señal de salida, esta señal de salida se registra en una tira de datos, al mismo tiempo es una señal que se retroalimenta y compara con una señal de referencia, es decir la temperatura de retroalimentación se compara con la temperatura de referencia. La diferencia de las temperaturas (señal de error) se ingresa al control PID, el control PID nos dará un valor que lo pasaremos a traducir con ayuda de un arduino, a un voltaje de 0 a 5 V. La resistencia de calentamiento del reactor necesita una potencia mayor, es necesario utilizar más voltaje, el convertidor toma energía alterna del tomacorriente (0-127 V) y la convierte en corriente directa para posteriormente con ayuda de un mosfet potenciar la energía saliente del PID ( señal de control convertida a voltaje), para finalmente entrará a la resistencia de calentamiento en el reactor. El ciclo de medición y calentamiento se lleva a cabo durante el tiempo que dure el pretratamiento.
+El sistema general del proceso de la etapa del pretratamiento se muestra en la imagen \ref{descrip}. Donde inicia ingresando los insumos dentro de un tanque agitado de \SI{10.38}{\liter}  , con 6 litros de capacidad de trabajo, tales como el agua desmineralizada,  la materia lignocelulósica (el bagazo de caña) y finalmente el humus de lombriz o hidróxido de sodio. Durante el pretratamiento se mezclan los compuestos, por lo que tenemos condiciones de mezclado, es decir, 142 rpm por parte del motor, encendiendo y apagando el motor cada 10 segundos, con el propósito de observar el comportamiento en la producción de bioetanol, y el efecto del consumo energético. También durante el proceso de pretratamiento se lee la temperatura dentro del biorreactor (o tanque agitado, llamado así por el mezclado durante el pretratamiento), esa señal de temperatura se le llama señal de salida, esta señal de salida se registra en una tira de datos, al mismo tiempo es una señal que se retroalimenta y compara con una señal de referencia, es decir la temperatura de retroalimentación se compara con la temperatura de referencia. La diferencia de las temperaturas (señal de error) se ingresa al control PID, el control PID nos dará un valor que lo pasaremos a traducir con ayuda de un arduino, a un voltaje de 0 a 5 V. La resistencia de calentamiento del reactor necesita una potencia mayor, es necesario utilizar más voltaje, el convertidor toma energía alterna del tomacorriente (0-127 V) y la convierte en corriente directa para posteriormente con ayuda de un mosfet potenciar la energía saliente del PID ( señal de control convertida a voltaje), para finalmente entrará a la resistencia de calentamiento en el reactor. El ciclo de medición y calentamiento se lleva a cabo durante el tiempo que dure el pretratamiento.
 
 \subsection{Hidrólisis y fermentación}
 Para mostrar la etapa de hidrólisis y fermentación se presenta el sistema que describe el proceso y la obtención de los datos.
@@ -1471,7 +1471,7 @@ De la misma forma, cada pretratamiento fue realizado modificando tres factores. 
 
 
 
-A continuación se presenta un diagrama donde se clasifica por factores cada variable a considerar, esto solo para el caso del pretratamiento alcalino, ver figura  \ref{Diagramaalcalino}.
+A continuación se presenta un diagrama donde se clasifica por factores cada variable a considerar, esto solo para el caso del pretratamiento alcalino, ver Figura  \ref{Diagramaalcalino}.
 
 
 
@@ -1554,7 +1554,7 @@ El pre-pretratamiento es un preprocesamiento de la biomasa para someterla poster
 
 \begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
 	\textit{$\bullet$ Lona} & \textit{$\bullet$ Malla cuadrada 1 cm} & \textit{$\bullet$ Bolsa plástica de 30$×$40 cm} \\ 
-	\textit{$\bullet$ Báscula} & \textit{$\bullet$ Cubeta con capacidad de 10 l} & \\ 
+	\textit{$\bullet$ Báscula} & \textit{$\bullet$ Cubeta con capacidad de \SI{10}{\liter}  } & \\ 
 \end{tabular}
 
 
@@ -1563,7 +1563,7 @@ El pre-pretratamiento es un preprocesamiento de la biomasa para someterla poster
 \textbf{1.} Se implementó una barrera de protección usando una lona impermeable extendida sobre el piso, evitando el contacto directo del bagazo de caña con superficies contaminantes. Sobre esta superficie aislante, se distribuyó uniformemente el bagazo de caña para facilitar el secado pasivo y la eliminación controlada de su humedad residual. El proceso se muestra en la Figura~\ref{secado1}
 
 
-\textbf{2.}	La clasificación por tamaño se efectuó usando un arreglo de dos mallas metálicas de 1 cm, montadas en serie sobre un recipiente de 10 L. Mediante agitación rítmica del bagazo colocado en la malla superior (Figura \ref{cernir_bagazo_B}), las fracciones menores a 1 cm fueron seleccionadas por gravedad hacia la cubeta, mientras que las partículas mayores se retuvieron en el tamiz.
+\textbf{2.}	La clasificación por tamaño se efectuó usando un arreglo de dos mallas metálicas de 1 cm, montadas en serie sobre un recipiente de \SI{10}{\liter}. Mediante agitación rítmica del bagazo colocado en la malla superior (Figura \ref{cernir_bagazo_B}), las fracciones menores a 1 cm fueron seleccionadas por gravedad hacia la cubeta, mientras que las partículas mayores se retuvieron en el tamiz.
 
 \begin{figure}[H]
 	\centering
@@ -1584,7 +1584,7 @@ El pre-pretratamiento es un preprocesamiento de la biomasa para someterla poster
 
 
 
-\textbf{3.}	El bagazo se sometió a dos ciclos adicionales de cribado utilizando el mismo sistema de doble malla (abertura de 1 cm), aplicando un movimiento armónico controlado en cada repetición (Figura \ref{cernir_bagazo_2C}). Este proceso iterativo permitió obtener una fracción de partículas con tamaño significativamente reducido, optimizando la homogeneidad del material resultante.
+\textbf{3.}	El bagazo se sometió a dos ciclos adicionales de cribado utilizando el mismo sistema de doble malla (abertura de \SI{0.01}{\meter}), aplicando un movimiento armónico controlado en cada repetición (Figura \ref{cernir_bagazo_2C}). Este proceso iterativo permitió obtener una fracción de partículas con tamaño significativamente reducido, optimizando la homogeneidad del material resultante.
 
 
 \textbf{4.} Para garantizar un tamaño de partícula uniforme, el bagazo de caña se sometió a un cribado adicional mediante un cedazo de malla más fina, con el objetivo de obtener un material final con una granulometría controlada de 1 cm, lo que optimiza su posterior aprovechamiento en procesos industriales. Ver Figura \ref{cernir_bagazo_cedazo}.
@@ -1643,10 +1643,10 @@ Para la ejecución del pretratamiento biológico se requirió el siguiente conjunto
 	\textbf{Procedimiento}
 \\[0.5em]
 
-\textbf{1.}	La dosificación del bagazo fue realizada mediante pesaje con una báscula digital utilizando una bolsa plástica de 3 kg como recipiente, hasta alcanzar los 180 g requeridos. Este procedimiento se aplicó únicamente cuando no se empleó la medida estándar de 1 cm de longitud de partícula, en cuyo caso se utilizó directamente el material previamente clasificado y calibrado. Ver Figura \ref{bagazo_variostamanos}.
+\textbf{1.}	La dosificación del bagazo fue realizada mediante pesaje con una báscula digital utilizando una bolsa plástica de 3 kg como recipiente, hasta alcanzar los  \SI{0.18}{\kilo\gram} requeridos. Este procedimiento se aplicó únicamente cuando no se empleó la medida estándar de 1 cm de longitud de partícula, en cuyo caso se utilizó directamente el material previamente clasificado y calibrado. Ver Figura \ref{bagazo_variostamanos}.
 
 
-\textbf{2.}	Mediante báscula digital ($±$0.2 g) y material de vidrio calibrado (vaso de precipitado de 500 mL) se pesó exactamente 350 g de humus de lombriz grado técnico, siguiendo el procedimiento ilustrado en la Figura \ref{humus}.
+\textbf{2.}	Mediante báscula digital ($±$ \SI{0.002}{\kilo\gram}) y material de vidrio calibrado (vaso de precipitado de \SI{0.5}{\liter}) se pesó exactamente \SI{0.35}{\kilo\gram} de humus de lombriz grado técnico, siguiendo el procedimiento ilustrado en la Figura \ref{humus}.
 
 			
 \begin{figure}[H]
@@ -1671,7 +1671,7 @@ Para la ejecución del pretratamiento biológico se requirió el siguiente conjunto
 
 
 
-\textbf{4.}	Se cargó el reactor con 6.0 L de agua desmineralizada, dosificados mediante un vaso de precipitado de 1 L, calibrado. Posteriormente, se incorporaron los 180 g de bagazo de caña previamente pesados y contenidos en la bolsa de 3 kg, siguiendo el procedimiento ilustrado en la Figura \ref{baciad}.
+\textbf{4.}	Se cargó el reactor con 6.0 L de agua desmineralizada, dosificados mediante un vaso de precipitado de 1 L, calibrado. Posteriormente, se incorporaron los  \SI{0.18}{\kilo\gram} de bagazo de caña previamente pesados y contenidos en la bolsa de 3 kg, siguiendo el procedimiento ilustrado en la Figura \ref{baciad}.
 
 
 \begin{figure}[H]
@@ -1763,9 +1763,9 @@ El pretratamiento alcalino de la biomasa se implementó usando Hidróxido de Sodio
 \\[0.5em]
 
 
-\textbf{1.}	La cantidad de bagazo se determinó mediante pesaje con báscula digital (precisión $±$0.2 g) usando una bolsa plástica de 30$×$40 cm como contenedor, hasta alcanzar 180 g. Alternativamente, cuando se requirió la medida de 1 cm, se utilizó directamente el material preclasificado y calibrado, según se ilustra en la Figura \ref{bagazo1}.\\
+\textbf{1.}	La cantidad de bagazo se determinó mediante pesaje con báscula digital (precisión $±$ \SI{0.002}{\kilo\gram}) usando una bolsa plástica de 30$×$40 cm como contenedor, hasta alcanzar  \SI{0.18}{\kilo\gram}. Alternativamente, cuando se requirió la medida de 1 cm, se utilizó directamente el material preclasificado y calibrado, según se ilustra en la Figura \ref{bagazo1}.\\
 
-\textbf{2.} Mediante una báscula digital (precisión $±$0.2 g) y vaso de precipitado de vidrio, se pesaron exactamente 120 g de hidróxido de sodio en pellets, asegurando la exactitud requerida para el proceso.Ver Figura \ref{cernir_bagazo_hidroxidopesado}.
+\textbf{2.} Mediante una báscula digital (precisión $±$0.2 g) y vaso de precipitado de vidrio, se pesaron exactamente \SI{0.12}{\kilo\gram} de hidróxido de sodio en pellets, asegurando la exactitud requerida para el proceso.Ver Figura \ref{cernir_bagazo_hidroxidopesado}.
 
 
 \begin{figure}[H]
@@ -1871,8 +1871,7 @@ El pretratamiento alcalino de la biomasa se implementó usando Hidróxido de Sodio
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{0.46\textwidth}
-		\centering
-		\includegraphics[width=5cm, height=3cm]{imagenes/watimetro} % Cambia "imagen1.jpg" por el nombre de tu archivo
+		\centering		\includegraphics[width=5cm, height=3cm]{imagenes/watimetro} % Cambia "imagen1.jpg" por el nombre de tu archivo
 		\caption{Se observa el watímetro que se encuentra en la estructura y mide la energía que entra al convertidor.}
 		\label{watimetro}
 	\end{minipage}
@@ -2099,7 +2098,7 @@ Para la SSF se consideraron los datos del apartado del diseño factorial, a conti
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CAPÍTULO 4
 \singlespacing
-\chapter{Resultados experimentales del proceso de producción de bioetanol 2 G con pretratamiento Alcalino  y Biológico}
+\chapter{Resultados experimentales del proceso de producción de bioetanol 2G con pretratamiento Alcalino  y Biológico}
 \onehalfspacing
 
 
@@ -2255,7 +2254,7 @@ Para la producción de bioetanol utilizando un pretratamiento biológico, fue nece
 		\hline
 		\textbf{Bagazo de caña} & 0.95 $USD/kg$ & 0.18 $kg$ & 0.01  &0.19  \\
 		\hline
-		\textbf{Agua desmineralizada} & 0.68 $USD/L$ & 6 $L$ & 1.29 &5.38 \\
+		\textbf{Agua desmineralizada} & 0.68 $USD/L$ & \SI{6}{\liter}  & 1.29 &5.38 \\
 		\hline
 	\end{tabular}
 \end{table}
@@ -2368,10 +2367,10 @@ Los costos asociados a la producción de bioetanol de segunda generación se repor
 		& \textbf{Costo por} & \textbf{Cantidad por }  & \textbf{Costos} \\
 		\textbf{Material} & \textbf{ consumo } & \textbf{ pretratamiento}  & \textbf{total} \\ 
 		& \textbf{ (\$ USD)} & \textbf{ }  & \textbf{(\$USD)} \\ \hline
-		Saccharomyces cerevisiae &4798.4 $USD/kg$  & 0.00185 $L$  & 8.9 \\ \hline
+		Saccharomyces cerevisiae &4798.4 $USD/kg$  & \SI{0.00185}{\liter}    & 8.9 \\ \hline
 		Ácido cítrico            & 4.27 $USD/kg$    &0.005 $kg$       &0.04 \\ \hline
 		Levadura activa         &14.39 $USD/kg$     &0.160 $kg$       & 2.37 \\ \hline
-		Agua desmineralizada    & 0.68 $USD/L$     &2 $L$            & 1.57 \\ \hline
+		Agua desmineralizada    & 0.68 $USD/L$   & \SI{2}{\liter}            & 1.57 \\ \hline
 	\end{tabular}
 \end{table}
 
@@ -2591,6 +2590,8 @@ En resumen, el pretratamiento con humus de lombriz no solo resulta económicament
 
 
 \section{Trabajos futuros}
+
+
 
 %\begin{itemize}
 %	\item Probar el esquema de diagnóstico en un motor de combustión interna en condiciones normales de operación

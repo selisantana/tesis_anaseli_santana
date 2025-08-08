@@ -61,7 +61,7 @@
 \contentsline {subsubsection}{Pretratamiento Alcalino}{62}{section*.76}%
 \contentsline {subsubsection}{Acondicionamiento para el material pretratado}{64}{section*.81}%
 \contentsline {subsubsection}{Hidr\'olisis y fermentaci\'on en etapas simult\'aneas}{67}{section*.86}%
-\contentsline {chapter}{\numberline {6}Resultados experimentales del proceso de producci\'on de bioetanol 2 G con pretratamiento Alcalino y Biol\'ogico}{71}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Resultados experimentales del proceso de producci\'on de bioetanol 2G con pretratamiento Alcalino y Biol\'ogico}{71}{chapter.6}%
 \contentsline {subsubsection}{Pretratamiento Biol\'ogico}{71}{section*.92}%
 \contentsline {subsubsection}{ Hidr\'olisis y fermentaci\'on para pretratamiento Alcalino}{72}{section*.94}%
 \contentsline {subsection}{\numberline {6.0.1}Resultados experimentales del proceso de producci\'on de bioetanol en la etapa de hidr\'olisis y fermentaci\'on utilizando diferentes tipos de pretratamiento}{73}{subsection.6.0.1}%
