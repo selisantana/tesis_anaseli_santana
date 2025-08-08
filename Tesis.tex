@@ -209,7 +209,7 @@ Ya que este tipo de biomasa es considerada basura, tiene la característica de no
 Este proyecto busca mejorar la producción de bioetanol 2G a partir de biomasa lignocelulósica, probando y analizando dos métodos de pretratamiento: biológico y alcalino. El estudio se centra en determinar las condiciones más adecuadas (temperatura, tamaño de partícula y tiempo) para lograr mayores rendimientos, menores costos y un consumo energético más eficiente.
 
 
-Esta investigación se justifica al abordar dos limitantes críticas en la producción de bioetanol a partir de bagazo de caña. La primera es la baja eficiencia en la liberación de azúcares en la materia lignocelulósica, y la segunda los altos costos asociados a métodos convencionales. Para resolver estas limitantes resulta de gran importancia el estudio de las variables como la temperatura, el tamaño de bagazo y el tiempo en el pretratamiento. Es de gran importancia conocer las ventajas de los tipos de pretratamientos para la producción de bioetanol, implementados en una configuración SSF. Estas variables y parámetros en el proceso productivo, deben de compararse también desde un punto de vista de costos y eficiencia energética, a modo de contar con un panorama más completo de los beneficios de cada pretratamiento.
+Esta investigación se justifica al abordar dos limitantes críticas en la producción de bioetanol a partir de bagazo de caña. La primera es la baja eficiencia en la liberación de azúcares en la materia lignocelulósica, y la segunda los altos costos asociados a métodos convencionales. Para resolver estas limitantes resulta de gran importancia el estudio de las variables como la temperatura, el tamaño de bagazo y el tiempo en el pretratamiento. Es de gran importancia conocer las ventajas de los tipos de pretratamientos para la producción de bioetanol, implementados en una configuración SSF. Estas variables y parámetros en el proceso deben compararse en función de costos y eficiencia energética, de tal forma que se pueda obtener un panorama mas completo de los beneficios de cada pretratamiento.
  
  
  
@@ -219,7 +219,7 @@ Esta investigación se justifica al abordar dos limitantes críticas en la producc
 \begin{enumerate}
 	\item Se llevaron a cabo experimentos cambiando variables, como la temperatura en dos pretratamientos. Como resultado se especifican las condiciones de operación que permitan obtener una mayor producción de biocombustible.
 	
-	\item Se diseño e implemento experimentalmente un lazo de control de temperatura manteniendo la operación de la planta en un rango seguro y adecuado para la producción de bioetanol.
+	\item Se diseñó e implementó experimentalmente un lazo de control de temperatura manteniendo la operación de la planta en un rango seguro y adecuado para la producción de bioetanol.
 	
 	\item Se demostró experimentalmente la producción de bioetanol a través de dos etapas combinadas, es decir, sacarificación y fermentación simultáneas, para analizar el comportamiento de las variables y la eficiencia del proceso.
 	
@@ -228,14 +228,22 @@ Esta investigación se justifica al abordar dos limitantes críticas en la producc
 
 
 \singlespacing
-\section{Limitaciones}
+\section{Implementación de la planta piloto}
 \onehalfspacing
 Para la producción de bioetanol se enfrentaron diferentes retos.
-Para agitar la biomasa durante el pretratamiento se requiere un motor de alta potencia para mantener la temperatura y las partículas homogeneas durante el pretratamiento
+Para agitar la biomasa durante el pretratamiento se requiere un motor de alta potencia que mantenga la temperatura y las partículas homogéneas durante el pretratamiento, un motor con estas características perturba de manera importante la lectura de la temperatura dentro del reactor, para resolver el problema se uso un motoreductor y se colocaron los sensores en una ubicación en la que el ruido no afectara la medición dentro del reactor tipo batch.
 
-, una de las limitaciones son las características del motor, dado que tiene poca capacidad de mover el reactivo durante el pretratamiento, otra limitación es la variación en las condiciones de operación, es decir, la temperatura ambiente. La temperatura ambiente es un factor que impacta en la temperatura dentro del reactor. Cualquier cambio de temperatura en el ambiente hace que se consuma más energía. Para la condición de operación, se considera otra limitación, la potencia de la resistencia, dado que es una resistencia pequeña para la capacidad máxima de carga que se utiliza dentro del reactor, y esta calienta demasiado lento. En la adquisición de datos, el sistema cuenta con un Arduino que nos ayuda a leer, y codificar las señales.
+
+ es la variación en las condiciones de operación, es decir, la temperatura ambiente. La temperatura ambiente es un factor que impacta en la temperatura dentro del reactor. Cualquier cambio de temperatura en el ambiente hace que se consuma más energía. Para la condición de operación, se considera otra limitación, la potencia de la resistencia, dado que es una resistencia pequeña para la capacidad máxima de carga que se utiliza dentro del reactor, y esta calienta demasiado lento. En la adquisición de datos, el sistema cuenta con un Arduino que nos ayuda a leer, y codificar las señales.
  
-
+ 
+ 
+ \singlespacing
+ \section{Implementación de la planta piloto}
+ \onehalfspacing
+no hubo control de ph 
+Tiempo: se pueden realizar mas experimentos
+solo se utilizaron ssf
 %\singlespacing
 %\section{Metodología}
 %\onehalfspacing
