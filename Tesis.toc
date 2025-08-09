@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {1.4}Justificaci\'on}{5}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Alcances}{6}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Implementaci\'on de la planta piloto}{6}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Implementaci\'on de la planta piloto}{7}{section.1.7}%
+\contentsline {section}{\numberline {1.7}Limitaciones}{7}{section.1.7}%
 \contentsline {section}{\numberline {1.8}Organizaci\'on del documento}{7}{section.1.8}%
 \contentsline {chapter}{\numberline {2}Marco te\'orico y Estado del arte}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Marco conceptual}{9}{section.2.1}%

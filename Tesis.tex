@@ -234,41 +234,25 @@ Para la producción de bioetanol se enfrentaron diferentes retos.
 Para agitar la biomasa durante el pretratamiento se requiere un motor de alta potencia que mantenga la temperatura y las partículas homogéneas durante el pretratamiento, un motor con estas características perturba de manera importante la lectura de la temperatura dentro del reactor, para resolver el problema se uso un motoreductor y se colocaron los sensores en una ubicación en la que el ruido no afectara la medición dentro del reactor tipo batch.
 
 
- es la variación en las condiciones de operación, es decir, la temperatura ambiente. La temperatura ambiente es un factor que impacta en la temperatura dentro del reactor. Cualquier cambio de temperatura en el ambiente hace que se consuma más energía. Para la condición de operación, se considera otra limitación, la potencia de la resistencia, dado que es una resistencia pequeña para la capacidad máxima de carga que se utiliza dentro del reactor, y esta calienta demasiado lento. En la adquisición de datos, el sistema cuenta con un Arduino que nos ayuda a leer, y codificar las señales.
+ La temperatura ambiente es un factor que impacta en la temperatura dentro del reactor. Cualquier cambio de temperatura en el ambiente hace que se consuma más energía.
+ Por lo que se realizo un control de temperatura que ayudara a mantener la temperatura dentro del reactor, aun con los cambios de temperatura ambiente.
+ 
+ 
  
  
  
  \singlespacing
- \section{Implementación de la planta piloto}
+ \section{Limitaciones}
  \onehalfspacing
-no hubo control de ph 
-Tiempo: se pueden realizar mas experimentos
-solo se utilizaron ssf
-%\singlespacing
-%\section{Metodología}
-%\onehalfspacing
-%\begin{enumerate}
-%	\item \textbf{Revisión del estado del arte.}: Se realiza una exhaustiva búsqueda del estado del arte de la producción de bioetanol , así como los pretratamientos.
-%	
-%	\item \textbf{Análisis de los pretratamientos.}: En el contexto de la experimentación, se realiza un minucioso análisis de los datos obtenidos, con el objetivo de obtener una comprensión profunda de los resultados, el proceso del análisis y modificación se lleva a cabo con el propósito de obtener mejores resultados y así podemos garantizar que los resultados obtenidos sean confiables. En relación con la experimentación, se analizan los datos obtenidos y se modifican las variables para cumplir los objetivos propuestos.
-%	
-%	\item \textbf{Experimentación}: Después de tener información sobre las técnicas para la producción de bioetanol en la etapa de pretratamientos, para ser más objetivo, en las propuestas, se plantea conocer el laboratorio, así como conocer un poco más sobre el material que se utilizará y las técnicas de fermentación.
-%	Por otro lado, se realizará experimentación en todo el trabajo, para realizar configuración en el pretratamiento y así ir modificando cada variable para cumplir con el objetivo de obtener la mejor relación costo/beneficio. Por otra parte, una de las experimentaciones realizadas fueron:
-%	
-%	
-%	\item \textbf{Análisis de datos.}: En el contexto de la experimentación, se realiza un minucioso análisis de los datos obtenidos, con el objetivo de obtener una comprensión profunda de los resultados, proceso de análisis y modificación se lleva a cabo con el propósito de obtener mejores resultados y así poder garantizar que los resultados obtenidos sean confiables. En relación con la experimentación, se analizan los datos obtenidos y se ajustan las variables para cumplir con los objetivos propuestos. A partir del análisis de los datos, se modifican las variables, logrando una mejor relación costo/beneficio.
-%	
-%	
-%	
-%	\item \textbf{Modelo de las variables de interés.}: Con base a los experimentos se realiza un análisis de sensibilidad de las variables de interés dado el impacto que obtienen en la producción de bioetanol en las distintas etapas.
-%	
-%	\item \textbf{Aplicación del control.}:
-%	El modelo es obtenido por parámetro de interés observando la sensibilidad de las variables.
-%	Basando el modelo en distintas técnicas. Tomando en cuenta que solo algunas variables tendrán un modelo con aplicación práctica y algunas con modelo en simulación.
-%	
-%	
-%\end{enumerate}
+ 
 
+ En el siguiente trabajo de investigación se tuvieron diferentes limitaciones
+ 
+\textbf{Control del pH:} Durante la experimentación, el pH solo pudo monitorearse al inicio y al final de cada prueba, sin posibilidad de ajustes continuos debido a limitaciones técnicas. Esto pudo afectar la producción final de bioetanol 2G y el control exacto de las condiciones del reactor.
+
+\textbf{Tiempo limitado para experimentación:} El tiempo disponible para realizar las pruebas fue restringido, lo que impidió ejecutar un mayor número de ensayos de pretratamiento para comparar diferentes condiciones. Esto limita la capacidad de generalizar los resultados.
+
+\textbf{Configuración SSF}  Aunque se optó por este método por su eficiencia, no fue posible evaluar otras configuraciones (como procesos separados) debido a restricciones de tiempo. Por lo tanto, los resultados obtenidos están condicionados a este único esquema operativo.
 
 
 
