@@ -66,7 +66,19 @@ A  \\
 \singlespacing
 \chapter*{Agradecimientos}
 
+\textbf{A mi esposo } 
 
+
+\textbf{A mis padres } 
+
+
+
+
+\textbf{A mis asesores } 
+
+
+
+\textbf{A mis asesores } 
 
 
 \textbf{Al Tecnológico Nacional de México y al Centro Nacional de Investigación y Desarrollo Tecnológico} por brindarme las herramientas necesarias para mi desarrollo profesional, así como, por cada una de las amables atenciones que recibí durante mi estancia. \\
@@ -74,12 +86,27 @@ A  \\
 \textbf{Al CONACYT} por el apoyo económico que me brindaron para la realización del trabajo.
 
 
+
+
+
+
+
 % RESUMEN
 \singlespacing
 \chapter*{Resumen}
 \onehalfspacing
+Este trabajo de investigación muestra la comparativa de distintos enfoques en la producción de bioetanol de segunda generación (2G) utilizando bagazo de caña. 
+Se evaluó el efecto del tamaño de partícula, temperatura de pretratamiento y tiempo de reacción en una configuración de Sacarificación y Fermentación Simultáneas (SSF). Utilizando un reactor tipo batch instrumentado donde se adapto y se adecuó la planta donde se llevaron a cabo las experimentaciones.
+Se diseñó un lazo de control que mantuviera la temperatura constante dentro del reactor batch, dado que las variaciones de temperatura ambiente afectarían en la producción de bioetanol 2G. Por lo que el trabajo incluye un control de temperatura utilizando un controlador PID, mediante un sistema identificado.
+Se realizó pruebas experimentales leyendo la temperatura en tiempo real, siguiendo un diseño de experimentos donde se muestran las variables en cada prueba.
 
-Este trabajo de tesis se presenta
+Los resultados nos muestran una comparativa de la producción de bioetanol 2G, observando un porcentaje de bioetanol diluido hasta la etapa de fermentación, para cada pretratamiento. Con un análisis comparativo de costos asociados.
+
+
+
+
+
+
 
 
 
@@ -88,9 +115,11 @@ Este trabajo de tesis se presenta
 \chapter*{Abstract}
 \onehalfspacing
 
+This research presents a comparative analysis of different approaches for second-generation (2G) bioethanol production using sugarcane bagasse. The study experimentally evaluated the effects of particle size, pretreatment temperature, and reaction time in a Simultaneous Saccharification and Fermentation (SSF) configuration. Experiments were conducted in an instrumented batch reactor system specifically adapted for this investigation.
 
-To achieve this objective,
+A control loop was implemented to maintain constant temperature within the batch reactor, as ambient temperature fluctuations were found to significantly affect 2G bioethanol production. The system incorporated a PID temperature controller based on an identified process model. Real-time temperature monitoring was performed throughout the experimental trials following a structured design of experiments methodology.
 
+The results provide a comparative assessment of 2G bioethanol production yields, measuring the percentage of diluted bioethanol obtained at the fermentation stage for each pretreatment method. The study includes an associated cost analysis of the different pretreatment approaches.
 
 
 % INDICE GENERAL
@@ -110,7 +139,9 @@ To achieve this objective,
 
 	SSF & Sacarificación y fermentación simultánea \\
 	UPF & Unidades papel filtro \\
-    PRBS & Señal binaria pseudoaleatoria
+    PRBS & Señal binaria pseudoaleatoria\\
+    2G & Segunda generación\\
+        &
 \end{tabular}
 
 	
@@ -131,7 +162,7 @@ Después del pretratamiento, la biomasa es sometida a una hidrólisis y a una ferm
 
 Este trabajo de tesis estudia los procesos de producción de bioetanol de segunda generación. El estudio abarca desde los procesos de pre-pretratamiento de la biomasa 2G, que incluyen la clasificación y limpieza del bagazo, hasta la fermentación que  produce bioetanol diluido. El trabajo incluye la comparación de dos pretratamientos y se considera únicamente la configuración SSF para obtener el producto final. Los pretratamientos considerados son uno químico (alcalino) y uno biológico (utilizando humus de lombriz). Las operación requiere tener una temperatura controlada en estas dos etapas.
 
-Las variables del proceso que determinan la producción de bioetanol incluyen, para la etapa de pretratamiento, la temperatura, el tamaño de partícula del bagazo (grado de molienda) y el tiempo de tratamiento; mientras que para el proceso SSF se consideran la temperatura, el pH, la carga enzimática y el volumen de la mezcla. Los experimentos se realizaron secuencialmente en un reactor tipo batch, manteniendo constantes el volumen de mezcla, la carga enzimática y la masa de levadura durante el proceso SSF. Cada serie experimental se efectuó empleando una temperatura de pretratamiento (T$_P$) constante y una temperatura de SSF (T$_P$) también constante, donde T$_P$  $\neq$   T$_s$.
+Las variables del proceso que determinan la producción de bioetanol incluyen, para la etapa de pretratamiento, la temperatura, el tamaño de partícula del bagazo (grado de molienda) y el tiempo de tratamiento; mientras que para el proceso SSF se consideran la temperatura, el pH, la carga enzimática y el volumen de la mezcla. Los experimentos se realizaron secuencialmente en un reactor tipo batch, manteniendo constantes el volumen de mezcla, la carga enzimática y la masa de levadura durante el proceso SSF. Cada serie experimental se efectuó empleando una temperatura de pretratamiento (T$_P$) constante y una temperatura de SSF (T$_S$) también constante, donde T$_P$  $\neq$   T$_S$.
 
 Para evaluar el efecto de las condiciones de pretratamiento de la biomasa, se diseñó una serie de experimentos considerando 2 tamaños de partícula de bagazo, tres temperaturas de pretratamiento y 2 tiempos de duración del pretratamiento. Todos los experimentos de SSF se realizaron a temperatura de \SI{43}{\degreeCelsius} y manteniendo las condiciones del reactor batch fijas durante el proceso.
 
