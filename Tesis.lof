@@ -20,7 +20,7 @@
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Programaci\'on de los sensores}}{26}{figure.caption.31}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Diagrama del convertidor}}{27}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Construcci\'on del convertidor}}{31}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Planta con los elementos necesarios para realizar los pretratamientos, as\IeC {\'\i } como la hidr\'olisis y fermentaci\'on..}}{32}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Planta con los elementos necesarios para realizar los pretratamientos, as\IeC {\'\i } como la hidr\'olisis y fermentaci\'on.}}{32}{figure.caption.34}%
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Diagrama que muestra las entradas a la planta}}{33}{figure.caption.35}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama para generar una se\~nal PWM en Simulink}}{34}{figure.caption.36}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Se\~nal PWM}}{34}{figure.caption.37}%
@@ -37,10 +37,10 @@
 \contentsline {figure}{\numberline {3.29}{\ignorespaces Comportamiento de la temperatura dentro del reactor con se\~nal de entrada PRBS }}{41}{figure.caption.48}%
 \contentsline {figure}{\numberline {3.30}{\ignorespaces Comportamiento de la temperatura sin la temperatura ambiente dentro del laboratorio. }}{41}{figure.caption.49}%
 \contentsline {figure}{\numberline {3.31}{\ignorespaces Comparaci\'on del sistema con la identificaci\'on.}}{42}{figure.caption.50}%
-\contentsline {figure}{\numberline {3.32}{\ignorespaces Polos y ceros del sistema}}{43}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Polos y ceros del sistema}}{42}{figure.caption.51}%
 \contentsline {figure}{\numberline {3.33}{\ignorespaces Respuesta del sistema}}{43}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.34}{\ignorespaces Ventana de la herramienta PID Tuner}}{45}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.35}{\ignorespaces Sistema simulado con control de temperatura a \SI {90}{\degreeCelsius }}}{46}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Ventana de la herramienta PID Tuner}}{44}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Sistema simulado con control de temperatura a \SI {90}{\degreeCelsius }}}{45}{figure.caption.54}%
 \contentsline {figure}{\numberline {3.36}{\ignorespaces Diagrama del sistema}}{46}{figure.caption.55}%
 \contentsline {figure}{\numberline {3.37}{\ignorespaces Diagrama del proceso de pretratamiento de material lignocelul\'osico (bagazo de ca\~na).}}{48}{figure.caption.56}%
 \contentsline {figure}{\numberline {3.38}{\ignorespaces Diagrama del proceso de la etapa de hidr\'olisis y fermentaci\'on (bagazo de ca\~na).}}{49}{figure.caption.57}%

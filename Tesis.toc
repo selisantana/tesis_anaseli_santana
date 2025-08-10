@@ -45,11 +45,11 @@
 \contentsline {subsection}{\numberline {3.3.2} An\'alisis del comportamiento del sistema ante excitaciones}{35}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Dise\~no de una excitaci\'on con fines de identificaci\'on}{39}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Respuesta experimental de la planta aplicando la entrada para\IeC {\nobreakspace }identificaci\'on}{40}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Identificaci\'on de la planta}{42}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Lazo de control}{44}{section.3.4}%
-\contentsline {section}{\numberline {3.5} Descripci\'on del Sistema de control de temperatura dentro del reactor }{46}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Descripci\'on del Sistema de control de temperatura dentro del reactor }{48}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Pretratamiento }{48}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.3.5}Identificaci\'on de la planta}{41}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Lazo de control}{43}{section.3.4}%
+\contentsline {section}{\numberline {3.5} Descripci\'on del Sistema de control de temperatura dentro del reactor }{45}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Descripci\'on del Sistema de control de temperatura dentro del reactor }{47}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Pretratamiento }{47}{subsection.3.6.1}%
 \contentsline {subsection}{\numberline {3.6.2}Hidr\'olisis y fermentaci\'on}{49}{subsection.3.6.2}%
 \contentsline {chapter}{\numberline {4}Dise\~no de experimentos}{50}{chapter.4}%
 \contentsline {subsubsection}{Variables}{50}{section*.58}%
