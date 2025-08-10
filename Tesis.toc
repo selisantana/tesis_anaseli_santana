@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\'Indice de figuras}{XI}{chapter*.6}%
-\contentsline {chapter}{\'Indice de tablas}{XIII}{chapter*.7}%
-\contentsline {chapter}{Nomenclatura}{XIV}{chapter*.8}%
+\contentsline {chapter}{\'Indice de figuras}{X}{chapter*.6}%
+\contentsline {chapter}{\'Indice de tablas}{XII}{chapter*.7}%
+\contentsline {chapter}{Nomenclatura}{XIII}{chapter*.8}%
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Planteamiento del problema}{4}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objetivos}{4}{section.1.2}%
@@ -76,10 +76,10 @@
 \contentsline {subsubsection}{Relaci\'on costo producci\'on}{84}{section*.116}%
 \contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{85}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Conclusiones}{85}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Trabajos futuros}{85}{section.8.2}%
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{88}{chapter*.117}%
-\contentsline {chapter}{Anexo A}{89}{chapter*.118}%
-\contentsline {section}{\numberline {8.3} Instalaci\'on del sistema operativo en la Raspberry }{89}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1} Actualizaci\'on del sistema operativo}{90}{subsection.8.3.1}%
-\contentsline {chapter}{Anexo B}{91}{chapter*.122}%
-\contentsline {section}{\numberline {8.4}Programa para la lectura de la temperatura para los sensores DHT11 y termopar tipo k}{91}{section.8.4}%
+\contentsline {section}{\numberline {8.2}Trabajos futuros}{86}{section.8.2}%
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{89}{chapter*.117}%
+\contentsline {chapter}{Anexo A}{90}{chapter*.118}%
+\contentsline {section}{\numberline {8.3} Instalaci\'on del sistema operativo en la Raspberry }{90}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1} Actualizaci\'on del sistema operativo}{91}{subsection.8.3.1}%
+\contentsline {chapter}{Anexo B}{92}{chapter*.122}%
+\contentsline {section}{\numberline {8.4}Programa para la lectura de la temperatura para los sensores DHT11 y termopar tipo k}{92}{section.8.4}%
