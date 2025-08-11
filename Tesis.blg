@@ -12,59 +12,58 @@ I'm skipping whatever remains of this entry
 Warning--entry type for "Perez2024" isn't style-file defined
 --line 139 of file bibliografia.bib
 Warning--entry type for "CFETarifas2023" isn't style-file defined
---line 293 of file bibliografia.bib
-I was expecting a `,' or a `}'---line 417 of file bibliografia.bib
+--line 311 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 435 of file bibliografia.bib
  :   
  :   url        = {iea.org/reports/key-world-energy-statistics-2021},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 969 of file bibliografia.bib
+You're missing a field name---line 1013 of file bibliografia.bib
  :   author={Ventura R{\'i}os}, 
  :                              {J.} and {Honorato Salazar}, {J. A.} and {Hern{\'a}ndez Garay},{A.} and {Aburto Anell}, {J. A.} and {Vaquera Huerta},{ H.} and {Enr{\'i}quez Quiroz}, {J. F},
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "portalproduccion"
 Warning--I didn't find a database entry for "Arturo2022evaluacion"
 Warning--can't use both volume and number fields in Figueroa2022evaluacion
 Warning--empty journal in Posada2005modulacion
-You've used 29 entries,
+You've used 32 entries,
             1935 wiz_defined-function locations,
-            674 strings with 11389 characters,
-and the built_in function-call counts, 11000 in all, are:
-= -- 1054
-> -- 516
-< -- 14
-+ -- 182
-- -- 176
-* -- 959
-:= -- 2004
-add.period$ -- 84
-call.type$ -- 29
-change.case$ -- 233
-chr.to.int$ -- 29
-cite$ -- 31
-duplicate$ -- 392
-empty$ -- 705
-format.name$ -- 207
-if$ -- 2075
+            695 strings with 12238 characters,
+and the built_in function-call counts, 12092 in all, are:
+= -- 1163
+> -- 563
+< -- 16
++ -- 198
+- -- 192
+* -- 1047
+:= -- 2203
+add.period$ -- 95
+call.type$ -- 32
+change.case$ -- 256
+chr.to.int$ -- 32
+cite$ -- 34
+duplicate$ -- 434
+empty$ -- 779
+format.name$ -- 226
+if$ -- 2285
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 22
-newline$ -- 144
-num.names$ -- 87
-pop$ -- 181
+missing$ -- 24
+newline$ -- 160
+num.names$ -- 96
+pop$ -- 200
 preamble$ -- 1
-purify$ -- 233
+purify$ -- 256
 quote$ -- 0
-skip$ -- 304
+skip$ -- 332
 stack$ -- 0
-substring$ -- 672
-swap$ -- 35
+substring$ -- 733
+swap$ -- 37
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 174
+type$ -- 192
 warning$ -- 2
-while$ -- 83
+while$ -- 91
 width$ -- 0
-write$ -- 369
+write$ -- 410
 (There were 3 error messages)

@@ -1,12 +1,13 @@
-\documentclass[12pt,letterpaper,openright, oneside]{book}
+ \documentclass[12pt,letterpaper,openright, oneside]{book}
 \usepackage[left=3cm, right=2.5cm, top=3cm, bottom=3cm]{geometry} % margenes
 \usepackage[spanish,mexico]{babel}   % adapta elementos de latex al castellano
+\usepackage{hyperref}                % links del mismo documento
 \usepackage[latin1]{inputenc}        % escribir simbolos no anglosajones
 \usepackage{enumerate}               % editar formato de listados III, 3, c
 %\usepackage{subfigure}               % varias figuras en una sola
 \usepackage{graphicx}                % incluir gráficos
 \usepackage{amsfonts}                % fuentes de uso matemático
-\usepackage{hyperref}                % links del mismo documento
+
 \usepackage{textcomp}                % fuetes de texto companion (yen, nota musical)
 \usepackage{mathrsfs}                % formato de letra
 \usepackage{pdfpages}                % incluir archivos pdf en el texto
@@ -28,7 +29,31 @@
 \DeclareSIUnit{\rpm}{rpm} % Define la unidad "rpm"
 \sisetup{per-mode = symbol}
 
+
+
 \author{Ana Seli Santana Marquina}
+
+%
+%
+%\newcounter{anexocounter}
+%\newcommand{\anexo}[1]{%
+%	\refstepcounter{anexocounter}%
+%	\section*{Anexo \Alph{anexocounter}. #1}%
+%	\addcontentsline{toc}{section}{Anexo \Alph{anexocounter}. #1}%
+%	\setcounter{subsection}{0}%
+%	\renewcommand{\thesubsection}{\Alph{anexocounter}.\arabic{subsection}}%
+%}
+\newcounter{anexocounter}
+\renewcommand{\theanexocounter}{\Alph{anexocounter}} % Forzar letras
+
+\newcommand{\anexo}[1]{%
+	\refstepcounter{anexocounter}%
+	\section*{Anexo \theanexocounter. #1}%
+	\addcontentsline{toc}{section}{Anexo \theanexocounter. #1}%
+	\label{anexo:\theanexocounter}% Etiqueta consistente
+}
+
+
 
 
 \begin{document}
@@ -341,7 +366,7 @@ Ya que no es un componente tóxico, ni contaminante, el alcohol etílico contiene 
 Proveniente de la fotosíntesis, la lignocelulosa es uno de los componentes más abundantes y principales de la biomasa, esta forma la pared celular de las plantas. Entre las plantas, la composición y porcentajes de lignocelulosa varían dependiendo de la edad y etapa de crecimiento de las plantas \citep{cuervo2009lignocelulosa}.
 Es viable utilizar este material por su bajo costo, su alta disponibilidad y aprovechamiento variado. Como ejemplo se ha reportado su uso en la industria de los materiales compuestos \citep{jara2022principales}.
 Se han desarrollado usos alternativos para aprovechar este subproducto agroindustrial, utilizándolo en la creación de biocombustibles.
-La lignocelulosa está conformada por celulosa, hemicelulosa y lignina, siendo una fuente de carbono y energía renovable \cite{portalproduccion}. 
+La lignocelulosa está conformada por celulosa, hemicelulosa y lignina, siendo una fuente de carbono y energía renovable \cite{Patricio2014produccion}. 
 
 
 
@@ -354,7 +379,7 @@ El bagazo representa el material de mayor tonelaje y volumen entre los que se ge
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm, height=6cm]{imagenes/bagazo}
-	\caption[Bagazo de caña]{}
+	\caption{Bagazo de caña}
 	\label{fig:bagazo}
 \end{figure}
 
@@ -421,7 +446,7 @@ La producción del etanol por etapas separadas es una de las técnicas más antigua
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm, height=7cm]{imagenes/Diagrama2}
-	\caption{Diagrama de hidrólisis y fermentación en etapas separadas.}
+	\caption{Diagrama de hidrólisis y fermentación en etapas separadas  \citep{CHOUDHARY201682}.}
 	\label{fig:diagrama2}
 \end{figure}
 
@@ -441,7 +466,7 @@ Las enzimas hidrolíticas son adaptables al frío y las levaduras termófilas son i
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm, height=7cm]{imagenes/dagrama ssf}
-	\caption{Diagrama de hidrólisis y fermentación simultánea}
+	\caption{Diagrama de hidrólisis y fermentación simultánea \citep{CHOUDHARY201682}.}
 	\label{fig:diagrama-de-sacarificacion-y-fermentacion-simultanea1}
 \end{figure}
 
@@ -460,9 +485,13 @@ También hay pretratamientos biológicos en los que comúnmente se usan microorgani
 \singlespacing
 \subsection{Tecnología de bioetanol de segunda generación.}
 \onehalfspacing
-El bioetanol puede ser producido a partir de distintos tipos de materia prima, cuando se utiliza la materia lignocelulósica, el bioetanol es llamado de segunda generación. En la investigación creada por 
+El bioetanol puede ser producido a partir de distintos tipos de materia prima. Cuando se utiliza la materia lignocelulósica, el bioetanol es llamado de segunda generación (2G). En la revisión creada por \cite{Melendez2022biotecnologia}   muestra una investigación sobre la tecnología empleada en la producción de bioetanol 1G y 2G, donde categorizo en tres clasificaciones: Innovación en 1G, Innovación en 2G y, por último, Gestión  y  factibilidad  industrial.
+Para la primera clasificación resalta los costos asociados para la producción de bioetanol, dado que se basan en esos resultados para encontrar métodos eficientes. Menciona materias primas como el jugo de caña, donde se obtienen mayores resultados. El autor ejemplifica con esquemas para la producción utilizando esta materia prima.
+
+Para la segunda clasificación se enfoca la ventaja y desventajas de la utilización de materias lignocelulosica, dando un enfoque en los pretratamientos y así como en los acondicionamientos en la biomasa.
 
 
+Para la tercera clasificación, habla sobre la adaptabilidad de los procesos en las biorrefinerias, utilizando normas y la producción, realizando así una conexión industrial-empresarial.
 
 \singlespacing
 \subsection{Pretratamientos.}
@@ -518,7 +547,7 @@ Regresando al trabajo de \citet{rojas2010analisis}, otro de los pretratamiento p
 
 El trabajo de \citet{MOONSAMY2022115675} tuvo como objetivo lograr una producción autosustentable, para lo cual se propusieron distintos escenarios. Un aspecto escencial de su análisis fue explorar la vialidad de combinar procesos de primera y segunda generación a partir de melazas y material lignocelulósico provenientes de la caña de azúcar. El pretratamiento propuesto fue el de explosión de vapor. Este consiste en hacer pasar una corriente líquida de hemicelulosa con una parte solida de celulosa y lignina. Posteriormente, dependiendo del escenario se realizó una SSF o una SHF. La conclusión fue que la ventaja del proceso combinado es su factibilidad económica, el reto es evitar la inhibición o supresión de la glucosa.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \subsection{Configuraciones en la producción de bioetanol}
 
 
@@ -533,9 +562,13 @@ En el artículo de \citet{Gomes2022analisis} se analizaron tres configuraciones p
 
 
 \subsubsection{Sacarificación y fermentación simultáneas} 
-La producción de bioetanol en etapas simultáneas se realizan
+En la tesis publicada por \cite{CortesOcampo2022}, desarrollada en la Universidad Autónoma del Estado de Morelos, se investigó la producción de etanol a partir de rastrojo de maíz utilizando una configuración de sacarificación y fermentación simultánea (SSF, por sus siglas en inglés). El estudio incluyó un pretratamiento termoquímico del residuo lignocelulósico, empleando ácido sulfúrico a una temperatura de \SI{130}{\degreeCelsius}, en condiciones de laboratorio.
 
+La etapa de SSF se llevó a cabo con temperaturas máximas de \SI{50}{\degreeCelsius}, con tiempos de reacción que variaron entre 6 y 48 horas, durante los cuales se realizaron muestreos en línea para el monitoreo del proceso. Posteriormente, se aplicó un tratamiento a los sólidos remanentes.
 
+Para el análisis final, se cuantificaron glucosa, carbohidratos liberados y compuestos solubles mediante HPLC, así como los carbohidratos presentes en los sólidos remanentes. Los resultados mostraron que, a las 24 horas posteriores al inicio del pretratamiento, se alcanzó la mayor producción de etanol, así como una temperatura de \SI{45}{\degreeCelsius}. La sepa con mayor producción de etanol es la llamada TT23 S. Ccerevisiae.
+
+\newpage
 \subsection{Producción de bioetanol de segunda generación en reactores tipo Batch}
 En la tesis de \cite{Perez2024} se realizó un proceso de hidrólisis y fermentación simultáneas. El trabajo tuvo como objetivo diseñar un biorreactor para la producción de 2,3 -butanodiol  a partir de zanahoria, mencionando que el diseño del biorreactor tiene un sistema de agitación. Uno dato que se menciona es que mediante el agitado, la glucosa es más abundante en el proceso. El reactor usado tenía una capacidad de 2 L, fue operado con una carga enzimática de 5 FPU/g y 10 FPU/g con temperaturas de \SI{37}{\degreeCelsius}. Otra conclusión obtenida fue que la carga enzimática no afectó la producción.
 En otra investigación, la producción de bioetanol se llevó a cabo utilizando la cáscara de piña como biomasa. En este caso se empleó un reactor tipo batch con tanque agitado, elegido por su facilidad de manejo. Como conclusión, se destaca que factores como la temperatura han influido positivamente en el aumento del rendimiento del proceso. Ver el artículo  \cite{Segura2018}
@@ -548,7 +581,7 @@ En otra investigación, la producción de bioetanol se llevó a cabo utilizando la 
 \singlespacing
 \chapter{Instrumentación del sistema  y control  }
 \onehalfspacing
-
+\label{instrumentacion}
 \section{Planta piloto de producción de biodiésel}
 \onehalfspacing
 
@@ -698,7 +731,7 @@ La temperatura ambiente es un elemento importante, dado que puede impactar en la
 \end{itemize}
 
 
-La Raspberry Pi es una mini computadora con un sistema operativo tipo Linux. La ventaja de esta es que puede interactuar con el mundo exterior. Para poder realizar el programa que lea los datos y se grafiquen, se configura la Raspberry Pi 3 en dos pasos: instalación del sistema operativo(Raspberry Pi OS, anteriormente llamado como Raspbian)  e instalación de las librerías (Pandas, Numpy, entre otras). Después de la instalación, se inicia la programación de los sensores. Para conocer cómo se instaló y actualizó el sistema operativo de la Raspberry Pi 3, así como las librerías que se utilizaron para programar los sensores se puede consultar el anexo \ref{anexo a}.
+La Raspberry Pi es una mini computadora con un sistema operativo tipo Linux. La ventaja de esta es que puede interactuar con el mundo exterior. Para poder realizar el programa que lea los datos y se grafiquen, se configura la Raspberry Pi 3 en dos pasos: instalación del sistema operativo(Raspberry Pi OS, anteriormente llamado como Raspbian)  e instalación de las librerías (Pandas, Numpy, entre otras). Después de la instalación, se inicia la programación de los sensores. Para conocer cómo se instaló y actualizó el sistema operativo de la Raspberry Pi 3, así como las librerías que se utilizaron para programar los sensores se puede consultar el anexo \ref{a}.
 
 \subsection{ Lectura y registro de las temperaturas.}
 
@@ -1095,7 +1128,7 @@ Una PRBS (Pseudorandom binary sequence) es una señal binaria pseudoaleatoria. Es
 	\caption{Señal PRBS. }
 	\label{prbs}
 \end{figure}
-Esta señal, con ayuda del convertidor, entra a la resistencia y es utilizada para modular la potencia. Se mide la temperatura dentro del reactor para poder realizar una identificación del sistema. Dado que se realizó una prueba de linealidad, se puede observar que es necesario modificar la amplitud de la señal PRBS en caso de que el sistema presente no linealidad. Dado que se realizaron las pruebas con la PWM modificando el ciclo de trabajo, se puede configurar la señal PRBS  de tal manera que trabaje en el rango que sea necesario para tener mayor variación en el sistema. Esta información se puede observar en la conclusión de las variaciones del PWM, obteniendo como resultado una señal PRBS con amplitud y longitud variable, como se muestra en la figura .
+Esta señal, con ayuda del convertidor, entra a la resistencia y es utilizada para modular la potencia. Se mide la temperatura dentro del reactor para poder realizar una identificación del sistema. Dado que se realizó una prueba de linealidad, se puede observar que es necesario modificar la amplitud de la señal PRBS en caso de que el sistema presente no linealidad. Dado que se realizaron las pruebas con la PWM modificando el ciclo de trabajo, se puede configurar la señal PRBS  de tal manera que trabaje en el rango que sea necesario para tener mayor variación en el sistema. Esta información se puede observar en la conclusión de las variaciones del PWM, obteniendo como resultado una señal PRBS con amplitud y longitud variable, como se muestra en la Figura \ref{fig:senalprbsamplalea}.
 
 
 
@@ -1121,7 +1154,7 @@ La señal PRBS entra  mediante la salida PWM del Arduino a un convertidor, pasand
 	\label{ diagrama_prbs}
 \end{figure}
 
-En el reactor, la temperatura se mide mediante los termopares tipo K. Este valor, obtenido como resultado de ingresar la señal PRBS, tiene la forma  que muestra la Figura \ref{ Temperatura_con PRBS}
+En el reactor, la temperatura se mide mediante los termopares tipo K. Este valor, obtenido como resultado de ingresar la señal PRBS, tiene la forma  que muestra la Figura \ref{ Temperatura_con PRBS}.
 
 \begin{figure}[H]
 	\centering
@@ -1130,7 +1163,7 @@ En el reactor, la temperatura se mide mediante los termopares tipo K. Este valor
 	\label{ Temperatura_con PRBS}
 \end{figure}
 
-Como se puede observar en la Figura, la temperatura sufre variaciones que ayudan a obtener la identificación del sistema con precisión.
+Como se puede observar en la Figura \ref{ Temperatura_con PRBS}, la temperatura sufre variaciones que ayudan a obtener la identificación del sistema con precisión.
 Para obtener la temperatura neta del sistema, es decir, la temperatura sin la influencia de la temperatura ambiente, se resta la temperatura ambiente dentro del laboratorio, menos la temperatura dentro del biorreactor.
 
 \begin{figure}[H]
@@ -1139,9 +1172,7 @@ Para obtener la temperatura neta del sistema, es decir, la temperatura sin la in
 	\caption{Comportamiento de la temperatura sin la temperatura ambiente dentro del laboratorio. }
 	\label{ Temperatura neta_con PRBS}
 \end{figure}
-
-La gráfica de la Figura \ref{ Temperatura neta_con PRBS} muestra la temperatura dentro del reactor 
-
+La gráfica de la Figura \ref{ Temperatura neta_con PRBS} muestra la temperatura dentro del reactor neta. Esta temperatura resta la temperatura leída, menos la temperatura ambiente.
 
 \singlespacing
 \subsection{Identificación de la planta}
@@ -1155,7 +1186,7 @@ Se necesita un sistema que modele el comportamiento de la temperatura de la plan
 	G(s) = \frac{0.0005369 \, s^2 + 0.0003022 \, s + 8.207 \times 10^{-5}}{s^3 + 0.3314 \, s^2 + 0.0002728 \, s + 2.707 \times 10^{-7}}
 \end{equation}
 
-Esta función de transferencia produce la respuesta que se muestra en la figura \ref{fig:identificacion}, se trata de un sistema de tercer orden
+Esta función de transferencia produce la respuesta que se muestra en la figura \ref{fig:identificacion}, se trata de un sistema de tercer orden.
 
 
 \begin{figure} [H]
@@ -1164,7 +1195,7 @@ Esta función de transferencia produce la respuesta que se muestra en la figura \
 	\caption{Comparación del sistema con la identificación.}
 	\label{fig:identificacion}
 \end{figure}
-Para observar el comportamiento del sistema se pueden analizar los polos y ceros del sistema en la figura \ref{polos y ceros}
+Para observar el comportamiento del sistema se pueden analizar los polos y ceros del sistema en la figura \ref{polos y ceros}.
 
 \begin{figure} [H]
 	\centering
@@ -1411,7 +1442,7 @@ Para el pretratamiento biológico, específicamente se tomó un nivel 1 de tiempo d
 	\begin{tabular}{|c|c|c|  }
 		\hline
 		\textbf{Núm de} & \textbf{Tamaño de particula } & \textbf{Temperatura} \\
-		\textbf{experimento} 	& \textbf{ del bagazo de caña} &  \textbf{(°C)}   \\		
+		\textbf{experimento} 	& \textbf{ del bagazo de caña} &  \SI{}{\degreeCelsius}   \\		
 		\hline
 		1   & \multirow{3}{*}{TNUB *} & 45  \\	\cline{1-1}	
 		2 &  & 40 \\ \cline{1-1} 						
@@ -1453,10 +1484,12 @@ Para el caso del pretratamiento alcalino con hidróxido de sodio las temperaturas
 		\begin{tabular}{| c | c | c | c | c | c |      }
 			\hline
 			\textbf{Cantidad de} & \textbf{Cantidad de} & \textbf{Volumen de } & \textbf{Tiempo del} & \multicolumn{2}{c|}{ \textbf{Condiciones de agitación} } \\  
-			\textbf{bagazo de caña} & \textbf{Hidróxido de sodio} & \textbf{la carga (l)} & \textbf{pretratamiento (s)} & \multicolumn{2}{c|}{  }  \\  
+			\textbf{bagazo de caña} & \textbf{Hidróxido de sodio} & \textbf{la carga } & \textbf{pretratamiento } & \multicolumn{2}{c|}{  }  \\  
+		
+				\textbf{(\% p/v)} & \textbf{(\% p/v)} & \SI{}{\liter} & \textbf{(s)} & \multicolumn{2}{c|}{  }  \\  
 			\hline
 			
-			\multirow{6}{*}{4 \% p/v } & \multirow{6}{*}{2\% p/v }  & \multirow{6}{*}{6 } & \multirow{3}{*}{5400} & \multirow{6}{*}{ 10 s encendido/apagado} & \multirow{6}{*}{142 rpm}  \\ 
+			\multirow{6}{*}{4  } & \multirow{6}{*}{2 }  & \multirow{6}{*}{6 } & \multirow{3}{*}{5400} & \multirow{6}{*}{ 10 s encendido/apagado} & \multirow{6}{*}{142 rpm}  \\ 
 			& & & &  &  \\ 
 			& & & &  &   \\ 
 			\cline{4-4}
@@ -1480,7 +1513,7 @@ De la misma forma, cada pretratamiento fue realizado modificando tres factores. 
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\textbf{Núm de} & \textbf{Temperatura} & \textbf{Tamaño de } & \textbf{Tiempo} \\ 
-		\textbf{de experimento}	&\textbf{ (°C)}&\textbf{ bagazo}  &\textbf{(s)}	\\ \hline
+		\textbf{de experimento}	&\SI{}{\degreeCelsius}&\textbf{ bagazo}  &(s)	\\ \hline
 		1 & \multirow{4}{*}{95} & \multirow{2}{*}{TNUB*} & 5400   \\ \cline{1-1} \cline{4-4}
 		2 &  &  & 7870  \\ \cline{3-4}  \cline{1-1} 
 		3 &  & \multirow{2}{*}{1 cm} & 5400  \\  \cline{1-1} \cline{4-4}
@@ -1529,11 +1562,11 @@ La producción de bioetanol fue realizada usando la configuración de hidrólisis y
 		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 			\hline
 			\textbf{Biomasa}  &\textbf{ Volumen}  & \textbf{Carga de } & \textbf{Carga}  & \textbf{Inoculo}  &\textbf{ pH}  & \textbf{Temperatura } & \textbf{Tiempo}   \\
-			&   & \textbf{ biomasa}  & \textbf{enzimática } & \textbf{de levadura } & &  &     \\
+			& \SI{}{\liter}  & \textbf{ biomasa (\%)}  & \textbf{enzimática} ( UPF/g ) & \textbf{de levadura (\%)} & & \SI{}{\degreeCelsius} &   \SI{}{\hour}  \\
 			
 			\hline
-			\multirow{2}{*}{Bagazo de caña} &\multirow{2}{*}{2 l}  &\multirow{2}{*}{5\%}  & \multirow{2}{*}{20 UPF/g } & \multirow{2}{*}{10\% } &\multirow{2}{*}{ 5} & \multirow{2}{*}{\SI{43}{\degreeCelsius}} & \multirow{2}{*}{48h }   \\
-			&   & & &  &  & &     \\		
+		Bagazo  &\multirow{2}{*}{2 }  &\multirow{2}{*}{5}  & \multirow{2}{*}{20} & \multirow{2}{*}{10 } &\multirow{2}{*}{ 5} & \multirow{2}{*}{43} & \multirow{2}{*}{48 }   \\
+			de caña&   & & &  &  & &     \\		
 			\hline
 	\end{tabular}}
 \end{table}
@@ -1701,7 +1734,7 @@ Para la ejecución del pretratamiento biológico se requirió el siguiente conjunto
 
 
 
-\textbf{4.}	Se cargó el reactor con 6.0 L de agua desmineralizada, dosificados mediante un vaso de precipitado de 1 L, calibrado. Posteriormente, se incorporaron los  \SI{0.18}{\kilo\gram} de bagazo de caña previamente pesados y contenidos en la bolsa de 3 kg, siguiendo el procedimiento ilustrado en la Figura \ref{baciad}.
+\textbf{4.}	Se cargó el reactor con \SI{6.0}{\liter} de agua desmineralizada, dosificados mediante un vaso de precipitado de \SI{1}{\liter}, calibrado. Posteriormente, se incorporaron los  \SI{0.18}{\kilo\gram} de bagazo de caña previamente pesados y contenidos en la bolsa de 3 kg, siguiendo el procedimiento ilustrado en la Figura \ref{baciad}.
 
 
 \begin{figure}[H]
@@ -1723,7 +1756,7 @@ Para la ejecución del pretratamiento biológico se requirió el siguiente conjunto
 
 \textbf{5.}	Se adicionaron 300 g de humus de lombriz al reactor que ya contenía agua desmineralizada y bagazo de caña (Figura \ref{humus2}).
 
-\textbf{6.} Se procedió a sellar el reactor utilizando una tapa que incorpora el motor. Se colocaron los sensores de tipo termopar K en los tubos de un centímetro de diámetro, asegurándo que estuvieran correctamente posicionados. Para evitar fugas de vapor, se utilizó algodón para sellar adecuadamente los tubos. Además, se emplearon láminas de aluminio y cinta aislante o térmica para garantizar un cierre hermético tanto alrededor de la tapa como en la zona de los sensores, tal como se observa en la Figura~\ref{cellado del reactor}.
+\textbf{6.} Se procedió a sellar el reactor utilizando una tapa que incorpora el motor. Se colocaron los sensores de tipo termopar K en los tubos de un centímetro de diámetro, asegurándo que estuvieran correctamente posicionados. Para evitar fugas de vapor, se utilizó algodón para sellar adecuadamente los tubos. Además, se emplearon láminas de aluminio y cinta aislante o térmica para garantizar un cierre hermético tanto alrededor de la tapa como en la zona de los sensores, tal como se observa en la Figura \ref{cellado del reactor}.
 
 
 
@@ -1745,25 +1778,15 @@ Para la ejecución del pretratamiento biológico se requirió el siguiente conjunto
 \end{figure}
 
 
-\textbf{7. } Se procedió a conectar las Raspberry Pi y los monitores, así como las fuentes de alimentación y el sistema de respaldo (no-break). Se conectaron los contactos múltiples necesarios, se configuraron los dispositivos y se programó el control para mantener la temperatura conforme al diseño experimental descrito en el apartado \ref{disenodeexperimentobiologico}. El proceso se mantuvo durante el tiempo estipulado para el pretratamiento. El diseño del control de temperatura se reporta en el anexo \ref{diseno del control de temp}. Las Figuras \ref{progra 1} y \ref{progra 2} muestran las pantallas con el control en funcionamiento.
+\textbf{7. } Se procedió a conectar las Raspberry Pi y los monitores, así como las fuentes de alimentación y el sistema de respaldo (no-break). Se conectaron los contactos múltiples necesarios, se configuraron los dispositivos y se programó el control para mantener la temperatura conforme al diseño experimental descrito en el apartado \ref{disenodeexperimentobiologico}. El proceso se mantuvo durante el tiempo estipulado para el pretratamiento. El diseño del control de temperatura se reporta en el capitulo \ref{instrumentacion}. La Figura \ref{p_1}  muestra el programa que implementa el control de temperatura.
+
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{0.46\textwidth}
-		\centering
-		\includegraphics[width=5cm, height=3cm]{imagenes/programa1} % Cambia "imagen1.jpg" por el nombre de tu archivo
-		\caption{Programa de la temperatura ambiente en marcha.}
-		\label{progra 1}
-	\end{minipage}
-	\hfill
-	\begin{minipage}{0.48\textwidth}
-		\centering
-		\includegraphics[width=5cm, height=3cm]{imagenes/programa2} % Cambia "imagen2.jpg" por el nombre de tu archivo
-		\caption{Programa del control en marcha.}
-		\label{progra 2}
-	\end{minipage}
+	\includegraphics[width=0.7\linewidth]{imagenes/programa_1}
+	\caption{Programa del control de temperatura.}
+     \label{p_1}
 \end{figure}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1848,29 +1871,27 @@ El pretratamiento alcalino de la biomasa se implementó usando Hidróxido de Sodio
 
 \textbf{6.} El reactor se selló herméticamente mediante un sistema multicapa compuesto por: algodón como barrera primaria, papel aluminio para aislamiento térmico y cinta aislante/ térmica como sellado secundario, garantizando el cierre completo del sistema como se detalla en la Figura \ref{sellado_bio}.
 
+\begin{figure}[H]
+		\centering
+	\includegraphics[width=\linewidth, height=4cm, keepaspectratio]{imagenes/sellado2}
+	\caption{El reactor se sella con ayuda de algodón, papel aluminio y cinta de aislar o cinta térmica.}
+	\label{sellado_bio}
+\end{figure}
 
 
 \textbf{7.} Finalmente, se activó el sistema de control automatizado (Figura \ref{programa}), para seguir los perfiles programados de temperatura para el interior del reactor y el tiempo de pretratamiento establecidos en el diseño experimental (Figura \ref{Diagrama1}). Este control garantizó las condiciones requeridas para el proceso.
 
-
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{0.46\textwidth}
-		\centering
-		\includegraphics[width=\linewidth, height=4cm, keepaspectratio]{imagenes/sellado2}
-		\caption{El reactor se sella con ayuda de algodón, papel aluminio y cinta de aislar o cinta térmica.}
-		\label{sellado_bio}
-	\end{minipage}
-	\hfill
-	\begin{minipage}{0.48\textwidth}
-		\centering
-		\includegraphics[width=\linewidth, height=4cm, keepaspectratio]{imagenes/programa3}
-		\caption{Se muestra el programa en funcionamiento.}
-		\label{programa}
-	\end{minipage}
+	\includegraphics[width=\linewidth, height=4cm, keepaspectratio]{imagenes/programa_3}
+	\caption{Programa para el control de temperatura en python.}
+	\label{programa}
 \end{figure}
 
-\textbf{7.} El diseño del control de temperatura para llevar a cabo este pretratamiento de la biomasa está reportado en el anexo \ref{diseno del control de temp}.
+
+
+
+\textbf{8.} El diseño del control de temperatura para llevar a cabo este pretratamiento de la biomasa está reportado en el capitulo \ref{instrumentacion}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1885,7 +1906,7 @@ El pretratamiento alcalino de la biomasa se implementó usando Hidróxido de Sodio
 \begin{tabular}{p{0.3\textwidth}p{0.3\textwidth}p{0.3\textwidth}}
 	$\bullet$ \textit{Agua desmineralizada} & $\bullet$ \textit{ Bagazo de caña Pretratado} & $\bullet$ \textit{Tela delgada}  \\
 	
-	$\bullet$ \textit{Colador} & $\bullet$ \textit{Cubeta 10 l} & 
+	$\bullet$ \textit{Colador} & $\bullet$ \textit{Cubeta \SI{10}{\liter}} & 
 \end{tabular}
 \\[0.5em]
 
@@ -1984,7 +2005,7 @@ El pretratamiento alcalino de la biomasa se implementó usando Hidróxido de Sodio
 
 \textbf{8.} Una vez completado el secado, el bagazo se almacenó en bolsas herméticas para prevenir la absorción de humedad ambiental, garantizando así las condiciones óptimas para su uso en los posteriores procesos de la SSF, tal como se muestra en la Figura \ref{biologico4}. Posteriormente el reactor tipo batch fue lavado con agua desmineralizada. \\[0.5em]
 
-\textbf{9.} En el anexo \ref{diseno del control de temp} se reporta el diseño del control de temperatura para este pretratamiento.
+\textbf{9.} En el capitulo \ref{instrumentacion} se reporta el diseño del control de temperatura para este pretratamiento.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Hidrólisis y fermentación en etapas simultáneas}
@@ -2120,7 +2141,7 @@ Para la SSF se consideraron los datos del apartado del diseño factorial, a conti
 \end{figure}
 
 
-\textbf{10.} El diseño del control del proceso SSF se reporta en el anexo \ref{diseno del control de temp}.
+\textbf{10.} El diseño del control del proceso SSF se reporta en el capitulo \ref{instrumentacion}.
 
 
 
@@ -2132,7 +2153,7 @@ Para la SSF se consideraron los datos del apartado del diseño factorial, a conti
 \onehalfspacing
 
 
-En esta Sección se reportan los resultados de los experimentos implementados en un reactor tipo batch de laboratorio con capacidad de 6 l para producir bioetanol de segunda generación a partir de bagazo de caña. Se compara el desempeño de dos alternativas de producción: un pretratamiento biológico seguido de un proceso SSF, y un pretratamiento alcalino seguido de un proceso SSF. La misma configuración de producción conduce a diferentes desempeños del proceso, distinguiendo los pretratamientos. Los resultados se presentan en téminos de la calidad del producto, el consumo energético y los costos de producción. Los desempeños presentados corresponden al producto y condiciones de operación de los experimentos diseñados en el apartado %\ref{Diseño factorial del pretratamiento alcalino}.
+En esta Sección se reportan los resultados de los experimentos implementados en un reactor tipo batch de laboratorio con capacidad de \SI{6}{\liter} para producir bioetanol de segunda generación a partir de bagazo de caña. Se compara el desempeño de dos alternativas de producción: un pretratamiento biológico seguido de un proceso SSF, y un pretratamiento alcalino seguido de un proceso SSF. La misma configuración de producción conduce a diferentes desempeños del proceso, distinguiendo los pretratamientos. Los resultados se presentan en téminos de la calidad del producto, el consumo energético y los costos de producción. Los desempeños presentados corresponden al producto y condiciones de operación de los experimentos diseñados en el apartado %\ref{Diseño factorial del pretratamiento alcalino}.
 
 
 \subsubsection{Pretratamiento Biológico}
@@ -2145,7 +2166,7 @@ Los pretratamientos biológicos realizados sobre bagazo de caña de azúcar (Tabla 
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\textbf{Núm de} &\textbf{ Temperatura} & \textbf{Tamaño de bagazo} & \textbf{Consumo energético } \\ 
-		\textbf{de experimento} &\textbf{  (°C)} &  & \textbf{ (kWh)} \\ \hline
+		\textbf{de experimento} &\textbf{  \SI{}{\degreeCelsius}} &  & \textbf{ (kWh)} \\ \hline
 		1 & \multirow{2}{*}{45} & TNUB & 4.55 \\ \cline{1-1} \cline{3-4}
 		2 &  & 1 cm & 3.81 \\ \hline
 		3 &\multirow{2}{*}{ 40} & TNUB & 2.77 \\ \cline{3-4} \cline{1-1}
@@ -2172,7 +2193,7 @@ Inicialmente se definió un tiempo para el pretratamiento alcalino según lo recom
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		\textbf{Núm de} & \textbf{Temperatura} & \textbf{Tamaño de } & \textbf{Tiempo} & \textbf{Consumo } \\ 
-		\textbf{de experimento}	&\textbf{ (°C)}&\textbf{ bagazo}  &\textbf{(s)}	&\textbf{ energético (kWh)}\\ \hline
+		\textbf{de experimento}	& \SI{}{\degreeCelsius}&\textbf{ bagazo}  &(s)	&\textbf{ energético }(kWh)\\ \hline
 		1 & \multirow{4}{*}{95} & \multirow{2}{*}{TNUB} & 5400 & 0.66  \\ \cline{1-1} \cline{4-5}
 		2 &  &  & 7870 & 0.81  \\ \cline{3-5}  \cline{1-1} 
 		3 &  & \multirow{2}{*}{1 cm} & 5400 & 0.74 \\  \cline{1-1} \cline{4-5}
@@ -2202,8 +2223,8 @@ Cada pretratamiento realizado fue seguido de una hidrólisis y fermentación simul
 	\begin{tabular}{|c|c|c|c|c|c|}
 		\hline
 		\textbf{Núm }& \textbf{Temperatura}  & \textbf{Tamaño} & \textbf{Consumo } & \textbf{Consumo }  & \textbf{Producción} \\ 
-		\textbf{de}&\textbf{(°C)} &\textbf{de bagazo} & \textbf{energético} & \textbf{energético }&\textbf{de alcohol}\\ 
-		\textbf{exp.}&& & \textbf{ pretrata (kWh)} & \textbf{ SSF (kWh)}&\textbf{(\%)}\\ \hline
+		\textbf{de}&\SI{}{\degreeCelsius} &\textbf{de bagazo} & \textbf{energético} & \textbf{energético }&\textbf{de alcohol}\\ 
+		\textbf{exp.}&& & \textbf{ pretrata }(kWh) & \textbf{ SSF }(kWh)&(\%)\\ \hline
 		
 		1 & \multirow{2}{*}{45} & TNUB & 4.55 & 2.8  & 11.5 \\ \cline{1-1} \cline{3-6}
 		2 &                     & 1 cm & 3.81 & 2.7  & 14 \\ \hline
@@ -2233,8 +2254,8 @@ Para las pruebas de SSF con bagazo pretratado con hidróxido de sodio, se utilizó
 	\begin{tabular}{|c|c|c|c|c|c|c|}
 		\hline
 		\textbf{Núm} & \textbf{Temperatura} & \textbf{Tamaño} & \textbf{Tiempo} & \textbf{Consumo } & \textbf{Consumo } & \textbf{Producción } \\
-		\textbf{de}	&\textbf{ (°C)}& \textbf{bagazo}&\textbf{(s)}	&\textbf{de pretra. }&\textbf{ de SSF}&\textbf{ de alcohol}\\ 
-		\textbf{exp}	& & \textbf{bagazo}&	&\textbf{ (kWh)}&\textbf{ (kWh)}&\textbf{ (\%)}\\ \hline
+		\textbf{de}	&\SI{}{\degreeCelsius}& \textbf{bagazo}&(s)	&\textbf{de pretra. }&\textbf{ de SSF}&\textbf{ de alcohol}\\ 
+		\textbf{exp}	& & \textbf{bagazo}&	&(kWh)& (kWh)& (\%)\\ \hline
 		
 		
 		1 & \multirow{4}{*}{95} & \multirow{2}{*}{TNUB} & 5400 &0.66& 1.95 & 13 \\ \cline{1-1} \cline{4-7}
@@ -2304,7 +2325,7 @@ Al realizarse las pruebas experimentales en el reactor tipo batch se registró el
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		\textbf{Núm de}&\textbf{Temperatura del} & \textbf{Tamaño }  & \textbf{ Consumo } & \textbf{Costos } \\ 
-		&\textbf{ pretratamiento (°C)} &	\textbf{ de bagazo}  & 	\textbf{energético(kWh) }& 	\textbf{(\$ USD)} \\ \hline
+		&\textbf{ pretratamiento }\SI{}{\degreeCelsius} &	\textbf{ de bagazo}  & 	\textbf{energético} (kWh)& 	(\$ USD) \\ \hline
 		1  & \multirow{2}{*}{45} & TNUB & 4.55 & 0.294 \\ \cline{3-5} \cline{1-1}
 		2	& & 1cm & 3.81 & 0.246 \\ \hline 
 		3&\multirow{2}{*}{40} & TNUB & 2.77 & 0.179 \\ \cline{3-5} \cline{1-1}
@@ -2334,11 +2355,11 @@ Para la producción de bioethanol aplicando el pretratamiento alcalino se utiliza
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		& \textbf{Costo}& \textbf{Cantidad por }  & \textbf{ Costo extra} &\textbf{ Costo total} \\
-		\textbf{Material}&	\textbf{} & 	\textbf{pretratamiento}& \textbf{ (USD) } & \textbf{ (USD)} \\ \hline
+		\textbf{Material}&	\textbf{} & 	\textbf{pretratamiento}&  (USD)  &  (USD) \\ \hline
 	
 		Hidróxido de sodio&37.9 $USD/kg$& 0.12 $kg$& 0.51  &   5.06718 \\ \hline
 		Bagazo de caña 	  &0.95 $USD/kg$& 0.24 $kg$ & 0.023 &    0.25336 \\ \hline
-		Agua desmineralizada&0.68 $USD/L$& 6  $L$ & 1.29   &      5.38 \\ \hline
+		Agua desmineralizada&0.68 $USD/L$& \SI{6}{\liter} & 1.29   &      5.38 \\ \hline
 	\end{tabular} 
 	
 	
@@ -2359,8 +2380,8 @@ La Tabla \ref{tabla costo 1 cm} documenta el consumo energético promedio de 0.74
 	\begin{tabular}{|c|c|c|c|c|c|}
 		\hline
 		\textbf{Núm}&\textbf{Temperatura } & \textbf{Tamaño } & \textbf{Tiempo} & \textbf{Energía} & \textbf{Costos } \\ 
-		\textbf{ de}	&\textbf{pretratamiento } &	\textbf{ de}  &	\textbf{ (s)} & 	\textbf{ consumida }& 	\textbf{(\$ USD)} \\ 
-		\textbf{exp}	&\textbf{(°C)} &	\textbf{ bagazo}  &	 & 	\textbf{ Pretrata(kWh) }& 	 \\ \hline
+		\textbf{ de}	&\textbf{pretratamiento } &	\textbf{ de}  & (s) & 	\textbf{ consumida }& (\$ USD) \\ 
+		\textbf{exp}	&\SI{}{\degreeCelsius} &	\textbf{ bagazo}  &	 & 	\textbf{ Pretrata }(kWh)& 	 \\ \hline
 		
 		
 		1&	\multirow{5}{*}{95} & \multirow{3}{*}{TNUB} & 5400 &0.66  & 0.88968  \\  \cline{4-6} \cline{1-1}
@@ -2415,12 +2436,12 @@ Los costos asociados a la produción de bioetanol por SSF utilizando bagazo pretr
 	\centering
 	\caption{El costo de la energía consumida para la etapa de SSF con bagazo pretratada mediante un proceso biológico. }
 	\label{pruebbio}
-	{\fontsize{9}{10.8}\selectfont % Ajusta el tamaño de letra a 12pt
+%	{\fontsize{9}{10.8}\selectfont % Ajusta el tamaño de letra a 12pt
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
 			\textbf{Núm de}&\textbf{Temperatura del} & \textbf{Tamaño } & \textbf{Energía } & \textbf{Costos } \\ 
 			\textbf{experimento}&\textbf{pretratamiento} &	\textbf{ de bagazo}   & 	\textbf{consumida  }& 	\textbf{ total} \\ 
-			&	\textbf{(°C)}  &    & \textbf{(kWh)} & \textbf{(\$ USD)} \\ \hline
+			&	\SI{}{\degreeCelsius}  &    & (kWh) & (\$ USD)\\ \hline
 			1	&	\multirow{2}{*}{45}& TNUB & 2.8 & 0.18 \\  \cline{3-5} \cline{1-1}
 			2	&	& 1 cm & 2.7 & 0.17  \\ \hline 
 			3	&	\multirow{2}{*}{40} & TNUB & 2.56 & 0.16  \\ \cline{3-5}\cline{1-1}
@@ -2429,7 +2450,7 @@ Los costos asociados a la produción de bioetanol por SSF utilizando bagazo pretr
 			6	&	& 1 cm & 3.01 & 0.19  \\ \hline
 			
 		\end{tabular}
-	}
+	%}
 \end{table}
 
 
@@ -2446,12 +2467,12 @@ Clasificando las pruebas experimentales en pretratamientos realizados anteriorme
 	\centering
 	\label{energi_}
 	\caption{El costo de la energía consumida para la etapa de SSF con bagazo pretratada mediante un proceso alcalino. }
-	{\fontsize{9}{10.8}\selectfont
+	%{\fontsize{9}{10.8}\selectfont
 		\begin{tabular}{|c|c|c|c|c|c|}
 			\hline
 			\textbf{Núm}	&\textbf{Temperatura del} & \textbf{Tamaño } & \textbf{Tiempo} & \textbf{Energía } & \textbf{Costos } \\ 
-			&\textbf{pretratamiento} &	\textbf{ de bagazo}  &	\textbf{ (s)} & 	\textbf{consumida  }& 	\textbf{(\$ USD)} \\ 
-			&\textbf{(°C)}  &  &  & \textbf{(kWh)} &  \\ \hline
+			&\textbf{pretratamiento} &	\textbf{ de bagazo}  &	 (s)& 	\textbf{consumida  }& 	(\$ USD) \\ 
+			&\SI{}{\degreeCelsius} &  &  & (kWh) &  \\ \hline
 			1	&\multirow{5}{*}{95} &\multirow{2}{*}{ TNUB} & 5400 & 1.95 & 0.12 \\ \cline{4-6}\cline{1-1}
 			2	&&  & 7870& 2.74 & 0.17  \\ \cline{3-6}\cline{1-1}
 			3	&	& \multirow{2}{*}{ 1 cm}& 5400  & 1.41 & 0.09  \\ \cline{4-6}\cline{1-1}
@@ -2462,8 +2483,8 @@ Clasificando las pruebas experimentales en pretratamientos realizados anteriorme
 			8	&	& & 7870 & 2.88 & 0.18  \\ \hline
 			9	&		\multirow{2}{*}{80}	 & TNUB & 5400 & 1.84 &0.11   \\ \cline{3-6}\cline{1-1}
 			10	&	 & 1 cm & 7870 & 2.58 & 0.16 \\ \hline
-	\end{tabular}}
-	
+	\end{tabular}
+%}
 \end{table}
 
 
@@ -2495,11 +2516,11 @@ Para obtener un panorama general sobre los resultados del trabajo experimental, 
 				&  \textbf{ (\$ USD)} & \textbf{ (\$ USD)} & \textbf{  (\$ USD)} & \textbf{  (\%)  }\\ \hline
 				
 				
-			Pretratamiento biológico, &  \multirow{2}{*}{20.13} & \multirow{2}{*}{0.33}&\multirow{2}{*}{19.58} & \multirow{2}{*}{11.15}  \\ 
+			Pretratamiento biológico, &  \multirow{2}{*}{19.58} & \multirow{2}{*}{0.33}&\multirow{2}{*}{20.13} & \multirow{2}{*}{11.15}  \\ 
 			SSF Y acondicionamiento &  &&&   \\ \hline
 			
 			
-			Pretratamiento alcalino, &  \multirow{2}{*}{25.09} & \multirow{2}{*}{0.18}&\multirow{2}{*}{24.49} & \multirow{2}{*}{12.8}  \\ 
+			Pretratamiento alcalino, &  \multirow{2}{*}{24.49} & \multirow{2}{*}{0.18}&\multirow{2}{*}{25.09} & \multirow{2}{*}{12.8}  \\ 
 			SSF Y acondicionamiento &  &&&   \\ \hline
 			
 			
@@ -2516,13 +2537,13 @@ A continuación, se muestra la producción de alcohol obtenida para el proceso con
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}[b]{8 cm}
-		\includegraphics[width=9cm, height=6.2cm]{imagenes/biologico_11}
+		\includegraphics[width=9cm, height=6.2cm]{imagenes/biologico_12}
 		\caption{Producción de bioetanol con pretratamiento biológico con bagazo de caña  de TNUB.}
 		\label{fig:imagen1}
 	\end{subfigure}
 	\hfill % Espacio horizontal entre imágenes
 	\begin{subfigure}[b]{8 cm}
-		\includegraphics[width=9cm, height=6.2cm]{imagenes/biologico_TNUB}
+		\includegraphics[width=9cm, height=6.2cm]{imagenes/biologico_TNUB1}
 		\caption{Producción de bioetanol con pretratamiento biológico con bagazo de caña de 1 cm.}
 		\label{fig:imagen2}
 	\end{subfigure}
@@ -2539,18 +2560,18 @@ Para el pretratamiento alcalino se observa que al utilizar TNUB (tamaño no unifo
 
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}[b]{0.48\textwidth}
-		\includegraphics[width=\linewidth]{imagenes/alcalino_TNUB.png}
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\linewidth]{imagenes/alcalino_TNUB1}
 		\caption{Producción de bioetanol con pretratamiento alcalino con bagazo de caña de TNUB.}
 		\label{bipoo}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.48\textwidth}
-		\includegraphics[width=\linewidth]{imagenes/alcalino_1cm.png}
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\linewidth]{imagenes/alcalino_1cm1}
 		\caption{Producción de bioetanol con pretratamiento alcalino con bagazo de caña de 1 cm.}
 		\label{fig:imagen11}
 	\end{subfigure}
-	\caption{Producción de bioetanol con pretratamiento alcalino.}
+	\caption{Producción de bioetanol con pretratamiento alcalino a 7870 s.}
 	\label{produccion}
 \end{figure}
 
@@ -2568,7 +2589,7 @@ Los resultados presentados en la Figura \ref{grafica1} permiten establecer que e
 
 \begin{figure} [H]
 	\centering
-	\includegraphics[width=16cm, height=7cm]{imagenes/CONSUMOENERGETICOSSF}
+	\includegraphics[width=16cm, height=7cm]{imagenes/CONSUMOENERGETICOSSF2}
 	\caption{Consumo energético para SSF. }
 	\label{grafica1}
 \end{figure}
@@ -2608,8 +2629,8 @@ Respecto a la comparativa de los tamaños de bagazo, los datos muestran que el us
 \section{Conclusiones}
 \onehalfspacing
 
-Con respecto a lo mencionado anteriormente podemos concluir que en el pretratamiento biológico existe un cambio modificando el tamaño de partícula, así como la temperatura con mayor producción es de 45°.
-Para el pretratamiento alcalino podemos observar que un tiempo de  5400 s no presenta cambios en la producción de bioetanol, aun modificando el tamaño de partícula y la temperatura. En general, se puede concluir que, aunque el pretratamiento con hidróxido de sodio genera una mayor producción promedio de bioetanol en comparación con el humus de lombriz, la diferencia en rendimiento no justifica necesariamente su uso frente al pretratamiento biológico. Este último permite obtener una producción similar con un costo aproximadamente 5 dólares menor, además de presentar una ventaja ambiental clave: no contamina de la misma manera que el hidróxido de sodio, lo que lo convierte en una alternativa más sostenible.
+Con respecto a lo mencionado anteriormente podemos concluir que en el pretratamiento biológico existe un cambio modificando el tamaño de partícula, así como la temperatura con mayor producción es de \SI{45}{\degreeCelsius}.
+Para el pretratamiento alcalino podemos observar que un tiempo de  5400 s no presenta cambios en la producción de bioetanol, aun modificando el tamaño de partícula y la temperatura. En general, se puede concluir que, aunque el pretratamiento con hidróxido de sodio genera una mayor producción promedio de bioetanol en comparación con el humus de lombriz, la diferencia en rendimiento no justifica necesariamente su uso frente al pretratamiento biológico. Este último método permite obtener una producción similar con un disminución del 19.21\% en los costos., además de presentar una ventaja ambiental clave: no contamina de la misma manera que el hidróxido de sodio, lo que lo convierte en una alternativa más sostenible.
 
 Por otro lado, al evaluar las variables de procesamiento, se observa que el tamaño de partícula de 1 cm en el bagazo es el que proporciona la mayor producción de bioetanol, lo que refuerza la viabilidad del pretratamiento biológico como método eficiente y ecológico para la producción de bioetanol de segunda generación (2G).
 
@@ -2636,14 +2657,19 @@ En resumen, el pretratamiento con humus de lombriz no solo resulta económicament
 \bibliography{bibliografia}
 \addcontentsline{toc}{chapter}{Bibliografía}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\newpage
+\section*{Anexos}		
 
-\chapter*{Anexo A} \addcontentsline{toc}{chapter}{Anexo A}
+\newcounter{anexo}
+\setcounter{anexo}{0}
 
-\section{ Instalación del sistema operativo en la Raspberry }
-\label{anexo a}
+% Para cada anexo:
+\stepcounter{anexo}
+\anexo{Instalación del sistema operativo en la Raspberry}
+\label{a}
 
 Se descargó el sistema operativo Raspberry Pi OS (anteriormente conocido como Raspbian), desde la página oficial para instalar el sistema operativo y posteriormente se monta la imagen a la memoria de 256 GB.
 
@@ -2688,12 +2714,10 @@ Las librerías instaladas para utilizar los sensores termopar k y DHT11,y algunas
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 
-
-\chapter*{Anexo B} \addcontentsline{toc}{chapter}{Anexo B}
-
+% Para cada anexo:
+%\stepcounter{anexo}
+\anexo{Programa para la lectura de la temperatura para los sensores DHT11 y termopar tipo k}
 \label{anexo B}
-\section{Programa para la lectura de la temperatura para los sensores DHT11 y termopar tipo k}
-\label{Programa para la lectura de la temperatura para los sensores DHT11 y termopar tipo k}
 
 \#se realiza un programa  para medir la tempreratura mediante el sensor k max6675 \\
 import time  as t \\
