@@ -92,7 +92,7 @@ Luis Enrique Hernandez Melendez por siempre estar a mi lado, apoyarme incondicio
 Ismael Santana Marquina, Mariel Santana Marquina, Claudia Lizbeth Santana Marquina y Jose Misael Santana Marquina por sus consejos, su tiempo y su cariño. Por estar presentes en la distancia.
 
 \textbf{\textit{A mi familia}} \\
-A mis abuelitos y primos por siempre ayudarme y apoyarme incondicionalmente.
+A mis abuelitos, primos y sobrinos por siempre ayudarme y apoyarme incondicionalmente.
 
 
 
@@ -104,7 +104,8 @@ A mis abuelitos y primos por siempre ayudarme y apoyarme incondicionalmente.
 \vspace{0.8cm}
 \textbf{\textbf{A mi esposo } } \\
 Por el cariño, el amor y ayuda incondicional todo el tiempo.
-\textbf{A mis padres } 
+\\
+\textbf{A mis padres } \\
 Por la confianza y apoyo incondicional.
 
 \textbf{A el Dr. Victor Manuel Alvarado Martínez y la Dra. Ma Guadalupe López López } Por la paciencia y ayuda en la realización de este trabajo. 
@@ -127,7 +128,7 @@ Por los consejos y los valiosos comentarios durante el proceso.
 \chapter*{Resumen}
 \onehalfspacing
 Este trabajo de investigación muestra la comparativa de distintos enfoques en la producción de bioetanol de segunda generación (2G) utilizando bagazo de caña. 
-Se evaluó el efecto del tamaño de partícula, temperatura de pretratamiento y tiempo de reacción en una configuración de Sacarificación y Fermentación Simultáneas (SSF). Utilizando un reactor tipo batch instrumentado donde se adapto y se adecuó la planta donde se llevaron a cabo las experimentaciones.
+Se evaluó el efecto del tamaño de partícula, temperatura de pretratamiento y tiempo de reacción en una configuración de Sacarificación y Fermentación Simultáneas (SSF). Utilizando un reactor tipo batch instrumentado, se adaptó y se adecuó la planta donde se llevaron a cabo las experimentaciones.
 Se diseñó un lazo de control que mantuviera la temperatura constante dentro del reactor batch, dado que las variaciones de temperatura ambiente afectarían en la producción de bioetanol 2G. Por lo que el trabajo incluye un control de temperatura utilizando un controlador PID, mediante un sistema identificado.
 Se realizó pruebas experimentales leyendo la temperatura en tiempo real, siguiendo un diseño de experimentos donde se muestran las variables en cada prueba.
 
@@ -1183,7 +1184,7 @@ Se necesita un sistema que modele el comportamiento de la temperatura de la plan
 
 
 \begin{equation}
-	G(s) = \frac{0.0005369 \, s^2 + 0.0003022 \, s + 8.207 \times 10^{-5}}{s^3 + 0.3314 \, s^2 + 0.0002728 \, s + 2.707 \times 10^{-7}}
+	G(s) = \frac{0.005369 \, s^2 + 0.003022 \, s + 8.207 \times 10^{-5}}{s^3 + 0.3314 \, s^2 + 0.002728 \, s + 2.707 \times 10^{-7}}
 \end{equation}
 
 Esta función de transferencia produce la respuesta que se muestra en la figura \ref{fig:identificacion}, se trata de un sistema de tercer orden.
@@ -2182,14 +2183,14 @@ El tiempo de pretratamiento para las pruebas anteriores fue 5 días.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{ Hidrólisis y fermentación para pretratamiento Alcalino}
+\subsubsection{ Pretratamiento Alcalino}
 Inicialmente se definió un tiempo para el pretratamiento alcalino según lo recomendado por \cite{Figueroa2022evaluacion}, quien consideró condiciones reportadas en la literatura. En la práctica, ya que el proceso se llevó a cabo en la presente tesis usando un reactor más grande que el empleado en el trabajo de referencia, el control de temperatura se volvió crítico. El control de temperatura que fue implementado tiene un tiempo de establecimiento relativamente grande, durante el cual la temperatura no se encuentra todavía en la referencia. Un supuesto fue que un tiempo de pretratamiento más largo permitiría operar por más tiempo el reactor con la temperatura controlada, y que esta etapa podría resultar más efectiva. En concreto, como segunda condición se definió un tiempo de pretratamiento de 7870, manejando partículas de bagazo de caña de 1 mm hasta 10 cm. Los tamaños considerados fueron iguales al caso previo con pretratamiento biológico, se manejaron tamaños no uniformes de bagazo (TNUB) y partículas de 1 cm. En la Tabla \ref{Pretratamiento Alcalino} se muestran las condiciones de los 12 experimentos diseñados, indicando la energía consumida en cada una de las pruebas, expresada en unidades de kWh, la cual fue leída de un watímetro. Esta energía también corresponde al consumo debido al calentamiento del reactor, sumando específicamente el consumo de la resistencia de calentamiento y del convertidor del control durante el pretratamiento.
 
 
 
 \begin{table}[H]
 	\centering
-	\caption{Preubas experimentales con pretratamiento alcalino}
+	\caption{Pruebas experimentales con pretratamiento alcalino.}
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		\textbf{Núm de} & \textbf{Temperatura} & \textbf{Tamaño de } & \textbf{Tiempo} & \textbf{Consumo } \\ 
@@ -2291,7 +2292,7 @@ Para la producción de bioetanol utilizando un pretratamiento biológico, fue nece
 \begin{table}[H]
 	\centering
 	
-	\caption{Costos detallados de materiales por prueba.}
+	\caption{Costos detallados de materiales por prueba para el pretratamiento biológico.}
 	\label{tab:costos_completos}
 	\footnotesize
 	\setlength{\tabcolsep}{2.5pt}
@@ -2418,10 +2419,10 @@ Los costos asociados a la producción de bioetanol de segunda generación se repor
 		& \textbf{Costo por} & \textbf{Cantidad por }  & \textbf{Costos} \\
 		\textbf{Material} & \textbf{ consumo } & \textbf{ pretratamiento}  & \textbf{total} \\ 
 		& \textbf{ (\$ USD)} & \textbf{ }  & \textbf{(\$USD)} \\ \hline
-		Saccharomyces cerevisiae &4798.4 $USD/kg$  & \SI{0.00185}{\liter}    & 8.9 \\ \hline
+		Saccharomyces cerevisiae &4798.4 $USD/kg$  & \SI{0.00185}{\liter}    & 9 \\ \hline
 		Ácido cítrico            & 4.27 $USD/kg$    &0.005 $kg$       &0.04 \\ \hline
-		Levadura activa         &14.39 $USD/kg$     &0.160 $kg$       & 2.37 \\ \hline
-		Agua desmineralizada    & 0.68 $USD/L$   & \SI{2}{\liter}            & 1.57 \\ \hline
+		Levadura activa         &14.39 $USD/kg$     &0.160 $kg$       & 2.4 \\ \hline
+		Agua desmineralizada    & 0.68 $USD/L$   & \SI{2}{\liter}            & 1.6 \\ \hline
 	\end{tabular}
 \end{table}
 
@@ -2434,7 +2435,7 @@ Los costos asociados a la produción de bioetanol por SSF utilizando bagazo pretr
 
 \begin{table}[H]
 	\centering
-	\caption{El costo de la energía consumida para la etapa de SSF con bagazo pretratada mediante un proceso biológico. }
+	\caption{El costo de la energía consumida para la etapa de SSF con bagazo pretratado mediante un proceso biológico. }
 	\label{pruebbio}
 %	{\fontsize{9}{10.8}\selectfont % Ajusta el tamaño de letra a 12pt
 		\begin{tabular}{|c|c|c|c|c|}
@@ -2707,7 +2708,7 @@ Para poder trabajar en la Raspberry se necesita actualizar el sistema operativo 
 
 
 Tecleando el código $"sudo apt  update"$ y dando enter se estará instalando la actualización.
-En dado caso que la fecha este mal no podrá actualizarse hasta ser modificada, por lo que digitaremos la fecha con el siguiente código ?sudo date -s ?YYYY-MM-DD HH:MM:SS? ? después de tener bien la fecha este podrá actualizarse e instalarse las librerías.
+En dado caso que la fecha este mal no podrá actualizarse hasta ser modificada, por lo que digitaremos la fecha con el siguiente código "sudo date -s "YYYY-MM-DD HH:MM:SS"" después de tener bien la fecha este podrá actualizarse e instalarse las librerías.
 Las librerías instaladas para utilizar los sensores termopar k y DHT11,y algunas otras funciones fueron:
 \textbf{ Pandas},\textbf{ Numpy}, \textbf{ Max6675 }, \textbf{ Adafruit} y \textbf{matplotlib}.
 
